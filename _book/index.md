@@ -15,7 +15,7 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-#Preface{-}
+# Preface{-}
 Welcome to Fundamental Statistics!\\
 This Workbook is designed to assist you with the learning through doing component
 of this course. The primary learning resource for the course is the lectures and tutorials,
