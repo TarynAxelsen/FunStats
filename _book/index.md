@@ -15,11 +15,45 @@ biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
 
-# About
+#Preface{-}
+Welcome to Fundamental Statistics!\\
+This Workbook is designed to assist you with the learning through doing component
+of this course. The primary learning resource for the course is the lectures and tutorials,
+however we do have an accompanying textbook De Veaux, Velleman & Bock,
+Stats: Data and Models, fourth edition. We do not cover the whole text book in this
+course or in the order it is presented in the book. You are directed to the relevant
+readings from the textbook at the end of each chapter within this Workbook. Once
+you have watched the lecture recordings, you should consolidate your understanding
+by working through the material and tutorials in this Workbook. The textbook
+readings will give you further knowledge and help to really solidify the materials
+covered each week.
+The tutorials align with the modules covered in this course as listed in the Course
+Specification. At the end of each tutorial you will notice a Module Checklist and, in
+some cases, a Using SPSS Checklist. Use these checklists to make sure that you have
+not missed an important concept as you work through the materials. It’s a good idea
+to tick them off after completing each module and again at revision time.
+Statistics is used regularly to help us gain an understanding of the information
+which is available to us on a daily basis. The root of this information is data, and
+the need to understand this data is what drives statistics. The goal in this course
+is to give you tools to enable you to competently use and interpret statistics. These
+statistical tools can be viewed in the same way as everyday household tools.
+A toolbox needs to have some basics such as a hammer, pliers, wrench and screwdriver.
+Similarly, in this course there are some concepts and skills which are essential
+for you to master. We call these Threshold Competencies. In order to pass this course,
+you will need to demonstrate that you have full understanding of the Threshold
+Competencies. Beyond this are what we have labeled Expanded Competencies and
+these include what you must know in order to achieve higher than a pass [P] in the
+course. Material that covers these Expanded Competencies will be indicated in this
+Workbook by an asterisk*.
+The emphasis in Fundamental Statistics is in understanding the basic concepts of
+statistical reasoning and learning how to use a statistical software package. There
+
+
+# About{-}
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports; for example, a math equation $a^2 + b^2 = c^2$.
 
-## Usage 
+## Usage{-} 
 
 Each **bookdown** chapter is an .Rmd file, and each .Rmd file can contain one (and only one) chapter. A chapter *must* start with a first-level heading: `# A good chapter`, and can contain one (and only one) first-level heading.
 
@@ -27,7 +61,7 @@ Use second-level and higher headings within chapters like: `## A short section` 
 
 The `index.Rmd` file is required, and is also your first book chapter. It will be the homepage when you render the book.
 
-## Render book
+## Render book{-}
 
 You can render the HTML version of this example book without changing anything:
 
@@ -44,7 +78,7 @@ bookdown::render_book()
 
 To render this example to PDF as a `bookdown::pdf_book`, you'll need to install XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.org/tinytex/>.
 
-## Preview book
+## Preview book{-}
 
 As you work, you may start a local server to live preview this HTML book. This preview will update as you edit the book when you save individual .Rmd files. You can start the server in a work session by using the RStudio add-in "Preview book", or from the R console:
 

@@ -6,12 +6,12 @@ delete_merged_file: true
 rmd_files:
 - index.Rmd
 - 01-Intro.Rmd
-- 02-Cross-refs.Rmd
-- 03-parts.Rmd
-- 04-citations.Rmd
-- 05-blocks.Rmd
-- 06-share.Rmd
-- 07-references.Rmd
+#- 02-Cross-refs.Rmd
+#- 03-parts.Rmd
+#- 04-citations.Rmd
+#- 05-blocks.Rmd
+#- 06-share.Rmd
+#- 07-references.Rmd
 
 language:
   ui:
