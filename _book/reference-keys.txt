@@ -2,3 +2,5 @@ summary-of-module-1
 review-questions-module-1
 tutorial-questions-module-1
 question-1-generating-an-appropriate-sample
+interactive-sampling-srs-vs-stratified
+textbook-readings
