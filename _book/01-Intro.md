@@ -1,11 +1,27 @@
-# Hello bookdown 
+# Summary of Module 1 
 
-All chapters start with a first-level heading followed by your chapter title, like the line above. There should be only one first-level heading (`#`) per .Rmd file.
+Put a summary here.
 
-## A section
+## Review Questions Module 1
 
-All chapter sections start with a second-level (`##`) or higher heading followed by your section title, like the sections above and below here. You can have as many as you want within a chapter.
+Once you have watched the lecture recordings you should be able to answer the
+following *Threshold* questions:
 
-### An unnumbered section {-}
+(i) What is a variable? What is a value of a variable? Give examples of each.
 
-Chapters and sections are numbered by default. To un-number a heading, add a `{.unnumbered}` or the shorter `{-}` at the end of the heading, like in this section.
+(ii) How can we tell if a variable is quantitative, categorical, ordinal or an identifier?
+
+(iii) What is the difference between a statistic and a parameter? What do they measure
+and how might they be obtained?
+
+(iv) What is the difference between a representative sample and a convenience
+sample? How are they obtained and what are their relative advantages/disadvantages?
+
+(v) What is a contingency or two-way table? When is it used?
+
+(vi) What is meant by a marginal distribution, a joint distribution and a conditional
+distribution?
+
+## Tutorial Questions Module 1
+
+Note: * Indicates **Expanded** Competencies

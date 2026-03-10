@@ -6,6 +6,7 @@ delete_merged_file: true
 rmd_files:
 - index.Rmd
 - 01-Intro.Rmd
+- module-01.Rmd
 #- 02-Cross-refs.Rmd
 #- 03-parts.Rmd
 #- 04-citations.Rmd
