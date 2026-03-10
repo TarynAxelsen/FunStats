@@ -66,7 +66,7 @@ for you to master. We call these Threshold Competencies. In order to pass this c
 you will need to demonstrate that you have full understanding of the *Threshold
 Competencies*. Beyond this are what we have labeled Expanded Competencies and
 these include what you must know in order to achieve higher than a Pass [P] in the
-course. Material that covers these Expanded Competencies will be indicated in this
+course. Material that covers these *Expanded Competencies* will be indicated in this
 Workbook by an asterisk *.
 
 The emphasis in Fundamental Statistics is in understanding the basic concepts of
@@ -87,7 +87,7 @@ at the start of each module in the lectures.
 
 Best wishes and good studying!
 
-## Overall Course Objective {-}
+## Overall Course Objectives {-}
 
 On completion of this course students should be able to:
 
@@ -99,6 +99,20 @@ data collection and analysis;
 * use a statistical computer package to enter, summarise and analyse data; and
 
 * interpret and communicate the results of statistical analyses for a diverse audience.
+
+## How this book was made {-}
+
+This book was made using **R** [@R-base], and the **bookdown** package [@R-bookdown], which is based on [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax, using **knitr** [@R-knitr].
+
+```{block2, type='flushright', html.tag='p'}
+Peter K. Dunn  
+Sippy Downs, Australia  
+Taryn Axelsen  
+Springfield, Australia
+```
+
+
+\mainmatter
 
 # About{-}
 
