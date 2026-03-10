@@ -14,12 +14,34 @@ description: |
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
+<!-- Peter Dunn: Best way I have found to get correct spacing for units in LaTeX, without screwing up HTML -->
+\newcommand{\cms}{\,\text{cm}}
+\newcommand{\dLs}{\,\text{dL}}
+\newcommand{\xdLs}{\text{dL}}
+<!-- No space beforehand so useful in place like \\mgs.\\xdLhas^{-1} -->
+\newcommand{\fmols}{\,\text{fmol}}
+\newcommand{\ft}{\,\text{ft}}
+\newcommand{\gs}{\,\text{g}}
+\newcommand{\hs}{\,\text{h}}
+\newcommand{\xhs}{\text{h}}
+<!-- No space beforehand so useful in place like \\km.\\xhs^{-1} -->
+\newcommand{\has}{\,\text{ha}}
+\newcommand{\xhas}{\text{ha}}
+<!-- No space beforehand so useful in place like \\kgs.\\xhas^{-1} -->
+\newcommand{\inches}{\,\text{inches}}
+\newcommand{\kgs}{\,\text{kg}}
+\newcommand{\kms}{\,\text{km}}
+\newcommand{\kWhs}{\,\text{kWh}}
+\newcommand{\lbs}{\,\text{lb}}
+\newcommand{\Ls}{\,\text{L}}
+\newcommand{\xLs}{\text{L}} 
+<!-- No space beforehand so useful in place like \\microgs.\\xLs^{-1} -->
 
+\frontmatter
 # Preface{-}
 Welcome to Fundamental Statistics! 
 
-This Workbook is designed to assist you with the \emph{learning through doing} component
-of this course. The primary learning resource for the course is the lectures and tutorials, however we do have an accompanying textbook De Veaux, Velleman & Bock,
+This Workbook is designed to assist you with the \textit{learning through doing} component of this course. The primary learning resource for the course is the lectures and tutorials, however we do have an accompanying textbook De Veaux, Velleman & Bock,
 Stats: Data and Models, fifth edition. We do not cover the whole text book in this
 course or in the order it is presented in the book. You are directed to the relevant
 readings from the textbook at the end of each chapter within this Workbook. Once
@@ -70,13 +92,11 @@ Best wishes and good studying!
 ## Overall Course Objective {-}
 
 On completion of this course students should be able to:
-\begin{enumerate}
-\item explore relationships in data and distinguish between different methods of
+* explore relationships in data and distinguish between different methods of
 data collection and analysis;
-\item evaluate and apply a variety of statistical inferential methods to real life situations;
-\item use a statistical computer package to enter, summarise and analyse data; and
-\item interpret and communicate the results of statistical analyses for a diverse audience.
-\end{enumerate}
+* evaluate and apply a variety of statistical inferential methods to real life situations;
+* use a statistical computer package to enter, summarise and analyse data; and
+* interpret and communicate the results of statistical analyses for a diverse audience.
 
 # About{-}
 

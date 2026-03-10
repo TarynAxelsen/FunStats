@@ -8,9 +8,7 @@ bibliography: [book.bib, packages.bib]
 # url: your book url like https://bookdown.org/yihui/bookdown
 # cover-image: path to the social sharing image like images/cover.jpg
 description: |
-  This is a minimal example of using the bookdown package to write a book.
-  The HTML output format for this example is bookdown::bs4_book,
-  set in the _output.yml file.
+  Fundamental Statistics Workbook - containing all extra information and exercises.
 biblio-style: apalike
 csl: chicago-fullnote-bibliography.csl
 ---
@@ -41,7 +39,7 @@ csl: chicago-fullnote-bibliography.csl
 # Preface{-}
 Welcome to Fundamental Statistics! 
 
-This Workbook is designed to assist you with the \textit{learning through doing} component of this course. The primary learning resource for the course is the lectures and tutorials, however we do have an accompanying textbook De Veaux, Velleman & Bock,
+This Workbook is designed to assist you with the *learning through doing* component of this course. The primary learning resource for the course is the lectures and tutorials, however we do have an accompanying textbook De Veaux, Velleman & Bock,
 Stats: Data and Models, fifth edition. We do not cover the whole text book in this
 course or in the order it is presented in the book. You are directed to the relevant
 readings from the textbook at the end of each chapter within this Workbook. Once
@@ -65,8 +63,8 @@ statistical tools can be viewed in the same way as everyday household tools.
 A toolbox needs to have some basics such as a hammer, pliers, wrench and screwdriver.
 Similarly, in this course there are some concepts and skills which are essential
 for you to master. We call these Threshold Competencies. In order to pass this course,
-you will need to demonstrate that you have full understanding of the \emph{Threshold
-Competencies}. Beyond this are what we have labeled Expanded Competencies and
+you will need to demonstrate that you have full understanding of the *Threshold
+Competencies*. Beyond this are what we have labeled Expanded Competencies and
 these include what you must know in order to achieve higher than a Pass [P] in the
 course. Material that covers these Expanded Competencies will be indicated in this
 Workbook by an asterisk *.
@@ -92,10 +90,14 @@ Best wishes and good studying!
 ## Overall Course Objective {-}
 
 On completion of this course students should be able to:
+
 * explore relationships in data and distinguish between different methods of
 data collection and analysis;
+
 * evaluate and apply a variety of statistical inferential methods to real life situations;
+
 * use a statistical computer package to enter, summarise and analyse data; and
+
 * interpret and communicate the results of statistical analyses for a diverse audience.
 
 # About{-}
