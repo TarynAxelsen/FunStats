@@ -1,7 +1,7 @@
 --- 
 title: "Fundamental Statistics"
 author: "Taryn Axelsen"
-date: "Last Updated: 2026-03-10"
+date: "Last Updated: 2026-03-11"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -104,12 +104,13 @@ data collection and analysis;
 
 This book was made using **R** [@R-base], and the **bookdown** package [@R-bookdown], which is based on [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax, using **knitr** [@R-knitr].
 
-\BeginKnitrBlock{flushright}<p class="flushright">Taryn Axelsen  
-Springfield, Australia
-Rachel King
-Toowoomba, Australia
-Bethany Rognoni
-Toowoomba, Australia</p>\EndKnitrBlock{flushright}
+\BeginKnitrBlock{flushright}<p class="flushright">Authors:
+  
+Taryn Axelsen (Springfield, Australia)
+
+Rachel King (Toowoomba, Australia)
+
+Bethany Rognoni (Toowoomba, Australia)</p>\EndKnitrBlock{flushright}
 
 
 \mainmatter

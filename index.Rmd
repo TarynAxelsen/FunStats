@@ -105,12 +105,13 @@ data collection and analysis;
 This book was made using **R** [@R-base], and the **bookdown** package [@R-bookdown], which is based on [Markdown](https://en.wikipedia.org/wiki/Markdown) syntax, using **knitr** [@R-knitr].
 
 ```{block2, type='flushright', html.tag='p'}
-Taryn Axelsen  
-Springfield, Australia
-Rachel King
-Toowoomba, Australia
-Bethany Rognoni
-Toowoomba, Australia
+Authors:
+  
+Taryn Axelsen (Springfield, Australia)
+
+Rachel King (Toowoomba, Australia)
+
+Bethany Rognoni (Toowoomba, Australia)
 ```
 
 
