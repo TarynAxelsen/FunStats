@@ -1,7 +1,1 @@
 module-1
-review-questions-module-1
-tutorial-questions-module-1
-question-1-generating-an-appropriate-sample
-interactive-app-sampling-srs-vs-stratified
-question-2-investigating-the-association-between-two-categorical-variables
-textbook-readings

@@ -118,7 +118,7 @@
 
 \title{Fundamental Statistics}
 \author{Taryn Axelsen}
-\date{Last Updated: 2026-03-10}
+\date{Last Updated: 2026-03-12}
 
 \begin{document}
 \maketitle
@@ -226,12 +226,13 @@ On completion of this course students should be able to:
 This book was made using \textbf{R} \citep{R-base}, and the \textbf{bookdown} package \citep{R-bookdown}, which is based on \href{https://en.wikipedia.org/wiki/Markdown}{Markdown} syntax, using \textbf{knitr} \citep{R-knitr}.
 
 \begin{flushright}
-Taryn Axelsen\\
-Springfield, Australia
-Rachel King
-Toowoomba, Australia
-Bethany Rognoni
-Toowoomba, Australia
+Authors:
+
+Taryn Axelsen (Springfield, Australia)
+
+Rachel King (Toowoomba, Australia)
+
+Bethany Rognoni (Toowoomba, Australia)
 \end{flushright}
 
 \mainmatter
@@ -284,14 +285,13 @@ As you work, you may start a local server to live preview this HTML book. This p
 \end{Highlighting}
 \end{Shaded}
 
-\chapter{Summary of Module 1}\label{summary-of-module-1}
+\chapter{Module 1}\label{module-1}
 
 Put a summary here.
 
-\section{Review Questions Module 1}\label{review-questions-module-1}
+\chapter{Review Questions Module 1}\label{review-questions-module-1}
 
-Once you have watched the lecture recordings you should be able to answer the
-following \emph{Threshold} questions:
+Once you have watched the lecture recordings you should be able to answer the following \emph{Threshold} questions (solutions can be found at the end of this Workbook):
 
 \begin{enumerate}
 \def\labelenumi{(\roman{enumi})}
@@ -316,18 +316,222 @@ following \emph{Threshold} questions:
 
 Note: * Indicates \textbf{Expanded} Competencies
 
-\subsubsection{Question 1: Generating an appropriate sample}\label{question-1-generating-an-appropriate-sample}
+\subsection{Question 1: Generating an appropriate sample}\label{question-1-generating-an-appropriate-sample}
 
-\section{Interactive: Sampling (SRS vs Stratified)}\label{interactive-sampling-srs-vs-stratified}
+The sampling frame for this question is as follows:
 
-Click the button below to launch the interactive sampling tool.
+\begin{itemize}
+\tightlist
+\item
+  Barry Humphries (m)\\
+\item
+  Bill Clinton (m)\\
+\item
+  Bill Cosby (m)\\
+\item
+  Bill Gates (m)\\
+\item
+  Bob Dylan (m)\\
+\item
+  Charles Yeager (m)\\
+\item
+  Colin Powell (m)\\
+\item
+  David Helfgott (m)\\
+\item
+  Dawn Fraser (f)\\
+\item
+  Evonne Goolagong (f)\\
+\item
+  Germaine Greer (f)
+\end{itemize}
 
-\subsection{Textbook \#\#\# Readings}\label{textbook-readings}
+\begin{itemize}
+\tightlist
+\item
+  Gough Whitlam (m)\\
+\item
+  Harriet Tubman (f)\\
+\item
+  Henry Kissinger (m)\\
+\item
+  Janet Reno (f)\\
+\item
+  Jennifer Crowe (f)\\
+\item
+  Joan Sutherland (f)\\
+\item
+  John Glenn (m)\\
+\item
+  Laura Schlesinger (f)\\
+\item
+  Leonardo DiCaprio (m)\\
+\item
+  Manon Rheaume (f)\\
+\item
+  Mario Cuomo (m)
+\end{itemize}
 
-This module covers material in Chapters 1, 2, 10 and 11 of De Veaux, Velleman \&
-Bock, (4th edition)(Chapters 1, 2.1, 3 and 10 of De Veaux, Velleman \& Bock, (5th
-edition)).
-\#\#\# Reading
+\begin{itemize}
+\tightlist
+\item
+  Michael Jordan (m)\\
+\item
+  Michele Pfeiffer (f)\\
+\item
+  Nelson Mandela (m)\\
+\item
+  Oprah Winfrey (f)\\
+\item
+  Paul Davies (m)\\
+\item
+  Paul Newman (m)\\
+\item
+  Pele (m)\\
+\item
+  Russell Crowe (m)\\
+\item
+  Samantha Riley (f)\\
+\item
+  Wayne Gardner (m)\\
+\item
+  Wynton Marsalis (m)
+\end{itemize}
+
+Note that stratified sampling involves taking simple random samples from each of a number of groups (strata) into which a population has been divided.
+
+This question can be done manually, or can be done visually using the information below.
+
+Suppose a random sample of eight people is required.
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\item
+  Using a random number generator (or below), select a simple random sample (SRS) from the sampling frame defined above.
+\item
+  How many males and females are there in your sample?
+\item
+  Using a random number generator (or below), select a second simple random sample.
+\item
+  How many males and females are there in this sample?
+\item
+  Compare your two samples: Did you expect the result you got? Explain your answer with reference to the sampling process.
+\item
+  *Using a random number generator (or below), select a stratified random sample, stratified according to gender so as to contain equal numbers of males (m) and females (f).
+\item
+  *Describe, in detail, the steps you took to produce your stratified sample or the steps that were likely to have been taken if doing this manually.
+\item
+  *Why might you decide that a stratified sample is more representative?
+\end{enumerate}
+
+(Note: \url{https://stattrek.com/statistics/random-number-generator}.
+aspx\# is one possible random number generator or the function RANDBETWEEN()
+in Excel).
+
+\subsection{Interactive - Simple Random Sampling and Stratified Sampling}\label{interactive---simple-random-sampling-and-stratified-sampling}
+
+Below is an interactive tool for selecting simple random samples (SRS) and stratified samples from the given sampling frame.
+
+The following App also allows an investigation into SRS and Stratified sampling:
+
+\subsection{Question 2: Investigating the association between two categorical variables}\label{question-2-investigating-the-association-between-two-categorical-variables}
+
+Is there an association between the amount of coffee consumed and the number of hours of sleep students manage to have per night?
+
+The following data was collected and organized into the Contingency Table (two-way table) below to see if there is an association between amount of coffee consumed
+(stated as `3 or less coffees per day (Light)' and `more than 3 coffees per day (Heavy)') and the number of hours slept per night (stated as `7 or less hours per night' and `more than 7 hours per night') for 151 statistics students.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.2889}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.3333}}
+  >{\raggedright\arraybackslash}p{(\linewidth - 6\tabcolsep) * \real{0.0778}}@{}}
+\caption{Coffee consumption and hours of sleep}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+7 hours or less per night
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+More than 7 hours per night
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Total
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+7 hours or less per night
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+More than 7 hours per night
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Total
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+3 or less coffees per day (Light) & 57 & 19 & 76 \\
+More than 3 coffees per day (Heavy) & 36 & 39 & 75 \\
+Total & 93 & 58 & 151 \\
+\end{longtable}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\tightlist
+\item
+  From the data in the study,
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\tightlist
+\item
+  how many students slept 7 or less hours per night?
+\item
+  how many students are light coffee drinkers?
+\item
+  how many students are heavy coffee drinkers AND sleep 7 or less hours per night?
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\setcounter{enumi}{1}
+\tightlist
+\item
+  From the data in the study (for each state if it is a joint, marginal or conditional
+  percentage (rounded to 1 decimal place) as well as the answer):
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\roman{enumi}.}
+\tightlist
+\item
+  what percentage of students slept 7 or less hours per night?
+\item
+  what percentage of students are light coffee drinkers?
+\item
+  what percentage of students are heavy coffee drinkers AND sleep 7 or
+  less hours per night?
+\item
+  what percentage of students who are light coffee drinkers also sleep 7 or
+  less hours per night?
+\item
+  what percentage of students who sleep 7 or less hours per night are light
+  coffee drinkers?
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{(\alph{enumi})}
+\setcounter{enumi}{2}
+\tightlist
+\item
+  In a two-way table, display the joint distribution of level of coffee consumed
+  and level of sleep in terms of percentages.
+\end{enumerate}
+
+\subsection{Textbook Readings}\label{textbook-readings}
+
 For extra clarification on materials in this module, see: De Veaux, Velle-
 man \& Bock, (4th edition), Chapters 1, 2, 10 and 11 (De Veaux, Velle-
 man \& Bock, (5th edition), Chapters 1, 2.1, 3 and 10).
