@@ -7,13 +7,12 @@ output_dir: "docs"
 rmd_files:
 - index.Rmd
 - 01-Mod1.Rmd
-#- module-01-interactive.Rmd
 #- 02-Cross-refs.Rmd
 #- 03-parts.Rmd
 #- 04-citations.Rmd
 #- 05-blocks.Rmd
 #- 06-share.Rmd
-#- 07-references.Rmd
+- 07-references.Rmd
 
 language:
   ui:

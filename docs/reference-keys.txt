@@ -1,1 +1,8 @@
 module-1
+use-abuse-and-misuse-of-statistics
+variables-and-types-of-data
+summarising-and-displaying-one-variable
+contingency-tables-two-categorical-variables
+question-1-generating-an-appropriate-sample
+question-2-investigating-the-association-between-two-categorical-variables
+textbook-readings

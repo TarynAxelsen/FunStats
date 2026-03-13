@@ -12,3 +12,55 @@ pre {
 pre code {
   white-space: inherit;
 }
+
+/* --- Tip/Important box (orange) for HTML --- */
+.tipBox {
+  position: relative;
+  border-left: 8px solid #f29c1f;              /* strong orange edge */
+  border: 1px solid #f0b37e;                   /* soft orange border */
+  background: #fff7ed;                         /* light orange wash */
+  padding: 1rem 1rem 1rem 3.2rem;              /* extra left for icon */
+  margin: 1rem 0;
+  border-radius: 6px;
+}
+
+/* BIG icon inside the box */
+.tipBox::before {
+  content: "💡";                                /* change to any emoji if you like */
+  position: absolute;
+  left: 0.9rem;
+  top: 0.85rem;
+  font-size: 1.7rem;                            /* bigger icon */
+  line-height: 1;
+}
+
+/* Optional: title line style if you put a bold lead-in */
+.tipBox strong:first-child {
+  color: #a85f0f;                               /* darker orange for title text */
+}
+``
+/* ===== Sidebar colour override (bs4_book) ===== */
+
+/* Sidebar background */
+.sidebar {
+  background-color: #f8f9fa;   /* very light grey */
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #2b8cbe;              /* your chosen blue */
+}
+
+/* Active page / hover */
+.sidebar a:hover,
+.sidebar .active > a {
+  color: #1f6f9b;
+  font-weight: 600;
+}
+
+/* Section headers in sidebar */
+.sidebar h2,
+.sidebar h3 {
+  color: #495057;              /* neutral dark grey */
+}
+``

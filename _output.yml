@@ -2,7 +2,10 @@ bookdown::bs4_book:
   css: style.css
   theme:
     primary: "#096B72"
+    bootswatch: flatly
+    #primary: "#2b8cbe"
   repo: https://github.com/rstudio/bookdown-demo
+  
 
 # Disable PDF and EPUB builds on GitHub
 # (You can still build them locally if you want.)
