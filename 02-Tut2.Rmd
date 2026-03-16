@@ -158,3 +158,463 @@ document.getElementById("hint").style.display="none";
 }
 
 </script>
+
+(b) Describe the distribution in terms of shape, centre, spread and outliers.
+
+Select the most appropriate description.
+
+---
+
+**Shape**
+
+<select id="shape">
+<option value="">Choose</option>
+<option>Symmetric</option>
+<option>Skewed to the left</option>
+<option>Skewed to the right</option>
+<option>Bimodal</option>
+</select>
+
+---
+
+**Centre**
+
+<select id="centre">
+<option value="">Choose</option>
+<option>About 2.4</option>
+<option>About 2.5</option>
+<option>About 2.6–2.7</option>
+<option>About 2.8</option>
+</select>
+
+---
+
+**Spread**
+
+<select id="spread">
+<option value="">Choose</option>
+<option>2.37 to 2.85</option>
+<option>2.53 to 2.85</option>
+<option>2.61 to 2.84</option>
+<option>2.37 to 2.72</option>
+</select>
+
+---
+
+**Outliers**
+
+<select id="outlier">
+<option value="">Choose</option>
+<option>No unusual observations</option>
+<option>2.37 may be a possible outlier</option>
+<option>2.85 is an outlier</option>
+<option>2.53 is an outlier</option>
+</select>
+
+---
+
+<button onclick="checkDist()">Check Answer</button>
+
+<p id="dist_result" style="font-weight:bold; margin-top:10px;"></p>
+
+<script>
+function checkDist(){
+
+  const correctAnswers = {
+    shape: "Skewed to the left",
+    centre: "About 2.6–2.7",
+    spread: "2.37 to 2.85",
+    outlier: "2.37 may be a possible outlier"
+  };
+
+  let score = 0;
+
+  // Loop over each select to check correctness and apply colors
+  Object.keys(correctAnswers).forEach(id => {
+    const sel = document.getElementById(id);
+    if(sel.value === correctAnswers[id]){
+      sel.style.backgroundColor = "#c8f7c5"; // green for correct
+      score++;
+    } else {
+      sel.style.backgroundColor = "#f7c5c5"; // red for incorrect
+    }
+  });
+
+  // Feedback text
+  let feedback = "";
+  if(score === 4){
+    feedback = "✔ Correct. The distribution is left-skewed, centred around 2.6–2.7, with values from 2.37 to 2.85. The value 2.37 may be a possible outlier.";
+  } else if(score >= 2){
+    feedback = "⚠ Partially correct. Review the distribution again and consider the skew and possible outliers.";
+  } else{
+    feedback = "✘ Not quite. Look again at the tail of the distribution and the range of values.";
+  }
+
+  document.getElementById("dist_result").innerHTML = feedback;
+}
+</script>
+
+## Question 2: Assignment Results
+
+The following represent the assignment results (out of 100) for a class of 20 statistics students:
+
+85, 38, 92, 93, 100, 88, 78, 79, 96, 81, 62, 39, 77, 78, 83, 91, 90, 85, 99, 97
+
+```{r hist-assignment, fig.cap="Histogram of assignment results (n = 20) (\\#fig:hist-assignment)", echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(plotly)
+
+# Data
+scores <- c(85, 38, 92, 93, 100, 88, 78, 79, 96, 81, 62, 39, 77, 78, 83, 91, 90, 85, 99, 97)
+
+# Histogram
+p <- ggplot(data.frame(scores), aes(x = scores)) +
+  geom_histogram(binwidth = 10, fill = "#2a7ae2", color = "white", boundary = 0) +
+  labs(title = "Histogram of Assignment Results (n=20)",
+       x = "Assignment Results (out of 100)",
+       y = "Frequency") +
+  theme_minimal() +
+  theme(
+    plot.title = element_text(size = 14, face = "bold"),
+    axis.title = element_text(size = 12)
+  )
+
+# Interactive
+ggplotly(p)
+```
+
+
+For this data and Figure \@ref(fig:hist-assignment) complete the following questions:
+
+(a) Describe the distribution of Assignment Results in terms of shape, centre, spread and outliers (including how many student results could be considered to be outliers).
+
+<!-- =========================
+Q2 (a) Describe the distribution
+========================== -->
+
+<!-- Shape -->
+<p><strong>Shape:</strong></p>
+<select id="q2-shape">
+  <option value="">Choose</option>
+  <option>Symmetric</option>
+  <option>Skewed left</option>
+  <option>Skewed right</option>
+  <option>Bimodal</option>
+</select>
+<div>
+  <button class="q2-btn" onclick="q2_hintA('shape')">Hint</button>
+  <button class="q2-btn" onclick="q2_checkA('shape')">Check</button>
+  <button class="q2-btn" onclick="q2_resetA('shape')">Reset</button>
+</div>
+<p id="q2-fb-shape" class="q2-feedback" aria-live="polite"></p>
+
+<!-- Centre -->
+<p style="margin-top:10px;"><strong>Centre:</strong></p>
+<select id="q2-centre">
+  <option value="">Choose</option>
+  <option>70–79</option>
+  <option>80–89</option>
+  <option>90–99</option>
+  <option>60–69</option>
+</select>
+<div>
+  <button class="q2-btn" onclick="q2_hintA('centre')">Hint</button>
+  <button class="q2-btn" onclick="q2_checkA('centre')">Check</button>
+  <button class="q2-btn" onclick="q2_resetA('centre')">Reset</button>
+</div>
+<p id="q2-fb-centre" class="q2-feedback" aria-live="polite"></p>
+
+<!-- Spread -->
+<p style="margin-top:10px;"><strong>Spread:</strong></p>
+<select id="q2-spread">
+  <option value="">Choose</option>
+  <option>38–100</option>
+  <option>62–100</option>
+  <option>70–95</option>
+  <option>75–100</option>
+</select>
+<div>
+  <button class="q2-btn" onclick="q2_hintA('spread')">Hint</button>
+  <button class="q2-btn" onclick="q2_checkA('spread')">Check</button>
+  <button class="q2-btn" onclick="q2_resetA('spread')">Reset</button>
+</div>
+<p id="q2-fb-spread" class="q2-feedback" aria-live="polite"></p>
+
+<!-- Outliers -->
+<p style="margin-top:10px;"><strong>Outliers:</strong></p>
+<select id="q2-outlier">
+  <option value="">Choose</option>
+  <option>None</option>
+  <option>1 student</option>
+  <option>2 students</option>
+  <option>More than 2</option>
+</select>
+<div>
+  <button class="q2-btn" onclick="q2_hintA('outlier')">Hint</button>
+  <button class="q2-btn" onclick="q2_checkA('outlier')">Check</button>
+  <button class="q2-btn" onclick="q2_resetA('outlier')">Reset</button>
+</div>
+<p id="q2-fb-outlier" class="q2-feedback" aria-live="polite"></p>
+
+<hr>
+
+<!-- =========================
+Q2 (b) Recommended centre & spread
+========================== -->
+<p class="h5">(b) What centre and spread would you use to describe this distribution? Why?</p>
+<input type="text" id="q2-centrespread" placeholder="Type your answer here (e.g., median & IQR)" style="width:100%; max-width:420px;">
+<div>
+  <button class="q2-btn" onclick="q2_hintB()">Hint</button>
+  <button class="q2-btn" onclick="q2_checkB()">Check</button>
+  <button class="q2-btn" onclick="q2_resetB()">Reset</button>
+</div>
+<p id="q2-fb-b" class="q2-feedback" aria-live="polite"></p>
+
+<hr>
+
+<!-- =========================
+Q2 (c) Mean
+========================== -->
+<p class="h5">(c) Using a computer or calculator, calculate the mean of the data set.</p>
+<input type="number" step="0.01" id="q2-mean" placeholder="Enter mean" style="width:200px;">
+<div>
+  <button class="q2-btn" onclick="q2_hintC()">Hint</button>
+  <button class="q2-btn" onclick="q2_checkC()">Check</button>
+  <button class="q2-btn" onclick="q2_resetC()">Reset</button>
+</div>
+<p id="q2-fb-c" class="q2-feedback" aria-live="polite"></p>
+
+<hr>
+
+<!-- =========================
+Q2 (d) Standard deviation
+========================== -->
+<p class="h5">(d) Using a computer or calculator, calculate the standard deviation of the data set.</p>
+<input type="number" step="0.01" id="q2-sd" placeholder="Enter SD" style="width:200px;">
+<div>
+  <button class="q2-btn" onclick="q2_hintD()">Hint</button>
+  <button class="q2-btn" onclick="q2_checkD()">Check</button>
+  <button class="q2-btn" onclick="q2_resetD()">Reset</button>
+</div>
+<p id="q2-fb-d" class="q2-feedback" aria-live="polite"></p>
+
+<hr>
+
+<!-- =========================
+Q2 (e) Median
+========================== -->
+<p class="h5">(e) Calculate the median of the data set by hand.</p>
+
+<input type="number" step="0.01" id="q2-median" placeholder="Enter median" style="width:200px;">
+<div>
+  <button class="q2-btn" onclick="q2_hintE()">Hint</button>
+  <button class="q2-btn" onclick="q2_checkE()">Check</button>
+  <button class="q2-btn" onclick="q2_resetE()">Reset</button>
+</div>
+<p id="q2-fb-e" class="q2-feedback" aria-live="polite"></p>
+
+<hr>
+
+<!-- =========================
+Q2 (f) Explain mean vs median difference
+========================== -->
+<p class="h5">(f) Why are the mean and median different/similar?</p>
+<textarea id="q2-meanmedian" placeholder="Explain here" rows="3" style="width:100%;"></textarea>
+<div>
+  <button class="q2-btn" onclick="q2_hintF()">Hint</button>
+  <button class="q2-btn" onclick="q2_checkF()">Check</button>
+  <button class="q2-btn" onclick="q2_resetF()">Reset</button>
+</div>
+<p id="q2-fb-f" class="q2-feedback" aria-live="polite"></p>
+
+<!-- =========================
+Styling for correct/incorrect
+========================== -->
+<style>
+.q2-correct { background-color:#c8f7c5 !important; }
+.q2-incorrect { background-color:#f7c5c5 !important; }
+.q2-feedback {
+  font-size: 0.9em;
+  font-weight: normal;
+  margin-top: 6px;
+  color: #333;
+}
+.q2-btn { margin-right:6px; margin-top:6px; }
+</style>
+
+<!-- =========================
+Logic
+========================== -->
+<script>
+/* --------- Config --------- */
+const q2cfg = {
+  correct: {
+    shape: "Skewed left",
+    centre: "80–89",
+    spread: "62–100",
+    outlier: "2 students",
+    mean: 81.55,
+    sd: 17.33,
+    median: 85
+  },
+  tol: 0.10 // numeric tolerance
+};
+
+/* --------- Helpers --------- */
+function q2_setState(el, ok) {
+  el.classList.remove('q2-correct','q2-incorrect');
+  if (ok === true) el.classList.add('q2-correct');
+  if (ok === false) el.classList.add('q2-incorrect');
+}
+function q2_clearState(el) {
+  el.classList.remove('q2-correct','q2-incorrect');
+}
+function q2_setText(id, html) {
+  document.getElementById(id).innerHTML = html || "";
+}
+
+/* ===== (a) per-subcontrol: shape/centre/spread/outlier ===== */
+function q2_checkA(which) {
+  const id = "q2-" + which;
+  const el = document.getElementById(id);
+  const val = el.value;
+  const isCorrect = val === q2cfg.correct[which];
+  q2_setState(el, isCorrect);
+  const fb = isCorrect ? "✔ Correct." : "✘ Not quite. Try the hint.";
+  q2_setText("q2-fb-" + which, fb);
+}
+
+function q2_hintA(which) {
+  let msg = "";
+  if (which === "shape") {
+    msg = "Look at the tail: a few low marks (38 & 39) extend the left tail.";
+  } else if (which === "centre") {
+    msg = "Most observations lie in the 80s; the middle of the data is around there.";
+  } else if (which === "spread") {
+    msg = "Consider the range that captures the bulk of the data, not just the extreme values.";
+  } else if (which === "outlier") {
+    msg = "The two lowest scores (38 & 39) are likely outliers.";
+  }
+  q2_setText("q2-fb-" + which, msg);
+}
+
+function q2_resetA(which) {
+  const id = "q2-" + which;
+  const el = document.getElementById(id);
+  el.value = "";
+  q2_clearState(el);
+  q2_setText("q2-fb-" + which, "");
+}
+
+/* ===== (b) centre & spread free text ===== */
+function q2_checkB() {
+  const el = document.getElementById("q2-centrespread");
+  const txt = (el.value || "").toLowerCase();
+  const ok = txt.includes("median") && (txt.includes("iqr") || txt.includes("interquartile"));
+  q2_setState(el, ok);
+  q2_setText("q2-fb-b", ok ? "✔ Correct: use the median & IQR for skewed data." :
+                              "✘ Try again. For skewed data, use a robust centre and spread.");
+}
+function q2_hintB() {
+  q2_setText("q2-fb-b", "Skewed distributions are best summarised by the median (centre) and IQR (spread).");
+}
+function q2_resetB() {
+  const el = document.getElementById("q2-centrespread");
+  el.value = "";
+  q2_clearState(el);
+  q2_setText("q2-fb-b", "");
+}
+
+/* ===== (c) mean ===== */
+function q2_checkC() {
+  const el = document.getElementById("q2-mean");
+  const val = parseFloat(el.value);
+  const ok = isFinite(val) && Math.abs(val - q2cfg.correct.mean) <= q2cfg.tol;
+  q2_setState(el, ok);
+  q2_setText("q2-fb-c", ok ? "✔ Correct (≈ 81.55)." : "✘ Not quite. Check your sum and divide by n = 20.");
+}
+function q2_hintC() {
+  q2_setText("q2-fb-c", "Mean = (sum of all 20 scores) ÷ 20.");
+}
+function q2_resetC() {
+  const el = document.getElementById("q2-mean");
+  el.value = "";
+  q2_clearState(el);
+  q2_setText("q2-fb-c", "");
+}
+
+/* ===== (d) standard deviation ===== */
+function q2_checkD() {
+  const el = document.getElementById("q2-sd");
+  const val = parseFloat(el.value);
+  const ok = isFinite(val) && Math.abs(val - q2cfg.correct.sd) <= q2cfg.tol;
+  q2_setState(el, ok);
+  q2_setText("q2-fb-d", ok ? "✔ Correct (≈ 17.33)." :
+                              "✘ Not quite. Use the sample SD and mind rounding.");
+}
+function q2_hintD() {
+  q2_setText("q2-fb-d", "Use a calculator or statistical software and make sure you are calculating the sample standard deviation.");
+}
+function q2_resetD() {
+  const el = document.getElementById("q2-sd");
+  el.value = "";
+  q2_clearState(el);
+  q2_setText("q2-fb-d", "");
+}
+
+/* ===== (e) median ===== */
+function q2_checkE() {
+  const el = document.getElementById("q2-median");
+  const val = parseFloat(el.value);
+  const ok = isFinite(val) && Math.abs(val - q2cfg.correct.median) <= q2cfg.tol;
+  q2_setState(el, ok);
+  q2_setText("q2-fb-e", ok ? "✔ Correct (85)." : "✘ Not quite. Sort the 20 values and average the 10th & 11th.");
+}
+function q2_hintE() {
+  q2_setText("q2-fb-e", "There are 20 observations, so the median is the average of the 10th and 11th values after ordering the data");
+}
+function q2_resetE() {
+  const el = document.getElementById("q2-median");
+  el.value = "";
+  q2_clearState(el);
+  q2_setText("q2-fb-e", "");
+}
+
+/* ===== (f) explanation ===== */
+function q2_checkF() {
+  const el = document.getElementById("q2-meanmedian");
+  const txt = (el.value || "").toLowerCase();
+
+  // Require key ideas: skew/outliers + effect on mean vs median robustness
+  const hasSkew = txt.includes("skew");
+  const hasOut = txt.includes("outlier") || txt.includes("38") || txt.includes("39");
+  const talksMean = txt.includes("mean");
+  const talksMedian = txt.includes("median");
+  const pulls = txt.includes("pull") || txt.includes("drag") || txt.includes("lower") || txt.includes("influenc");
+  const robust = txt.includes("robust") || txt.includes("resistant");
+
+  const ok = (hasSkew || hasOut) && talksMean && talksMedian && (pulls || robust);
+
+  q2_setState(el, ok);
+  q2_setText("q2-fb-f",
+    ok ? "✔ Good explanation." :
+         "✘ Try to mention skew/outliers pull the mean, while the median is more robust."
+  );
+}
+function q2_hintF() {
+  q2_setText("q2-fb-f",
+    "The two low outliers (38, 39) create left skew which pulls the mean down. " +
+    "The median** is more robust to outliers."
+  );
+}
+function q2_resetF() {
+  const el = document.getElementById("q2-meanmedian");
+  el.value = "";
+  q2_clearState(el);
+  q2_setText("q2-fb-f", "");
+}
+</script>
+
+
+
+

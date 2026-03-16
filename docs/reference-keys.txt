@@ -1,2 +1,4 @@
+fig:hist-assignment
 module-2
 question-1-describing-distributions
+question-2-assignment-results
