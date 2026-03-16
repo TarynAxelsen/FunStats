@@ -134,11 +134,11 @@ These tools allow us to build a clean, interactive, and reproducible learning re
 ### Authors{-}
 
 ```{block2, type='flushright', html.tag='p'}
-Taryn Axelsen (Springfield, Australia)
+Dr Taryn Axelsen (Springfield, Australia)
 
-Rachel King (Toowoomba, Australia)
+Dr Rachel King (Toowoomba, Australia)
 
-Hamid ShobeiriNejad (Toowoomba, Australia)
+Dr Hamid ShobeiriNejad (Toowoomba, Australia)
 ```
 
 
