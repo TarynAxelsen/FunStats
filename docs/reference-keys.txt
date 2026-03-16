@@ -8,3 +8,5 @@ question-2-investigating-the-association-between-two-categorical-variables
 further-practice-from-the-textbook
 textbook-readings
 module-2
+question-1-describing-distributions
+module-3

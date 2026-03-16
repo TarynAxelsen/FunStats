@@ -133,11 +133,11 @@ These tools allow us to build a clean, interactive, and reproducible learning re
 
 ### Authors{-}
 
-\BeginKnitrBlock{flushright}<p class="flushright">Taryn Axelsen (Springfield, Australia)
+\BeginKnitrBlock{flushright}<p class="flushright">Dr Taryn Axelsen (Springfield, Australia)
 
-Rachel King (Toowoomba, Australia)
+Dr Rachel King (Toowoomba, Australia)
 
-Bethany Rognoni (Toowoomba, Australia)</p>\EndKnitrBlock{flushright}
+Dr Hamid ShobeiriNejad (Toowoomba, Australia)</p>\EndKnitrBlock{flushright}
 
 
 \mainmatter

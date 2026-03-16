@@ -1,0 +1,8 @@
+# Tutorial Questions: Module 2 {-}
+
+Note: * Indicates **Expanded** Competencies
+
+## Question 1: Describing Distributions
+
+(a) Construct a stem-and-leaf display of the following data:
+2.73, 2.79, 2.85, 2.85, 2.53, 2.37, 2.61, 2.67, 2.78, 2.65, 2.84, 2.69, 2.72, 2.63, 2.68
