@@ -1382,6 +1382,9 @@ from your answer to f(ii) ).
 </script>
 ```
 
+
+
+
 ### Q2(g){-}
 *We used two categorical variables in this exercise and have examined the
 joint, marginal and conditional distributions. Based on this analysis so far (including
@@ -1390,12 +1393,25 @@ level of sleep and level of coffee consumed? Why or why not?
 
 ::: {.tipBox}
 **Note on wording**:
+
 - Saying that two categorical variables are **not associated** (or not related) is the
 same as saying they are **independent**.
 
 - Saying that two categorical variables are **associated** (or related) is the same as
 saying they are **NOT independent**.
 :::
+
+## Further Practice from the Textbook
+
+Answers to these questions are located in the back of the textbook. If you require further explanation, please ask in the Module Content Discussion Forum on the Study-
+Desk.
+
+**Note**: 1.23 means DeVeaux, Velleman & Bock (4th edition) Chapter 1, Exercise 23
+at the end of the chapter.
+
+• Questions 2.19, 2.21, 2.37*, 11.39, 11.45 (De Veaux, Velleman & Bock, (4th edition))
+
+• Questions 2.3, 2.43, 3.41*, 10.21, 10.41 (De Veaux, Velleman & Bock, (5th edition))
 
 ## Textbook Readings 
 For extra clarification on materials in this module, see: De Veaux, Velle-
