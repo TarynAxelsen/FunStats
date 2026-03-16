@@ -32,7 +32,5 @@ DO NOT add this file's children to _bookdown.yml
 DO NOT use # headings in the child files
 -->
 
-
-
 ```{r, child="02-Tut2.Rmd"}
 ```

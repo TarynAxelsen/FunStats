@@ -68,12 +68,8 @@
 <li><a class="" href="index.html">Preface</a></li>
 <li><a class="" href="module-1.html"><span class="header-section-number">1</span> Module 1</a></li>
 <li><a class="" href="review-questions-module-1.html">Review Questions: Module 1</a></li>
-<li><a class="" href="review-questions-module-1-do-you-like-this.html">Review Questions: Module 1 (Do you like this?)</a></li>
 <li><a class="active" href="tutorial-questions-module-1.html">Tutorial Questions: Module 1</a></li>
 <li><a class="" href="module-1-checklist.html">Module 1 Checklist</a></li>
-<li><a class="" href="module-2.html"><span class="header-section-number">2</span> Module 2</a></li>
-<li><a class="" href="tutorial-questions-module-2.html">Tutorial Questions: Module 2</a></li>
-<li><a class="" href="module-3.html"><span class="header-section-number">3</span> Module 3</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -1423,7 +1419,33 @@ from your answer to f(ii) ).</li>
 joint, marginal and conditional distributions. Based on this analysis so far (including
 your graph from part (f)), do you think there is an association between
 level of sleep and level of coffee consumed? Why or why not?</p>
-<div class="tipBox">
+<p>
+<em>Type your answer in the box below.</em>
+</p>
+<textarea rows="8" style="width:100%; font-size: 0.95em;"></textarea><details><summary style="font-size:0.9em;">
+Hint
+</summary><p style="font-size:0.9em;">
+Look at the conditional distributions. Are the percentages similar across the different
+levels of sleep, or are they noticeably different? If the percentages change depending
+on the level of sleep, this suggests an association.
+</p>
+</details><details><summary style="font-size:0.9em;">
+Sample answer
+</summary><p style="font-size:0.9em;">
+Yes, there does appear to be an association between level of sleep and level of coffee
+consumed. When we examine the conditional distribution of coffee consumption given
+level of sleep, the percentages differ noticeably between the sleep categories. For
+example, a much larger proportion of students who sleep more than 7 hours are heavy
+coffee drinkers compared to those who sleep 7 hours or less. Because the distribution
+of coffee consumption changes depending on the level of sleep, this indicates an
+association between the two variables.
+</p>
+<p style="font-size:0.9em;">
+Although this result may seem counterintuitive (since higher coffee consumption might
+be expected to reduce sleep), it could be due to other factors or because the sample is
+not representative of all students.
+</p>
+</details><div class="tipBox">
 <p><strong>Note on wording</strong>:</p>
 <ul>
 <li><p>Saying that two categorical variables are <strong>not associated</strong> (or not related) is the
@@ -1454,8 +1476,31 @@ man &amp; Bock, (4th edition), Chapters 1, 2, 10 and 11 (De Veaux, Velle-
 man &amp; Bock, (5th edition), Chapters 1, 2.1, 3 and 10).</p>
 </div>
 </div>
-  <div class="chapter-nav">
-<div class="prev"><a href="review-questions-module-1-do-you-like-this.html">Review Questions: Module 1 (Do you like this?)</a></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Restore saved answers
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (box.id) {
+      const saved = localStorage.getItem(box.id);
+      if (saved !== null) {
+        box.value = saved;
+      }
+    }
+  });
+
+  // Save answers as they type
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (!box.id) return;
+
+    box.addEventListener("input", function () {
+      localStorage.setItem(box.id, box.value);
+    });
+  });
+
+});
+</script><div class="chapter-nav">
+<div class="prev"><a href="review-questions-module-1.html">Review Questions: Module 1</a></div>
 <div class="next"><a href="module-1-checklist.html">Module 1 Checklist</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
@@ -1494,7 +1539,7 @@ man &amp; Bock, (5th edition), Chapters 1, 2.1, 3 and 10).</p>
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-16.</p>
+    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

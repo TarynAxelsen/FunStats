@@ -1,0 +1,24 @@
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Restore saved answers
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (box.id) {
+      const saved = localStorage.getItem(box.id);
+      if (saved !== null) {
+        box.value = saved;
+      }
+    }
+  });
+
+  // Save answers as they type
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (!box.id) return;
+
+    box.addEventListener("input", function () {
+      localStorage.setItem(box.id, box.value);
+    });
+  });
+
+});
+</script>

@@ -62,16 +62,15 @@ csl: chicago-fullnote-bibliography.csl
 The primary learning resource for the course is the lectures and tutorials, however we do have an accompanying textbook **De Veaux, Velleman & Bock,
 *Stats: Data and Models* (5th edition)**. We do not cover the whole textbook in this
 course or in the order it is presented in the book. You are directed to the relevant
-readings from the textbook at the end of each chapter within this Workbook.
+readings from the textbook at the end of each chapter within this interactive Workbook.
 
 Once you have watched the lecture recordings, you should consolidate your understanding
-by working through the material and tutorials in this Workbook. The textbook
+by working through the material and tutorials in this interactive Workbook. The textbook
 readings will give you further knowledge and help to really solidify the materials
 covered each week.
 
-The tutorials align with the modules covered in this course as listed in the Course
-Specification. At the end of each tutorial you will notice a Module Checklist and, in
-some cases, a Using Statistical software Checklist. Use these checklists to make sure that you have not missed an important concept as you work through the materials.
+The tutorials align with the modules covered in this course as listed in the *Course Specification*. At the end of each tutorial you will notice a *Module Checklist* and, in
+some cases, a *Using Statistical software Checklist*. Use these checklists to make sure that you have not missed an important concept as you work through the materials.
 
 ## 📊 Why Statistics Matters {-}
 
@@ -94,7 +93,7 @@ To pass the course, you’ll need to demonstrate a full understanding of these T
 
 Beyond these are the **Expanded Competencies**, which represent the knowledge required to achieve higher than a Pass (P) grade.  
 
-In this Workbook, material related to **Expanded Competencies** are marked with an asterisk (*).
+In this interactive Workbook, material related to **Expanded Competencies** are marked with an asterisk (*).
 
 ## What This Course Focuses On {-}
 
@@ -107,8 +106,11 @@ There is no intention to focus on the particular needs of one or other disciplin
 Once you understand the core ideas, learning the specialised tools for your field becomes much easier.
 
 We stick fairly closely to the textbook and its approach throughout this course, but for some modules we’ve added **Supplementary Notes** where we felt the textbook did not
-covered this particular content in a way that we would prefer (Binomial Model and
-Chi-square Test of Independence).
+covered this particular content in a way that we would prefer (*Chi-square Test of Independence*).
+
+The broad objectives of this course are stated below. More detailed overall objectives
+are given in the Course Specification. Specific objectives for each module are stated
+at the start of each module in the lectures.
 
 Best wishes and good studying!
 

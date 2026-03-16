@@ -19,7 +19,6 @@ In this module, we developed foundational skills for *exploring and understandin
 </div>
 <!-- ====== END BANNER ====== -->
 
----
 
 ## Use, Abuse, and Misuse of Statistics
 
@@ -127,6 +126,7 @@ To assess association, always compare **conditional distributions**, not just ra
 
 # Review Questions: Module 1 {-}
 
+```{=html}
 <div style="
   background: #f0f7ff;
   border-left: 6px solid #2a7ae2;
@@ -136,40 +136,10 @@ To assess association, always compare **conditional distributions**, not just ra
 ">
   <p style="margin:0; font-size:1.05em;">
     Once you have watched the lecture recordings you should be able to answer the following 
-    <em>Threshold</em> questions (solutions can be found at the end of this Workbook):
+    <em>Threshold</em> questions (solutions can be found at the end of this Workbook).
   </p>
 </div>
-
-<div style="
-  background:#ffffff;
-  border:1px solid #d9e6f2;
-  padding:18px;
-  border-radius:6px;
-  line-height:1.55;
-">
-
-**(i)** What is a variable? What is a value of a variable? Give examples of each.  
-<br>
-
-**(ii)** How can we tell if a variable is quantitative, categorical, ordinal or an identifier?  
-<br>
-
-**(iii)** What is the difference between a statistic and a parameter?  
-What do they measure and how might they be obtained?  
-<br>
-
-**(iv)** What is the difference between a representative sample and a convenience sample? How are they obtained and what are their relative advantages/disadvantages?  
-<br>
-
-**(v)** What is a contingency or two‑way table? When is it used?  
-<br>
-
-**(vi)** What is meant by a marginal distribution, a joint distribution and a conditional distribution?
-
-</div>
-
-# Review Questions: Module 1 (Do you like this?) {-}
-
+```
 
 ```{=html}
 <style>
@@ -193,37 +163,29 @@ What do they measure and how might they be obtained?
 
   (i) What is a variable? What is a value of a variable? Give examples.</strong>
   <div class="revq-row">
-    <textarea placeholder="Your answer…"></textarea>
+    <textarea id="revq_m1_q1"
+        placeholder="Your answer…"></textarea>
     <label class="chk"><input type="checkbox"> Marked correct</label>
   </div>
 
   (ii) How can we tell if a variable is quantitative, categorical, ordinal, or an identifier?</strong>
   <div class="revq-row">
-    <textarea placeholder="Your answer…"></textarea>
+    <textarea id="revq_m1_q2"
+    placeholder="Your answer…"></textarea>
     <label class="chk"><input type="checkbox"> Marked correct</label>
   </div>
 
-  (iii) What is the difference between a statistic and a parameter?</strong>
+  (iii) What is a contingency (two‑way) table? When is it used?</strong>
   <div class="revq-row">
-    <textarea placeholder="Your answer…"></textarea>
+    <textarea id="revq_m1_q3"
+    placeholder="Your answer…"></textarea>
     <label class="chk"><input type="checkbox"> Marked correct</label>
   </div>
 
-  (iv) What is the difference between a representative sample and a convenience sample?</strong>
+  (iv) What is meant by marginal, joint, and conditional distributions?</strong>
   <div class="revq-row">
-    <textarea placeholder="Your answer…"></textarea>
-    <label class="chk"><input type="checkbox"> Marked correct</label>
-  </div>
-
-  (v) What is a contingency (two‑way) table? When is it used?</strong>
-  <div class="revq-row">
-    <textarea placeholder="Your answer…"></textarea>
-    <label class="chk"><input type="checkbox"> Marked correct</label>
-  </div>
-
-  (vi) What is meant by marginal, joint, and conditional distributions?</strong>
-  <div class="revq-row">
-    <textarea placeholder="Your answer…"></textarea>
+    <textarea id="revq_m1_q4"
+    placeholder="Your answer…"></textarea>
     <label class="chk"><input type="checkbox"> Marked correct</label>
   </div>
 
@@ -248,21 +210,9 @@ What do they measure and how might they be obtained?
     Identifiers uniquely label each case.</p>
 
     <p><strong>(iii)</strong>
-    A <em>statistic</em> is a numerical measure calculated from a sample.
-    A <em>parameter</em> is a numerical measure describing a population.
-    Statistics are calculated by taking a sample of the population and collecting data. Parameters rely on data collected in a census.</p>
-
-    <p><strong>(iv)</strong>
-    A representative sample is representative of the target population. It can best be obtained by taking a random sample, where every individual in the population has an equally likely chance of being chosen to be in the sample. 
-Advantage = unbiased sample; disadvantage = may be a complicated procedure to get the sample.
-
-    A convenience sample includes individuals who are convenient for the researcher to sample. Because every individual in the population does not have an equally likely chance of being chosen, the sample is unlikely to be representative of the population and bias can occur.
-Advantage = convenient; disadvantage = biased sample.</p>
-
-    <p><strong>(v)</strong>
     A contingency (two-way) table is a visual representation of data which shows the distribution of individuals along two categorical variables.</p>
 
-    <p><strong>(vi)</strong>
+    <p><strong>(iv)</strong>
     A marginal distribution describes proportion of individuals in the table located in one particular row or column.
     A joint distribution describes the proportion of individuals in the table located in one particular cell.
     A conditional distribution describes the proportion of individuals in a row/column located in one particular cell.</p>
