@@ -6,9 +6,9 @@ output_dir: "docs"
 
 rmd_files:
 - index.Rmd
-- 01-Mod1.Rmd
+#- 01-Mod1.Rmd
 - 02-Mod2.Rmd
-- 03-Mod3.Rmd
+# - 03-Mod3.Rmd
 # - 04-Mod4.Rmd
 #- 04-citations.Rmd
 #- 05-blocks.Rmd
