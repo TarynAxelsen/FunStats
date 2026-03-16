@@ -1383,8 +1383,6 @@ from your answer to f(ii) ).
 ```
 
 
-
-
 ### Q2(g){-}
 *We used two categorical variables in this exercise and have examined the
 joint, marginal and conditional distributions. Based on this analysis so far (including

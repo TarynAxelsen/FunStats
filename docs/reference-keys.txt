@@ -7,3 +7,4 @@ question-1-generating-an-appropriate-sample
 question-2-investigating-the-association-between-two-categorical-variables
 further-practice-from-the-textbook
 textbook-readings
+module-2
