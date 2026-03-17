@@ -10,7 +10,7 @@ rmd_files:
 - 02-Mod2.Rmd
 #- 03-parts.Rmd
 #- 04-citations.Rmd
-#- 05-blocks.Rmd
+- 05-Mod5.Rmd
 #- 06-share.Rmd
 - 07-references.Rmd
 
