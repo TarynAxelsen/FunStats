@@ -68,10 +68,8 @@
 <li><a class="" href="index.html">Preface</a></li>
 <li><a class="" href="module-1.html"><span class="header-section-number">1</span> Module 1</a></li>
 <li><a class="" href="review-questions-module-1.html">Review Questions: Module 1</a></li>
-<li><a class="" href="review-questions-module-1-do-you-like-this.html">Review Questions: Module 1 (Do you like this?)</a></li>
 <li><a class="" href="tutorial-questions-module-1.html">Tutorial Questions: Module 1</a></li>
 <li><a class="active" href="module-1-checklist.html">Module 1 Checklist</a></li>
-<li><a class="" href="module-2.html"><span class="header-section-number">2</span> Module 2</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -113,7 +111,7 @@
     <div class="cl-controls">
       <button class="btn" id="cl-check-all">Mark all done</button>
       <button class="btn" id="cl-clear-all">Clear all</button>
-      <span class="cl-note">(* denotes advanced outcome)</span>
+      <span class="cl-note">(* denotes expanded competencies)</span>
     </div>
   </div>
 
@@ -220,14 +218,141 @@
 
   load();
 })();
+</script><div id="using-statistical-software-checklist" class="section level2 unnumbered">
+<h2>Using Statistical Software Checklist<a class="anchor" aria-label="anchor" href="#using-statistical-software-checklist"><i class="fas fa-link"></i></a>
+</h2>
+<div class="cl-wrap" id="m1-software-checklist">
+  <div class="cl-card">
+    <h4>Module 1 — Using Statistical Software Checklist</h4>
+    <div class="cl-note">
+      On successful completion of this module, you should be able to use statistical software to complete the following tasks. Tick each outcome once you have
+      successfully demonstrated it.
+    </div>
+
+    <div class="cl-prog">
+      <div class="cl-bar" id="cl-bar-soft"></div>
+    </div>
+    <div class="cl-stats" id="cl-stats-soft">0 of 0 completed</div>
+
+    <div class="cl-controls">
+      <button class="btn" id="cl-soft-check-all">Mark all done</button>
+      <button class="btn" id="cl-soft-clear-all">Clear all</button>
+      <span class="cl-note">(* denotes expanded competencies)</span>
+    </div>
+  </div>
+
+  <div class="cl-card">
+    <div class="cl-group-title">Data handling and graphs</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss1"><span>Enter data, open a data set, and label variables and values.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss2"><span>Construct a frequency table for a categorical variable.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss3"><span>Construct a bar graph to display the distribution of a categorical variable.</span>
+    </label>
+  </div>
+
+  <div class="cl-card">
+    <div class="cl-group-title">Two categorical variables</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss4"><span>Create a contingency table from data for two categorical variables.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss5"><span class="cl-adv">* Construct the joint, marginal, and conditional distributions from a contingency table.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss6"><span class="cl-adv">* Construct a stacked bar chart for two categorical variables.</span>
+    </label>
+  </div>
+</div>
+
+<script>
+(function(){
+  const KEY = "m1-software-checklist-v1";
+
+  const root = document.getElementById("m1-software-checklist");
+  const boxes = Array.from(root.querySelectorAll("input[type=checkbox][data-id]"));
+  const bar = document.getElementById("cl-bar-soft");
+  const stats = document.getElementById("cl-stats-soft");
+  const btnAll = document.getElementById("cl-soft-check-all");
+  const btnClear = document.getElementById("cl-soft-clear-all");
+
+  function update(){
+    const total = boxes.length;
+    const done = boxes.filter(b => b.checked).length;
+    const pct = total ? Math.round(100 * done / total) : 0;
+    bar.style.width = pct + "%";
+    stats.textContent = `${done} of ${total} completed (${pct}%)`;
+  }
+
+  function save(){
+    const state = {};
+    boxes.forEach(b => state[b.dataset.id] = !!b.checked);
+    localStorage.setItem(KEY, JSON.stringify(state));
+    update();
+  }
+
+  function load(){
+    try{
+      const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+      boxes.forEach(b => b.checked = !!saved[b.dataset.id]);
+    }catch(e){}
+    update();
+  }
+
+  boxes.forEach(b => b.addEventListener("change", save));
+  btnAll.addEventListener("click", () => { boxes.forEach(b => b.checked = true); save(); });
+  btnClear.addEventListener("click", () => {
+    if(confirm("Clear all ticks for this checklist on this device?")){
+      boxes.forEach(b => b.checked = false); save();
+    }
+  });
+
+  load();
+})();
 </script>
 </div>
-  <div class="chapter-nav">
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Restore saved answers
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (box.id) {
+      const saved = localStorage.getItem(box.id);
+      if (saved !== null) {
+        box.value = saved;
+      }
+    }
+  });
+
+  // Save answers as they type
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (!box.id) return;
+
+    box.addEventListener("input", function () {
+      localStorage.setItem(box.id, box.value);
+    });
+  });
+
+});
+</script><div class="chapter-nav">
 <div class="prev"><a href="tutorial-questions-module-1.html">Tutorial Questions: Module 1</a></div>
-<div class="next"><a href="module-2.html"><span class="header-section-number">2</span> Module 2</a></div>
+<div class="next"><a href="references.html">References</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#module-1-checklist">Module 1 Checklist</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#module-1-checklist">Module 1 Checklist</a></li>
+<li><a class="nav-link" href="#using-statistical-software-checklist">Using Statistical Software Checklist</a></li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
@@ -244,7 +369,7 @@
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-16.</p>
+    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

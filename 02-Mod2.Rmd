@@ -18,3 +18,19 @@ In this module, we ???.
   </p>
 </div>
 <!-- ====== END BANNER ====== -->
+
+
+<!--
+NOTE FOR FUTURE ME:
+This module uses child Rmd files under section headings (##) so that:
+- Module 1, Tutorial are in different files but render together
+- Summary, Review, and Tutorial are numbered 1.1, 1.2, 1.3
+- bs4_book splits these sections into separate HTML pages (via split_by: section)
+- PDF output still renders cleanly with correct numbering
+
+DO NOT add this file's children to _bookdown.yml
+DO NOT use # headings in the child files
+-->
+
+```{r, child="02-Tut2.Rmd"}
+```

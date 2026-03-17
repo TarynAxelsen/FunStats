@@ -68,10 +68,8 @@
 <li><a class="active" href="index.html">Preface</a></li>
 <li><a class="" href="module-1.html"><span class="header-section-number">1</span> Module 1</a></li>
 <li><a class="" href="review-questions-module-1.html">Review Questions: Module 1</a></li>
-<li><a class="" href="review-questions-module-1-do-you-like-this.html">Review Questions: Module 1 (Do you like this?)</a></li>
 <li><a class="" href="tutorial-questions-module-1.html">Tutorial Questions: Module 1</a></li>
 <li><a class="" href="module-1-checklist.html">Module 1 Checklist</a></li>
-<li><a class="" href="module-2.html"><span class="header-section-number">2</span> Module 2</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -170,16 +168,39 @@ data collection and analysis;</p></li>
 
 <p class="flushright">
 </p>
-<p>Taryn Axelsen (Springfield, Australia)</p>
-<p>Rachel King (Toowoomba, Australia)</p>
-Bethany Rognoni (Toowoomba, Australia)
+<p>Dr Taryn Axelsen (Springfield, Australia)</p>
+<p>Dr Rachel King (Toowoomba, Australia)</p>
+Dr Hamid ShobeiriNejad (Toowoomba, Australia)
 
 
 </div>
 </div>
 </div>
 
-  <div class="chapter-nav">
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Restore saved answers
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (box.id) {
+      const saved = localStorage.getItem(box.id);
+      if (saved !== null) {
+        box.value = saved;
+      }
+    }
+  });
+
+  // Save answers as they type
+  document.querySelectorAll("textarea").forEach(function (box) {
+    if (!box.id) return;
+
+    box.addEventListener("input", function () {
+      localStorage.setItem(box.id, box.value);
+    });
+  });
+
+});
+</script><div class="chapter-nav">
 <div class="empty"></div>
 <div class="next"><a href="module-1.html"><span class="header-section-number">1</span> Module 1</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
@@ -209,7 +230,7 @@ Bethany Rognoni (Toowoomba, Australia)
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-16.</p>
+    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-17.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

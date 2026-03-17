@@ -1,7 +1,7 @@
 --- 
 title: "Fundamental Statistics"
 author: "Taryn Axelsen"
-date: "Last Updated: 2026-03-16"
+date: "Last Updated: 2026-03-17"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
@@ -133,11 +133,11 @@ These tools allow us to build a clean, interactive, and reproducible learning re
 
 ### Authors{-}
 
-\BeginKnitrBlock{flushright}<p class="flushright">Taryn Axelsen (Springfield, Australia)
+\BeginKnitrBlock{flushright}<p class="flushright">Dr Taryn Axelsen (Springfield, Australia)
 
-Rachel King (Toowoomba, Australia)
+Dr Rachel King (Toowoomba, Australia)
 
-Bethany Rognoni (Toowoomba, Australia)</p>\EndKnitrBlock{flushright}
+Dr Hamid ShobeiriNejad (Toowoomba, Australia)</p>\EndKnitrBlock{flushright}
 
 
 \mainmatter

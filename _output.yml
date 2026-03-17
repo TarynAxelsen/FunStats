@@ -6,6 +6,10 @@ bookdown::bs4_book:
     #primary: "#2b8cbe"
   repo: https://github.com/rstudio/bookdown-demo
   
+  includes:
+    after_body: answer-persistence.html
+
+  
 
 # Disable PDF and EPUB builds on GitHub
 # (You can still build them locally if you want.)
