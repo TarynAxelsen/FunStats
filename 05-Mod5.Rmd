@@ -4,6 +4,7 @@
 1. You want answers stored locally when the person downloads the book, 
 2. When reset you want to do a hard reset (so wipes it even if they move pages
 3. Do each question and part separately
+4. Hint, check and reset buttons like Ive done in Mod 1
 -->
 
 <!-- ====== COLOURED BANNER ====== -->
