@@ -4,6 +4,8 @@ Note: * Indicates **Expanded** Competencies
 
 ## Question 1: 
 
+*Is there an association between the amount of coffee consumed and the number of hours of sleep students manage to have per night?*
+
 ## Question 2:
 
 
