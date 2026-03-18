@@ -62,6 +62,77 @@ allowing for later misuse or misinterpretation of the true nature of the
 data. This might not be done to intentionally misinform; however, simple
 lack of clarity and incomplete disclosure can lead to ethical issues.
 
+• Use of statistical methods appropriate to the data and questions that hope to
+be answered:
+
+– Verification of assumptions;
+
+– Appropriate use of statistical methods if more than one is available;
+
+– Appropriate use of visualisation (more than one type of graph) if more
+than one approach is available.
+
+• Fair reporting of results:
+
+– Sample size and its effect on statistical significance (we will cover this in
+more detail in Module 11);
+
+– Reporting significance without contextualising the meaning and importance
+of the effect size (e.g. the size of the difference between means or
+the strength of the relationships between variables. More details in Module
+11);
+
+– Applying multiple hypothesis tests to subsets of the data and selectively
+reporting only the significant results (we will cover this in more detail in
+Module 11);
+– Over-interpreting results e.g. inferring cause-and-effect based on an observational
+study, discussing results in the context of a population for
+which the sample is non-representative
+
+
+Even if your future work does not require you to produce statistical analyses and
+results, you may may need to rely on statistics produced by others. As consumers
+of statistical information we rarely have access to the original data to check if the
+analyses and claims are true. Ethical guidelines help us identify the information
+that should be available to us in order to trust the claims made.
+
+When considering statistical claims in research publications, the ethical statistician:
+
+• Acknowledges statistical and substantive assumptions made in the execution
+and interpretation of any analysis. When reporting on the validity of data
+used, acknowledges data editing procedures, including any imputation and
+missing data mechanisms.
+
+• Reports the limitations of statistical inference and possible sources of error.
+
+• In publications, reports, or testimony, identifies who is responsible for the statistical work if it would not otherwise be apparent.
+
+• Reports the sources and assessed adequacy of the data, accounts for all data
+considered in a study, and explains the sample(s) actually used.
+
+• Clearly and fully reports the steps taken to preserve data integrity and valid
+results.
+
+• Where appropriate, addresses potential confounding variables not included in
+the study.
+
+• In publications and reports, conveys the findings in ways that are both honest
+and meaningful to the user/reader. This includes tables, models, and graphics.
+
+• In publications or testimony, identifies the ultimate financial sponsor of the
+study, the stated purpose, and the intended use of the study results.
+
+• When reporting analyses of volunteer data or other data that may not be representative
+of a defined population, includes appropriate disclaimers and, if used, appropriate weighting.
+
+• To aid peer review and replication, shares the data used in the analyses whenever
+possible/allowable and exercises due caution to protect proprietary and
+confidential data, including all data that might inappropriately reveal respondent
+identities.
+
+• Strives to promptly correct any errors discovered while producing the final report
+or after publication. As appropriate, disseminates the correction publicly
+or to others relying on the results.
 <!--
 NOTE FOR FUTURE ME:
 This module uses child Rmd files under section headings (##) so that:
