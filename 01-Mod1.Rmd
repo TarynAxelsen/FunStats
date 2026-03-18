@@ -26,7 +26,7 @@ In this module, we ???.
 
 Statistics are powerful, but they can be misleading if used poorly or dishonestly.
 
-### Key ideas{-}
+**Key ideas**
 
 - Results can be **misinterpreted** through poor sampling or misleading summaries.
 - Graphs can strongly influence interpretation depending on:
@@ -34,7 +34,7 @@ Statistics are powerful, but they can be misleading if used poorly or dishonestl
   - graph type
   - use of 3D effects or distorted perspectives
 
-### Good data visualisation principles{-}
+**Good data visualisation principles**
 
 - Match the graph type to the **data type**
 - Label axes clearly (variable names and units)
@@ -52,13 +52,13 @@ A graph is only as good as the data it displays. No amount of visual design can 
 
 Understanding data begins with understanding variables.
 
-### Statistical terminology{-}
+**Statistical terminology**
 
 - **Cases**: the individuals or objects being studied
 - **Variables**: characteristics measured on each case
 - **Data**: the observed values of the variables
 
-### Types of data{-}
+**Types of data**
 
 | Data type | Description | Examples |
 |---------|------------|----------|
@@ -75,25 +75,25 @@ Categorical variables are often **coded numerically** in software, but the numbe
 
 The **distribution of a variable** describes what values it takes and how often they occur.
 
-### Numerical summaries{-}
+**Numerical summaries**
 
 - Frequency tables for categorical variables
 - Frequency distributions for quantitative variables
 
-### Graphical summaries{-}
+**Graphical summaries**
 
 | Data type | Appropriate graphs |
 |---------|-------------------|
 | Categorical | Bar chart, Pie chart |
 | Quantitative | Histogram, Stem-and-leaf plot, Boxplot |
 
-#### Bar charts{-}
+**Bar charts**
 
 - Used for **categorical variables**
 - Bars do **not** touch
 - Order bars logically (alphabetical or by size)
 
-#### Pie charts{-}
+**Pie charts**
 
 - Not recommended as difficult for the reader to fully understand
 - Show **parts of a whole**
@@ -106,17 +106,17 @@ The **distribution of a variable** describes what values it takes and how often 
 
 When analysing **two categorical variables**, we use a **contingency table** (also called a two-way table or cross-tabulation).
 
-### Types of distributions{-}
+**Types of distributions**
 
 - **Joint distribution**: proportions of all cases in each cell
 - **Marginal distribution**: proportions for one variable only (row or column totals)
 - **Conditional distribution**: proportions within a subgroup
 
-### Assessing association{-}
+**Assessing association**
 
 Two categorical variables are **associated** if the conditional distributions differ between groups. If the conditional distributions are similar, the variables are considered **independent**.
 
-### Graphical support{-}
+**Graphical support**
 
 - **Stacked bar charts** are useful for comparing conditional distributions visually.
 

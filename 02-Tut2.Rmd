@@ -832,9 +832,9 @@ the five-number summary.
 Answers to these questions are located in the back of the textbook. If you require further explanation, please ask in the Module Content Discussion Forum on the Study-
 Desk.
 
-• Questions 3.25, 4.31, 4.33 12.21, 12.47* (De Veaux, Velleman & Bock, (4th edition))
+• Questions 3.25, 4.31, 4.33  (De Veaux, Velleman & Bock, (4th edition))
 
-• Questions 2.53, 4.31, 4.33, 11.21,11.47* (De Veaux, Velleman & Bock, (5th edition))
+• Questions 2.53, 4.31, 4.33  (De Veaux, Velleman & Bock, (5th edition))
 
 ## Textbook Readings 
 For extra clarification on materials in this module, see: De Veaux, Velleman
@@ -843,3 +843,221 @@ For extra clarification on materials in this module, see: De Veaux, Velleman
 
 
 # Module 2 Checklist {-}
+
+```{=html}
+<style>
+  .cl-wrap{max-width:900px;margin:0 auto}
+  .cl-card{border:1px solid #e5e5e5;border-radius:6px;padding:14px;background:#fff;margin:12px 0}
+  .cl-card h4{margin:.2rem 0 .6rem;font-size:1.05rem}
+  .cl-note{font-size:.9rem;color:#666}
+  .cl-group-title{font-weight:700;margin:.4rem 0}
+  .cl-item{display:flex;align-items:flex-start;gap:8px;margin:.35rem 0}
+  .cl-item input[type=checkbox]{transform:scale(1.2);margin-top:2px}
+  .cl-adv{font-style:italic;color:#333}
+  .cl-controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:.6rem}
+  .btn{padding:6px 10px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer}
+  .cl-prog{height:10px;background:#f1f1f1;border-radius:6px;overflow:hidden;margin:.4rem 0 .8rem}
+  .cl-bar{height:100%;width:0%;background:#2b8cbe;transition:width .25s ease}
+  .cl-stats{font-size:.9rem;color:#555}
+</style>
+
+<div class="cl-wrap" id="m2-checklist">
+  <div class="cl-card">
+    <h4>Module 2 — Checklist</h4>
+    <div class="cl-note">
+      Once you have watched the lecture recordings, completed the tutorial activity,
+      and textbook problems, tick the outcomes you have achieved.
+      Your selections are saved in your browser on this device.
+    </div>
+
+    <div class="cl-prog"><div class="cl-bar"></div></div>
+    <div class="cl-stats"></div>
+
+    <div class="cl-controls">
+      <button class="btn" data-action="all">Mark all done</button>
+      <button class="btn" data-action="clear">Clear all</button>
+      <span class="cl-note">(* denotes expanded competencies)</span>
+    </div>
+  </div>
+
+  <div class="cl-card">
+    <div class="cl-group-title">Describing Distributions</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="d1">
+      <span>Visually describe the distribution of a quantitative variable in terms of shape, centre, and spread from a histogram.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="d2">
+      <span>Calculate by hand and interpret the median.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="d3">
+      <span>Know the numbers that make up the five-number summary.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="d4">
+      <span>Use technology to find the mean and standard deviation of a data set.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="d5">
+      <span>Compare groups using boxplots.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="d6">
+      <span class="cl-adv">* Calculate by hand the interquartile range (IQR) and five-number summary.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="d7">
+      <span class="cl-adv">* Recognise the impact of outliers and skewness on measures of centre and spread.</span>
+    </label>
+  </div>
+</div>
+
+<script>
+(function(){
+  const ROOT = document.getElementById("m2-checklist");
+  const KEY  = "m2-checklist-v1";
+
+  const boxes = Array.from(ROOT.querySelectorAll("input[type=checkbox][data-id]"));
+  const bar   = ROOT.querySelector(".cl-bar");
+  const stats = ROOT.querySelector(".cl-stats");
+  const btnAll   = ROOT.querySelector('[data-action="all"]');
+  const btnClear = ROOT.querySelector('[data-action="clear"]');
+
+  function update(){
+    const total = boxes.length;
+    const done  = boxes.filter(b => b.checked).length;
+    const pct   = total ? Math.round(100 * done / total) : 0;
+    bar.style.width = pct + "%";
+    stats.textContent = `${done} of ${total} completed (${pct}%)`;
+  }
+
+  function save(){
+    const state = {};
+    boxes.forEach(b => state[b.dataset.id] = b.checked);
+    localStorage.setItem(KEY, JSON.stringify(state));
+    update();
+  }
+
+  function load(){
+    const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+    boxes.forEach(b => b.checked = !!saved[b.dataset.id]);
+    update();
+  }
+
+  boxes.forEach(b => b.addEventListener("change", save));
+
+  btnAll.addEventListener("click", () => {
+    boxes.forEach(b => b.checked = true);
+    save();
+  });
+
+  btnClear.addEventListener("click", () => {
+    if (!confirm("Clear all ticks for this checklist on this device?")) return;
+    localStorage.removeItem(KEY);
+    boxes.forEach(b => b.checked = false);
+    update();
+  });
+
+  load();
+})();
+</script>
+```
+
+## Using Statistical Software Checklist {-}
+
+```{=html}
+<div class="cl-wrap" id="m2-software-checklist">
+  <div class="cl-card">
+    <h4>Module 2 — Using Statistical Software Checklist</h4>
+    <div class="cl-note">
+      On successful completion of this module, students should be able to use SPSS or Excel
+      to complete the following tasks.
+    </div>
+
+    <div class="cl-prog"><div class="cl-bar"></div></div>
+    <div class="cl-stats"></div>
+
+    <div class="cl-controls">
+      <button class="btn" data-action="all">Mark all done</button>
+      <button class="btn" data-action="clear">Clear all</button>
+    </div>
+  </div>
+
+  <div class="cl-card">
+    <div class="cl-group-title">Using Statistical Software</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss1">
+      <span>Construct a histogram, a boxplot, and multiple boxplots.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss2">
+      <span>Produce summary statistics of quantitative data.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss3">
+      <span>Select subsets of data using Select Cases.</span>
+    </label>
+  </div>
+</div>
+
+<script>
+(function(){
+  const ROOT = document.getElementById("m2-software-checklist");
+  const KEY  = "m2-software-checklist-v1";
+
+  const boxes = Array.from(ROOT.querySelectorAll("input[type=checkbox][data-id]"));
+  const bar   = ROOT.querySelector(".cl-bar");
+  const stats = ROOT.querySelector(".cl-stats");
+  const btnAll   = ROOT.querySelector('[data-action="all"]');
+  const btnClear = ROOT.querySelector('[data-action="clear"]');
+
+  function update(){
+    const total = boxes.length;
+    const done  = boxes.filter(b => b.checked).length;
+    const pct   = total ? Math.round(100 * done / total) : 0;
+    bar.style.width = pct + "%";
+    stats.textContent = `${done} of ${total} completed (${pct}%)`;
+  }
+
+  function save(){
+    const state = {};
+    boxes.forEach(b => state[b.dataset.id] = b.checked);
+    localStorage.setItem(KEY, JSON.stringify(state));
+    update();
+  }
+
+  function load(){
+    const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+    boxes.forEach(b => b.checked = !!saved[b.dataset.id]);
+    update();
+  }
+
+  boxes.forEach(b => b.addEventListener("change", save));
+
+  btnAll.addEventListener("click", () => {
+    boxes.forEach(b => b.checked = true);
+    save();
+  });
+
+  btnClear.addEventListener("click", () => {
+    if (!confirm("Clear all ticks for this checklist on this device?")) return;
+    localStorage.removeItem(KEY);
+    boxes.forEach(b => b.checked = false);
+    update();
+  });
+
+  load();
+})();
+</script>
+```
