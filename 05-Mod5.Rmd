@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Module 5
 
 <!-- ====== COLOURED BANNER ====== -->
@@ -41,10 +40,4 @@ DO NOT use # headings in the child files
 
 ```{r, child="05-Tut5.Rmd"}
 ```
-=======
----
-title: "05-Mod5"
-output: html_document
----
 
->>>>>>> 77b7c3142075340ee50319a03dcc45a25154acbb

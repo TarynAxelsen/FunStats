@@ -10,7 +10,7 @@ rmd_files:
 #- 02-Mod2.Rmd
 #- 03-Mod3.Rmd
 #- 04-Mod4.Rmd
-- 05-Mod5.Rmd
+#- 05-Mod5.Rmd
 #- 07-references.Rmd
 
 language:
