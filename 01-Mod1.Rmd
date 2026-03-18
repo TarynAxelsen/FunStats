@@ -1,6 +1,7 @@
 # Module 1
 
 <!-- ====== COLOURED BANNER ====== -->
+```{=html}
 <div style="
   background: linear-gradient(90deg, #e6f0ff, #f7fbff);
   border-left: 8px solid #2a7ae2;
@@ -12,11 +13,12 @@
     Module Focus:
   </h2>
   <p style="font-size:1.05em; margin-bottom:0;">
-    How data are collected, classified, summarised, and communicated — and how statistics can mislead if used incorrectly.
+    One line summary
 
-In this module, we developed foundational skills for *exploring and understanding data*. The emphasis was on thinking critically about data, choosing appropriate summaries and graphs, and interpreting relationships between categorical variables.
+In this module, we ???.
   </p>
 </div>
+```
 <!-- ====== END BANNER ====== -->
 
 
