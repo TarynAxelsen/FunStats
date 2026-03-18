@@ -1,24 +1,39 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Restore saved answers
-  document.querySelectorAll("textarea").forEach(function (box) {
-    if (box.id) {
-      const saved = localStorage.getItem(box.id);
-      if (saved !== null) {
-        box.value = saved;
+  // Restore saved values
+  document.querySelectorAll("textarea, input, select").forEach(function (el) {
+    if (!el.id) return;
+
+    const saved = localStorage.getItem(el.id);
+    if (saved !== null) {
+      if (el.type === "checkbox" || el.type === "radio") {
+        el.checked = (saved === "true");
+      } else {
+        el.value = saved;
       }
     }
   });
 
-  // Save answers as they type
-  document.querySelectorAll("textarea").forEach(function (box) {
-    if (!box.id) return;
+  // Save values
+  document.querySelectorAll("textarea, input, select").forEach(function (el) {
+    if (!el.id) return;
 
-    box.addEventListener("input", function () {
-      localStorage.setItem(box.id, box.value);
-    });
+    const save = function () {
+      if (el.type === "checkbox" || el.type === "radio") {
+        localStorage.setItem(el.id, el.checked);
+      } else {
+        localStorage.setItem(el.id, el.value);
+      }
+    };
+
+    // input works for text/number
+    el.addEventListener("input", save);
+
+    // change is REQUIRED for select
+    el.addEventListener("change", save);
   });
 
 });
 </script>
+``

@@ -41,6 +41,7 @@ csl: chicago-fullnote-bibliography.csl
 # Preface {-}
 
 <!-- ====== COLOURED BANNER ====== -->
+```{=html}
 <div style="
   background: linear-gradient(90deg, #e6f0ff, #f7fbff);
   border-left: 8px solid #2a7ae2;
@@ -57,6 +58,7 @@ csl: chicago-fullnote-bibliography.csl
     throughout the semester.
   </p>
 </div>
+```
 <!-- ====== END BANNER ====== -->
 
 The primary learning resource for the course is the lectures and tutorials, however we do have an accompanying textbook **De Veaux, Velleman & Bock,
@@ -78,6 +80,7 @@ Statistics helps us make sense of the information we encounter every day.
 At the heart of statistics is **data**, and the need to understand that data is what drives this entire field. The goal in this course
 is to give you tools to enable you to competently use and interpret statistics.
 
+```{=html}
 <div style="background:#fff4d6; border-left:6px solid #ffb300; padding:18px; margin:25px 0; border-radius:6px;">
   <p style="margin:0; font-size:1.05em;">
     <strong>Think of statistics like a toolbox.</strong><br><br>
@@ -88,6 +91,7 @@ is to give you tools to enable you to competently use and interpret statistics.
 To pass the course, you’ll need to demonstrate a full understanding of these Threshold Competencies.
   </p>
 </div>
+```
 
 
 
@@ -134,16 +138,18 @@ This book was made using **R** [@R-base], and the **bookdown** package [@R-bookd
 These tools allow us to build a clean, interactive, and reproducible learning resource.
 
 ### Authors{-}
-
-```{block2, type='flushright', html.tag='p'}
 Dr Taryn Axelsen (Springfield, Australia)
 
 Dr Rachel King (Toowoomba, Australia)
 
 Dr Hamid ShobeiriNejad (Toowoomba, Australia)
+
+```{=html}
+<button onclick="resetAllAnswers()"
+        style="margin:10px 0; padding:8px 14px;">
+Reset all answers in this workbook
+</button>
 ```
-
-
 \mainmatter
 
 

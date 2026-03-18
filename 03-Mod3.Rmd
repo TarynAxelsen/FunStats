@@ -1,6 +1,7 @@
 # Module 3
 
 <!-- ====== COLOURED BANNER ====== -->
+```{=html}
 <div style="
   background: linear-gradient(90deg, #e6f0ff, #f7fbff);
   border-left: 8px solid #2a7ae2;
@@ -17,6 +18,27 @@
 In this module, we ???.
   </p>
 </div>
+```
 <!-- ====== END BANNER ====== -->
+
+## Summary
+
+# Review Questions: Module 3 {-}
+<!-- Copy from Module 1. Then copy from the Workbook and ask AI to change  -->
+
+<!--
+NOTE FOR FUTURE ME:
+This module uses child Rmd files under section headings (##) so that:
+- Module 1, Tutorial are in different files but render together
+- Summary, Review, and Tutorial are numbered 1.1, 1.2, 1.3
+- bs4_book splits these sections into separate HTML pages (via split_by: section)
+- PDF output still renders cleanly with correct numbering
+
+DO NOT add this file's children to _bookdown.yml
+DO NOT use # headings in the child files
+-->
+
+```{r, child="03-Tut3.Rmd"}
+```
 
 

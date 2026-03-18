@@ -1,6 +1,7 @@
 # Module 2
 
 <!-- ====== COLOURED BANNER ====== -->
+```{=html}
 <div style="
   background: linear-gradient(90deg, #e6f0ff, #f7fbff);
   border-left: 8px solid #2a7ae2;
@@ -17,8 +18,49 @@
 In this module, we ???.
   </p>
 </div>
+```
 <!-- ====== END BANNER ====== -->
 
+## Summary
+
+## Supplementary Notes
+
+### Ethics and Statistics
+Whether we are consumers of statistical information or the person responsible for
+producing statistical analyses and results, standards of ethical practice help us navigate potential pitfalls which could lead to the spread of misinformation.
+
+The Committee on Professional Ethics of the American Statistical Association (ASA)
+published their Ethical Guidelines for Statistical Practice in 2018. https://www.amstat.org/ASA/Your-Career/Ethical-Guidelines-for-Statistical-Practice.
+aspx. These guidelines are intended to help users of statistics make ethical decisions
+and inform those who rely on statistical analysis of the standards they should expect.
+The ASA states:
+*Good statistical practice is fundamentally based on transparent assumptions, reproducible results, and valid interpretations. In some situations, guideline principles may conflict, requiring individuals to prioritize principles according to context.*
+
+Discussion around ethical use of data and/or research often focuses on important
+aspects such as:
+
+• Reproducibility and open data;
+
+• Security of data storage and data transmission;
+
+• Ethical treatment of human and animal participants (this includes confidentiality
+and informed consent in the area of human research);
+
+• Intellectual property.
+
+There are also key ethical considerations relating to:
+
+• Quality of data, where the data may have been compromised by a conflict of
+interest held by those collecting, analysing, reporting or commissioning the
+reporting of the data and/or resulting research outcomes. For example:
+
+– Where known problems with the collection method that could distort interpretation
+are intentionally not reported.
+
+– Where details of data collection methodology are not adequately described
+allowing for later misuse or misinterpretation of the true nature of the
+data. This might not be done to intentionally misinform; however, simple
+lack of clarity and incomplete disclosure can lead to ethical issues.
 
 <!--
 NOTE FOR FUTURE ME:

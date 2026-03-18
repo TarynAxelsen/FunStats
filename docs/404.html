@@ -64,14 +64,7 @@
 </form>
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">Preface</a></li>
-<li><a class="" href="module-1.html"><span class="header-section-number">1</span> Module 1</a></li>
-<li><a class="" href="review-questions-module-1.html">Review Questions: Module 1</a></li>
-<li><a class="" href="tutorial-questions-module-1.html">Tutorial Questions: Module 1</a></li>
-<li><a class="" href="module-1-checklist.html">Module 1 Checklist</a></li>
-<li><a class="" href="references.html">References</a></li>
-</ul>
+        <ul class="book-toc list-unstyled"><li><a class="" href="index.html">Preface</a></li></ul>
 
         <div class="book-extra">
           <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
@@ -88,26 +81,60 @@ the table of contents to find the page you are looking for.</p>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Restore saved answers
-  document.querySelectorAll("textarea").forEach(function (box) {
-    if (box.id) {
-      const saved = localStorage.getItem(box.id);
-      if (saved !== null) {
-        box.value = saved;
+  // Restore saved values
+  document.querySelectorAll("textarea, input, select").forEach(function (el) {
+    if (!el.id) return;
+
+    const saved = localStorage.getItem(el.id);
+    if (saved !== null) {
+      if (el.type === "checkbox" || el.type === "radio") {
+        el.checked = (saved === "true");
+      } else {
+        el.value = saved;
       }
     }
   });
 
-  // Save answers as they type
-  document.querySelectorAll("textarea").forEach(function (box) {
-    if (!box.id) return;
+  // Save values
+  document.querySelectorAll("textarea, input, select").forEach(function (el) {
+    if (!el.id) return;
 
-    box.addEventListener("input", function () {
-      localStorage.setItem(box.id, box.value);
-    });
+    const save = function () {
+      if (el.type === "checkbox" || el.type === "radio") {
+        localStorage.setItem(el.id, el.checked);
+      } else {
+        localStorage.setItem(el.id, el.value);
+      }
+    };
+
+    // input works for text/number
+    el.addEventListener("input", save);
+
+    // change is REQUIRED for select
+    el.addEventListener("change", save);
   });
 
 });
+</script>
+``
+<script>
+function resetAllAnswers() {
+
+  // Clear everything saved by this book
+  localStorage.clear();
+
+  // Clear visible inputs on the current page
+  document.querySelectorAll("textarea, input").forEach(el => {
+    if (el.type === "checkbox" || el.type === "radio") {
+      el.checked = false;
+    } else {
+      el.value = "";
+    }
+    el.classList.remove("correct","incorrect");
+  });
+
+  alert("All saved answers in this workbook have been cleared.");
+}
 </script><div class="chapter-nav">
 <div class="empty"></div>
 <div class="empty"></div>
@@ -120,7 +147,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-17.</p>
+    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-03-18.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
