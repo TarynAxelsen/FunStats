@@ -41,7 +41,7 @@ Although we don’t usually associate a specific number with such descriptions w
 
 This module formalises these familiar probability properties and rules. The second half of the module introduces the underlying principles of statistical inference – hypothesis testing and confidence intervals. The remaining modules in this course include a variety of hypothesis testing contexts and related statistical concepts all of which have their foundations in probability theory.
 
-###TEST {-}
+### TEST {-}
 
 ## Randomness and Probability
 
