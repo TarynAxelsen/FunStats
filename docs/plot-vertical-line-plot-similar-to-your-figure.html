@@ -4,16 +4,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 1 Module 5 | Fundamental Statistics</title>
+<title>Chapter 2 Plot (vertical line plot similar to your figure) | Fundamental Statistics</title>
 <meta name="author" content="Taryn Axelsen">
-<meta name="description" content="Module Focus:      One line summary In this module, we ???.    1.1 Summary   1.2 Supplementary Notes De Veaux, Velleman &amp; Bock’s approach to probability is at times more mathematical than...">
+<meta name="description" content='plot(x, prob, type = “h”, lwd = 5, col = “blue”, xlab = “x, no. of heads”, ylab = “probability”, ylim = c(0, 0.4))  document.addEventListener("DOMContentLoaded", function () {  // Restore saved...'>
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="Chapter 1 Module 5 | Fundamental Statistics">
+<meta property="og:title" content="Chapter 2 Plot (vertical line plot similar to your figure) | Fundamental Statistics">
 <meta property="og:type" content="book">
-<meta property="og:description" content="Module Focus:      One line summary In this module, we ???.    1.1 Summary   1.2 Supplementary Notes De Veaux, Velleman &amp; Bock’s approach to probability is at times more mathematical than...">
+<meta property="og:description" content='plot(x, prob, type = “h”, lwd = 5, col = “blue”, xlab = “x, no. of heads”, ylab = “probability”, ylim = c(0, 0.4))  document.addEventListener("DOMContentLoaded", function () {  // Restore saved...'>
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 1 Module 5 | Fundamental Statistics">
-<meta name="twitter:description" content="Module Focus:      One line summary In this module, we ???.    1.1 Summary   1.2 Supplementary Notes De Veaux, Velleman &amp; Bock’s approach to probability is at times more mathematical than...">
+<meta name="twitter:title" content="Chapter 2 Plot (vertical line plot similar to your figure) | Fundamental Statistics">
+<meta name="twitter:description" content='plot(x, prob, type = “h”, lwd = 5, col = “blue”, xlab = “x, no. of heads”, ylab = “probability”, ylim = c(0, 0.4))  document.addEventListener("DOMContentLoaded", function () {  // Restore saved...'>
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.9.0/transition.js"></script><script src="libs/bs3compat-0.9.0/tabs.js"></script><script src="libs/bs3compat-0.9.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -66,7 +66,9 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html">Preface</a></li>
-<li><a class="active" href="module-5.html"><span class="header-section-number">1</span> Module 5</a></li>
+<li><a class="" href="module-5.html"><span class="header-section-number">1</span> Module 5</a></li>
+<li><a class="active" href="plot-vertical-line-plot-similar-to-your-figure.html"><span class="header-section-number">2</span> Plot (vertical line plot similar to your figure)</a></li>
+<li><a class="" href="add-points-for-clarity.html"><span class="header-section-number">3</span> Add points for clarity</a></li>
 <li><a class="" href="review-questions-module-5.html">Review Questions: Module 5</a></li>
 <li><a class="" href="tutorial-questions-module-5.html">Tutorial Questions: Module 5</a></li>
 <li><a class="" href="module-5-checklist.html">Module 5 Checklist</a></li>
@@ -77,83 +79,14 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="module-5" class="section level1" number="1">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="plot-vertical-line-plot-similar-to-your-figure" class="section level1" number="2">
 <h1>
-<span class="header-section-number">1</span> Module 5<a class="anchor" aria-label="anchor" href="#module-5"><i class="fas fa-link"></i></a>
+<span class="header-section-number">2</span> Plot (vertical line plot similar to your figure)<a class="anchor" aria-label="anchor" href="#plot-vertical-line-plot-similar-to-your-figure"><i class="fas fa-link"></i></a>
 </h1>
-<!-- Things to Tell AI:
-1. You want answers stored locally when the person downloads the book, 
-2. When reset you want to do a hard reset (so wipes it even if they move pages
-3. Do each question and part separately
-4. Hint, check and reset buttons like Ive done in Mod 1
--->
-<!-- ====== COLOURED BANNER ====== -->
-<div style="
-  background: linear-gradient(90deg, #e6f0ff, #f7fbff);
-  border-left: 8px solid #2a7ae2;
-  padding: 22px;
-  margin-bottom: 30px;
-  border-radius: 6px;
-">
-  <h2 style="margin-top:0; color:#1a4f8b; font-weight:700;">
-    Module Focus:
-  </h2>
-  <p style="font-size:1.05em; margin-bottom:0;">
-    One line summary
-
-In this module, we ???.
-  </p>
-</div>
-<!-- ====== END BANNER ====== -->
-<div id="summary" class="section level2" number="1.1">
-<h2>
-<span class="header-section-number">1.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary"><i class="fas fa-link"></i></a>
-</h2>
-</div>
-<div id="supplementary-notes" class="section level2" number="1.2">
-<h2>
-<span class="header-section-number">1.2</span> Supplementary Notes<a class="anchor" aria-label="anchor" href="#supplementary-notes"><i class="fas fa-link"></i></a>
-</h2>
-<p>De Veaux, Velleman &amp; Bock’s approach to probability is at times more mathematical than necessary for this course, so we have prepared these notes to supplement explanation of the important concepts and to highlight where some content in the relevant chapters is not required.</p>
-<div id="introduction" class="section level3" number="1.2.1">
-<h3>
-<span class="header-section-number">1.2.1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction"><i class="fas fa-link"></i></a>
-</h3>
-<p>The concept of probability is familiar from everyday events and experiences. We use the language of probability in all sorts of contexts ranging from describing the vagaries of the weather to the anticipated results of sporting contests and expectations about our own future. Words such as likely, probable, unexpected, impossible and so on are part of our language.</p>
-<p>Although we don’t usually associate a specific number with such descriptions we are aware that outcomes which are unlikely have a probability near 0% and outcomes which are nearly certain have a probability near 100%. The simple idea of using numbers in the range 0 to 1 or 0% to 100% to quantify probabilities leads to many useful results. For example, if we are 100% certain of dying then we must be 0% certain of living forever. If a horse is 10% certain of winning a race it must be 90% certain of losing. In general terms the probability of an event occurring is one minus the probability of it not occurring. This is a rule of probability.</p>
-<p>This module formalises these familiar probability properties and rules. The second half of the module introduces the underlying principles of statistical inference – hypothesis testing and confidence intervals. The remaining modules in this course include a variety of hypothesis testing contexts and related statistical concepts all of which have their foundations in probability theory.</p>
-</div>
-</div>
-<div id="randomness-and-probability" class="section level2" number="1.3">
-<h2>
-<span class="header-section-number">1.3</span> Randomness and Probability<a class="anchor" aria-label="anchor" href="#randomness-and-probability"><i class="fas fa-link"></i></a>
-</h2>
-<p>Answers to probability questions can be expressed as a decimal fraction (such as 0.28) or a percentage (such as 28%). As usual, rounding off the final answer sensibly is recommended.
-Knowing the properties and rules about probabilities is one thing; being able to solve problems using them is another. The only way to get good at it is to practise enough problems to recognise what’s required. There is a minimum list of problems to at tempt in the corresponding tutorial in the Workbook. If you find them straightfor ward, great. If not, do some more now or later.
-If you enjoy working with probabilities (some of us do!), read De Veaux, Velleman &amp; Bock, (4th edition), Chapter 14 (De Veaux, Velleman &amp; Bock, (5th edition), Chapter 13). None of that material is assessable however!</p>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-1"></span>
-<img src="05-Mod5_files/figure-html/unnamed-chunk-1-1.png" alt="Probability distribution for number of heads in 3 tosses" width="60%"><p class="caption">
-Figure 1.1: Probability distribution for number of heads in 3 tosses
-</p>
-</div>
-<p>The probability distribution for the number of heads when tossing a fair coin three times is:</p>
-<p><span class="math display">\[
-P(X = x) = \binom{3}{x} (0.5)^3,\quad x = 0,1,2,3.
-\]</span></p>
-<p>The standard deviation is:</p>
-<p><span class="math display">\[
-\sigma = \sqrt{
-0.125(0 - 1.50)^2 +
-0.375(1 - 1.50)^2 +
-0.375(2 - 1.50)^2 +
-0.125(3 - 1.50)^2
-}
-\]</span></p>
-<p><span class="math display">\[
-\sigma = \sqrt{0.75} = 0.866.
-\]</span></p>
-</div>
+<p>plot(x, prob, type = “h”, lwd = 5, col = “blue”,
+xlab = “x, no. of heads”,
+ylab = “probability”,
+ylim = c(0, 0.4))</p>
 </div>
 <script>
 document.addEventListener("DOMContentLoaded", function () {
@@ -213,18 +146,11 @@ function resetAllAnswers() {
   alert("All saved answers in this workbook have been cleared.");
 }
 </script><div class="chapter-nav">
-<div class="prev"><a href="index.html">Preface</a></div>
-<div class="next"><a href="review-questions-module-5.html">Review Questions: Module 5</a></div>
+<div class="prev"><a href="module-5.html"><span class="header-section-number">1</span> Module 5</a></div>
+<div class="next"><a href="add-points-for-clarity.html"><span class="header-section-number">3</span> Add points for clarity</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#module-5"><span class="header-section-number">1</span> Module 5</a></li>
-<li><a class="nav-link" href="#summary"><span class="header-section-number">1.1</span> Summary</a></li>
-<li>
-<a class="nav-link" href="#supplementary-notes"><span class="header-section-number">1.2</span> Supplementary Notes</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#introduction"><span class="header-section-number">1.2.1</span> Introduction</a></li></ul>
-</li>
-<li><a class="nav-link" href="#randomness-and-probability"><span class="header-section-number">1.3</span> Randomness and Probability</a></li>
-</ul>
+      <ul class="nav navbar-nav"><li><a class="nav-link" href="#plot-vertical-line-plot-similar-to-your-figure"><span class="header-section-number">2</span> Plot (vertical line plot similar to your figure)</a></li></ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
