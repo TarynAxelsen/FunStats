@@ -73,7 +73,7 @@ Here’s an example using the formulas for *µ* and *σ*, for a discrete random 
 
 A coin is tossed three times and the number of heads counted.
 
-<p style="margin-left: 2em; text-indent: -1.5em;">
+<div style="margin-left: 0.5cm;">
 (a) What are the possible values for this variable?
 
 (b) Describe the distribution of this variable.
@@ -82,16 +82,36 @@ A coin is tossed three times and the number of heads counted.
 
 (d) *What is the standard deviation of the number of heads?
 
+</div>
+
 Solution
-<p style="margin-left: 2em; text-indent: -1.5em;">
+
+<div style="margin-left: 0.5cm;">
 (a) Let X = numberofheads. Then X cantake the values 0, 1, 2 or 3.
 (b) By being systematic, we can list eight outcomes in this sequence of trials:
+
+<div style="margin-left: 0.5cm;">
+<p style="text-align: center;">
+*hhh,hht,hth,thh,htt,tht,tth,ttt* 
 </p>
 
+Provided the coin is balanced, these eight outcomes are equally likely. The first of these outcomes produces 3 heads, the next three produce 2 heads, the next three produce 1 head, and the last outcome produces 0 heads. Consequently the probabilities associated with these outcomes are as displayed in the table:
+
+<p style="text-align: center;">
+\[
+\begin{array}{c|cccc}
+x & 0 & 1 & 2 & 3 \\
+\hline
+\text{probability} & \frac{1}{8} & \frac{3}{8} & \frac{3}{8} & \frac{1}{8} \\
+\end{array}
+\]
+``
 </p>
 
+This table represents the probability model or probability distribution of the variable X. It is represented graphically in Figure 5.1. We could also convert the above table to decimals rather than fractions:
 
-
+</div>
+</div>
 </div>
 
 ```{r, fig.width=5, fig.height=5, out.width="60%", fig.cap="Probability distribution for number of heads in 3 tosses", echo=FALSE}
