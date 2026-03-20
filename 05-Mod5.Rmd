@@ -42,10 +42,57 @@ Although we don’t usually associate a specific number with such descriptions w
 This module formalises these familiar probability properties and rules. The second half of the module introduces the underlying principles of statistical inference – hypothesis testing and confidence intervals. The remaining modules in this course include a variety of hypothesis testing contexts and related statistical concepts all of which have their foundations in probability theory.
 
 
-## Randomness and Probability
+### Randomness and Probability
 Answers to probability questions can be expressed as a decimal fraction (such as 0.28) or a percentage (such as 28%). As usual, rounding off the final answer sensibly is recommended.
-Knowing the properties and rules about probabilities is one thing; being able to solve problems using them is another. The only way to get good at it is to practise enough problems to recognise what’s required. There is a minimum list of problems to at tempt in the corresponding tutorial in the Workbook. If you find them straightfor ward, great. If not, do some more now or later.
-If you enjoy working with probabilities (some of us do!), read De Veaux, Velleman & Bock, (4th edition), Chapter 14 (De Veaux, Velleman & Bock, (5th edition), Chapter 13). None of that material is assessable however!
+Knowing the properties and rules about probabilities is one thing; being able to solve problems using them is another. The only way to get good at it is to practise enough problems to recognise what’s required. There is a minimum list of problems to attempt in the corresponding tutorial in the Workbook. If you find them straightfor ward, great. If not, do some more now or later.
+If you enjoy working with probabilities (some of us do!), read De Veaux, Velleman & Bock, (4th edition), Chapter 14 (De Veaux, Velleman & Bock, (5th edition), Chapter 13). **None of that material is assessable however!**
+
+## Random Variables {-}
+Sounds like a fancy description of something. It’s not. Any variable that takes on numerical values can be called a random variable. Therefore practically all the variables we’ve seen up to now could be called random variables. Even the variables that are categorical, provided a coding is used for them, are random variables. It just happens that when working with probabilities we like to call variables ‘random variables’ whereas when dealing with statistics we like to call them just variables. Nobody is going to worry if you leave out or put in the word ‘random’ though
+when talking about variables in any context. 
+
+Counts and rankings are common examples of discrete random variables. Height, weight, time, and length are common examples of continuous random variables. Notice that we measure and record the values of continuous random variables on a discrete scale because there’s a limit to the precision of measuring instruments. We can think of the exact value as having been  rounded off either because of the imprecision of the measuring device or as dictated by the requirements of the study. Hence, even though we might record, for example, human heights to the nearest centimetre, the variable ‘height’ is nonetheless continuous in that the exact values cannot be all listed, being anywhere in some range of about 50 to 250 cm.
+
+This module deals with discrete (random) variables and talks about probability models for them. We’ve already seen a model for a continuous (random) variable back in Module 3—the Normal model. That was an example of a probability model for a continuous variable because it describes the values a variable can take on and the associated probabilities—remember, they were the areas under the graph. For discrete probability models, because we can list all the values, we usually describe the model using a table with all the values in one row and the corresponding probabilities in another. If you’re thinking this is like the distribution of a variable, you’re exactly right. A probability model is often described as a **probability distribution**.
+
+The thing about a probability model (or distribution) is that it models reality; the probabilities are ‘true’ relative frequencies, not the actual relative frequencies found after a few trials. What you actually get is reality; what you expect to get is theory and that’s what the model describes.
+
+The book talks about probabilities as ‘true’ relative frequencies in the sense of the Law of Large Numbers. It’s worthwhile also to think about the meaning of proportions. A proportion is just a relative frequency. For example, if a coin is tossed 10 times and 4 heads are obtained, the relative frequency or proportion of heads is 4/10 or 0.4. Theprobability or true relative frequency of course is different, being 0.5. This 0.5 could also be referred to as the ‘true’ proportion, and sometimes, depending on the context, that is exactly the terminology we use. The standard model for the gender distribution of human beings, for example, is 50% female and 50% male. This is a discrete probability model or distribution. Depending on the question being asked it can be used to describe the (true) proportion of females in the population as 0.50 or to give 0.50 as the probability that a person chosen at random fromthe population is female.
+
+This last interpretation is certainly important in the context of surveys and experiments where the idea of random selection or random assignment is used. For example, if 20% is the true proportion of the population who are in favour of some government policy, what we are expecting by choosing participants at random for a poll is that each participant has a 20% probability of being in favour of the policy. Similarly for an experiment. If subjects are assigned at random to three treatments say, then each subject has a 1/3 probability of receiving treatment A, and that’s the same for every subject. These are fundamental ideas which underpin the analyses we deal with in much of the rest of the course.
+
+This idea of the expected value of a random variable is like the mean of a variable. When data is used to produce a mean we call the result $\bar{y}$ or $\bar{x}$ (or some variable name with a bar over the top). Expected value, being based on a probability model rather than actual data, is like a theoretical mean. The word ‘expected’ suggests it’s the mean we expect to get from real data if it wasn’t for sampling variation. The notation E(X) is pretty well self-explanatory. We tend not to use it in this course though, preferring to just call the expected value *µ* because it’s a mean, or if we have a few *µ*’s lying around, *µ*~1~ (“mu sub 1”) or *µ*~2~ or “mu sub something”.
+
+The standard deviation of a random variable is likewise the standard deviation we expect to get from real data for the variable if it wasn’t for sampling variation.
+
+Here’s an example using the formulas for *µ* and *σ*, for a discrete random variable, given in this chapter.
+
+<div style="margin-left: 2cm;">
+
+## Example 5.1 {-}
+
+A coin is tossed three times and the number of heads counted.
+
+<p style="margin-left: 2em; text-indent: -1.5em;">
+(a) What are the possible values for this variable?
+
+(b) Describe the distribution of this variable.
+
+(c) *What is the expected number of heads?
+
+(d) *What is the standard deviation of the number of heads?
+
+Solution
+<p style="margin-left: 2em; text-indent: -1.5em;">
+(a) Let X = numberofheads. Then X cantake the values 0, 1, 2 or 3.
+(b) By being systematic, we can list eight outcomes in this sequence of trials:
+</p>
+
+</p>
+
+
+
+</div>
 
 ```{r, fig.width=5, fig.height=5, out.width="60%", fig.cap="Probability distribution for number of heads in 3 tosses", echo=FALSE}
 x <- 0:3
