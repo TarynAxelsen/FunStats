@@ -1067,7 +1067,7 @@ An experiment was carried out in Tasmania, Australia between 1964 and 1971 to as
 [1] (Miller, A.J. et al (1979) 'Analyzing the results of a cloud-seeding experiment in Tasmania', *Communications in Statistics-Theory & Methods* **A8**(10),1017-1047)
 
 ```{r cloud-seeding-boxplot, fig.cap="Side by side boxplots of rainfall data.", echo=FALSE, out.width="80%", fig.align="center"}
-knitr::include_graphics("_book/figures/mod2-q3-boxplot-only.png")
+knitr::include_graphics("figures/mod2-q3-boxplot-only.png")
 ```
 
 ```{=html}
