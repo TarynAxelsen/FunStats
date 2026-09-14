@@ -1,0 +1,451 @@
+# Module 1
+
+<!-- ====== COLOURED BANNER ====== -->
+```{=html}
+<div style="
+  background: linear-gradient(90deg, #e6f0ff, #f7fbff);
+  border-left: 8px solid #2a7ae2;
+  padding: 22px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+">
+  <h2 style="margin-top:0; color:#1a4f8b; font-weight:700;">
+    Module Focus:
+  </h2>
+  <p style="font-size:1.05em; margin-bottom:0;">
+    One line summary
+
+In this module, we look at how graphs can be used and misused, learn to classify variables by data type, summarise and display single variables with the appropriate graph, and use contingency tables to explore the association between two categorical variables.
+  </p>
+</div>
+```
+<!-- ====== END BANNER ====== -->
+
+
+## Use, Abuse, and Misuse of Statistics
+
+Statistics are powerful, but they can be misleading if used poorly or dishonestly.
+
+**Key ideas**
+
+- Results can be **misinterpreted** through poor sampling or misleading summaries.
+- Graphs can strongly influence interpretation depending on:
+  - scale and axis limits
+  - graph type
+  - use of 3D effects or distorted perspectives
+
+**Good data visualisation principles**
+
+- Match the graph type to the **data type**
+- Label axes clearly (variable names and units)
+- Use honest scales (usually starting at zero)
+- Avoid unnecessary decoration (especially 3D graphs)
+- Aim to **tell the truth** and communicate clearly
+
+
+A graph is only as good as the data it displays. No amount of visual design can fix poor or biased data.
+
+
+---
+
+## Variables and Types of Data
+
+Understanding data begins with understanding variables.
+
+**Statistical terminology**
+
+- **Cases**: the individuals or objects being studied
+- **Variables**: characteristics measured on each case
+- **Data**: the observed values of the variables
+
+**Types of data**
+
+| Data type | Description | Examples |
+|---------|------------|----------|
+| Quantitative | Numerical values with meaningful units | Height (cm), pulse rate |
+| Categorical (Categorical) | Categories with no natural order | Gender, faculty |
+| Ordinal | Categories with a natural order | Likert scale responses |
+| Identifier | Unique labels for each case | Student number |
+
+Categorical variables are often **coded numerically** in software, but the numbers themselves have no numerical meaning.
+
+---
+
+## Summarising and Displaying One Variable
+
+The **distribution of a variable** describes what values it takes and how often they occur.
+
+**Numerical summaries**
+
+- Frequency tables for categorical variables
+- Frequency distributions for quantitative variables
+
+**Graphical summaries**
+
+| Data type | Appropriate graphs |
+|---------|-------------------|
+| Categorical | Bar chart, Pie chart |
+| Quantitative | Histogram, Stem-and-leaf plot, Boxplot |
+
+**Bar charts**
+
+- Used for **categorical variables**
+- Bars do **not** touch
+- Order bars logically (alphabetical or by size)
+
+**Pie charts**
+
+- Not recommended as difficult for the reader to fully understand
+- Show **parts of a whole**
+- Must include all categories (total = 100%)
+- Best used sparingly and with few categories
+
+---
+
+## Interactive Activity: Variable Types and Graphs {-}
+
+```{=html}
+<style>
+  .vg-wrap{max-width:900px;margin:0 auto;}
+  .vg-card{border:1px solid #e5e5e5;border-radius:6px;padding:16px;background:#fff;margin:14px 0;}
+  .vg-card h4{margin:.2rem 0 .5rem;font-size:1.05rem;color:#1a4f8b;}
+  .vg-note{font-size:.9rem;color:#666;margin-bottom:.6rem;}
+  .vg-tray{display:flex;flex-wrap:wrap;gap:8px;min-height:46px;padding:10px;border:1px dashed #bbb;border-radius:6px;background:#fafafa;margin-bottom:14px;}
+  .vg-item{padding:8px 12px;border:1px solid #2a7ae2;border-radius:16px;background:#eaf2ff;color:#1a4f8b;font-size:.92rem;cursor:grab;user-select:none;}
+  .vg-item.selected{background:#2a7ae2;color:#fff;box-shadow:0 0 0 2px #1a4f8b;}
+  .vg-item.correct{background:#e3f7e6;border-color:#2e8b45;color:#1e5b2c;}
+  .vg-item.incorrect{background:#fdeaea;border-color:#c0392b;color:#8a2418;}
+  .vg-bins{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px;margin-bottom:10px;}
+  .vg-bin h5{margin:0 0 6px;font-size:.95rem;text-align:center;color:#333;}
+  .vg-drop{min-height:90px;border:2px dashed #9bbbe8;border-radius:6px;background:#f5f9ff;padding:8px;display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start;}
+  .vg-drop.dragover{background:#e3edfc;border-color:#2a7ae2;}
+  .vg-controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;}
+  .vg-btn{padding:6px 10px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer;}
+  .vg-result{margin-top:8px;font-weight:600;}
+</style>
+
+<div class="vg-wrap">
+
+  <div class="vg-card">
+    <h4>Step 1: Classify Each Variable</h4>
+    <p class="vg-note">
+      Drag each variable card into the box describing its data type.
+      On a touch device, tap a variable then tap a box to place it.
+    </p>
+
+    <div id="vg1">
+      <div class="vg-tray">
+        <div class="vg-item" draggable="true" data-id="e1v1" data-answer="Quantitative">Height (cm)</div>
+        <div class="vg-item" draggable="true" data-id="e1v2" data-answer="Categorical">Eye colour</div>
+        <div class="vg-item" draggable="true" data-id="e1v3" data-answer="Ordinal">Course satisfaction (Poor to Excellent)</div>
+        <div class="vg-item" draggable="true" data-id="e1v4" data-answer="Identifier">Student ID number</div>
+        <div class="vg-item" draggable="true" data-id="e1v5" data-answer="Quantitative">Resting pulse rate</div>
+        <div class="vg-item" draggable="true" data-id="e1v6" data-answer="Categorical">Faculty enrolled in</div>
+      </div>
+
+      <div class="vg-bins">
+        <div class="vg-bin"><h5>Quantitative</h5><div class="vg-drop" data-bin="Quantitative"></div></div>
+        <div class="vg-bin"><h5>Categorical</h5><div class="vg-drop" data-bin="Categorical"></div></div>
+        <div class="vg-bin"><h5>Ordinal</h5><div class="vg-drop" data-bin="Ordinal"></div></div>
+        <div class="vg-bin"><h5>Identifier</h5><div class="vg-drop" data-bin="Identifier"></div></div>
+      </div>
+
+      <div class="vg-controls">
+        <button class="vg-btn" data-action="check">Check answers</button>
+        <button class="vg-btn" data-action="show">Show answers</button>
+        <button class="vg-btn" data-action="reset">Reset</button>
+      </div>
+      <div class="vg-result" id="vg1-result"></div>
+    </div>
+  </div>
+
+  <div class="vg-card">
+    <h4>Step 2: Choose the Right Graph</h4>
+    <p class="vg-note">
+      Now drag each variable into the box for the graph type that would best display it.
+    </p>
+
+    <div id="vg2">
+      <div class="vg-tray">
+        <div class="vg-item" draggable="true" data-id="e2v1" data-answer="Quant">Height (cm)</div>
+        <div class="vg-item" draggable="true" data-id="e2v2" data-answer="Cat">Eye colour</div>
+        <div class="vg-item" draggable="true" data-id="e2v3" data-answer="Cat">Course satisfaction (Poor to Excellent)</div>
+        <div class="vg-item" draggable="true" data-id="e2v4" data-answer="None">Student ID number</div>
+        <div class="vg-item" draggable="true" data-id="e2v5" data-answer="Quant">Resting pulse rate</div>
+        <div class="vg-item" draggable="true" data-id="e2v6" data-answer="Cat">Faculty enrolled in</div>
+        <div class="vg-item" draggable="true" data-id="e2v7" data-answer="None">Postcode</div>
+      </div>
+
+      <div class="vg-bins">
+        <div class="vg-bin"><h5>Bar chart / Pie chart<br>(Categorical)</h5><div class="vg-drop" data-bin="Cat"></div></div>
+        <div class="vg-bin"><h5>Histogram / Boxplot<br>(Quantitative)</h5><div class="vg-drop" data-bin="Quant"></div></div>
+        <div class="vg-bin"><h5>Not usually graphed<br>directly (Identifier)</h5><div class="vg-drop" data-bin="None"></div></div>
+      </div>
+
+      <div class="vg-controls">
+        <button class="vg-btn" data-action="check">Check answers</button>
+        <button class="vg-btn" data-action="show">Show answers</button>
+        <button class="vg-btn" data-action="reset">Reset</button>
+      </div>
+      <div class="vg-result" id="vg2-result"></div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function(){
+  function setupDragMatch(containerId, resultId){
+    const root  = document.getElementById(containerId);
+    const tray  = root.querySelector('.vg-tray');
+    const drops = Array.from(root.querySelectorAll('.vg-drop'));
+    const items = Array.from(root.querySelectorAll('.vg-item'));
+    const result = document.getElementById(resultId);
+    let selected = null;
+
+    function clearFeedback(){
+      items.forEach(it => it.classList.remove('correct','incorrect'));
+      result.textContent = '';
+    }
+
+    function placeInBin(item, bin){
+      bin.appendChild(item);
+      item.classList.remove('selected');
+    }
+
+    items.forEach(item => {
+      item.addEventListener('dragstart', e => {
+        e.dataTransfer.setData('text/plain', item.dataset.id);
+      });
+
+      item.addEventListener('click', () => {
+        if (selected === item) {
+          item.classList.remove('selected');
+          selected = null;
+          return;
+        }
+        items.forEach(i => i.classList.remove('selected'));
+        item.classList.add('selected');
+        selected = item;
+      });
+    });
+
+    [tray, ...drops].forEach(target => {
+      target.addEventListener('dragover', e => {
+        e.preventDefault();
+        target.classList.add('dragover');
+      });
+      target.addEventListener('dragleave', () => target.classList.remove('dragover'));
+      target.addEventListener('drop', e => {
+        e.preventDefault();
+        target.classList.remove('dragover');
+        const id = e.dataTransfer.getData('text/plain');
+        const item = root.querySelector(`[data-id="${id}"]`);
+        if (item) placeInBin(item, target);
+        clearFeedback();
+      });
+      target.addEventListener('click', () => {
+        if (selected) {
+          placeInBin(selected, target);
+          selected = null;
+          clearFeedback();
+        }
+      });
+    });
+
+    root.querySelector('[data-action="check"]').addEventListener('click', () => {
+      let correct = 0;
+      items.forEach(item => {
+        item.classList.remove('correct','incorrect');
+        const bin = item.closest('.vg-drop');
+        if (bin && bin.dataset.bin === item.dataset.answer) {
+          item.classList.add('correct');
+          correct++;
+        } else {
+          item.classList.add('incorrect');
+        }
+      });
+      result.textContent = `Score: ${correct} of ${items.length}`;
+    });
+
+    root.querySelector('[data-action="show"]').addEventListener('click', () => {
+      items.forEach(item => {
+        const bin = drops.find(d => d.dataset.bin === item.dataset.answer);
+        if (bin) placeInBin(item, bin);
+        item.classList.remove('correct','incorrect');
+      });
+      result.textContent = 'Answers shown.';
+    });
+
+    root.querySelector('[data-action="reset"]').addEventListener('click', () => {
+      items.forEach(item => {
+        tray.appendChild(item);
+        item.classList.remove('correct','incorrect','selected');
+      });
+      selected = null;
+      result.textContent = '';
+    });
+  }
+
+  setupDragMatch('vg1', 'vg1-result');
+  setupDragMatch('vg2', 'vg2-result');
+})();
+</script>
+```
+
+---
+
+## Contingency Tables (Two Categorical Variables)
+
+When analysing **two categorical variables**, we use a **contingency table** (also called a two-way table or cross-tabulation).
+
+**Types of distributions**
+
+- **Joint distribution**: proportions of all cases in each cell
+- **Marginal distribution**: proportions for one variable only (row or column totals)
+- **Conditional distribution**: proportions within a subgroup
+
+**Assessing association**
+
+Two categorical variables are **associated** if the conditional distributions differ between groups. If the conditional distributions are similar, the variables are considered **independent**.
+
+**Graphical support**
+
+- **Stacked bar charts** are useful for comparing conditional distributions visually.
+
+::: {.callout-important}
+To assess association, always compare **conditional distributions**, not just raw counts.
+:::
+
+---
+
+# Review Questions: Module 1 {-}
+
+```{=html}
+<div style="
+  background: #f0f7ff;
+  border-left: 6px solid #2a7ae2;
+  padding: 18px;
+  margin: 25px 0;
+  border-radius: 6px;
+">
+  <p style="margin:0; font-size:1.05em;">
+    Once you have watched the lecture recordings you should be able to answer the following 
+    <em>Threshold</em> questions (solutions can be found at the end of this Workbook).
+  </p>
+</div>
+```
+
+```{=html}
+<style>
+  .revq { max-width:900px; margin:0 auto; }
+  .revq .muted { color:#666; font-size:.9rem; }
+  .revq-row { display:grid; grid-template-columns: 1fr 120px; gap:10px; align-items:start; margin:.6rem 0; }
+  .revq textarea { width:100%; min-height:3.2rem; padding:6px; box-sizing:border-box; }
+  .revq .chk { display:flex; align-items:center; gap:.5rem; }
+  .revq .btn { padding:6px 10px; border:1px solid #ccc; border-radius:4px; background:#f7f7f7; cursor:pointer; }
+  .revq .btn + .btn { margin-left:.4rem; }
+  .revq-answers { background:#f6fbff; border-left:6px solid #2b8cbe; padding:.9rem 1rem; border-radius:6px; margin-top:.8rem; display:none; }
+  .revq-answers h5 { margin:.2rem 0 .5rem; font-size:1.05rem; }
+  .revq-answers p { margin:.4rem 0; }
+</style>
+
+<div class="revq" id="revq">
+  <p class="muted">
+    Write your answers in the boxes below. Tick the checkbox if you believe your answer is correct.
+    Click <em>Show model answers</em> to compare.
+  </p>
+
+  (i) What is a variable? What is a value of a variable? Give examples.</strong>
+  <div class="revq-row">
+    <textarea id="revq_m1_q1"
+        placeholder="Your answer…"></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (ii) How can we tell if a variable is quantitative, categorical, ordinal, or an identifier?</strong>
+  <div class="revq-row">
+    <textarea id="revq_m1_q2"
+    placeholder="Your answer…"></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (iii) What is a contingency (two‑way) table? When is it used?</strong>
+  <div class="revq-row">
+    <textarea id="revq_m1_q3"
+    placeholder="Your answer…"></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (iv) What is meant by marginal, joint, and conditional distributions?</strong>
+  <div class="revq-row">
+    <textarea id="revq_m1_q4"
+    placeholder="Your answer…"></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  <div style="margin-top:.6rem;">
+    <button class="btn" id="revq-show">Show model answers</button>
+    <button class="btn" id="revq-hide" style="display:none;">Hide model answers</button>
+    <button class="btn" id="revq-reset">Reset</button>
+  </div>
+
+  <div class="revq-answers" id="revq-model">
+    <h5>Model answers</h5>
+
+    <p><strong>(i)</strong> A <em>variable</em> is any characteristic of a case (an individual or object being described).
+    A <em>value</em> of a variable is the observed measurement or category for that case.
+    For example, for the variable <em>height</em>, values are measurements in centimetres or metres.
+    For <em>country of origin</em>, values may be Australia or Not Australia.</p>
+
+    <p><strong>(ii)</strong>
+    Quantitative variables takes on numerical values for which mathematical operations (like +, ÷) make sense, has a unit of measurement
+    Categorical variables are defined by categories.
+    Ordinal variables are categorical with a natural/set order.
+    Identifiers uniquely label each case.</p>
+
+    <p><strong>(iii)</strong>
+    A contingency (two-way) table is a visual representation of data which shows the distribution of individuals along two categorical variables.</p>
+
+    <p><strong>(iv)</strong>
+    A marginal distribution describes proportion of individuals in the table located in one particular row or column.
+    A joint distribution describes the proportion of individuals in the table located in one particular cell.
+    A conditional distribution describes the proportion of individuals in a row/column located in one particular cell.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const show = document.getElementById("revq-show");
+  const hide = document.getElementById("revq-hide");
+  const model = document.getElementById("revq-model");
+  const reset = document.getElementById("revq-reset");
+
+  show.onclick = () => { model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; };
+  hide.onclick = () => { model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; };
+  reset.onclick = () => {
+    document.querySelectorAll("#revq textarea").forEach(t => t.value="");
+    document.querySelectorAll("#revq input[type=checkbox]").forEach(c => c.checked=false);
+    model.style.display="none"; hide.style.display="none"; show.style.display="inline-block";
+  };
+})();
+</script>
+```
+
+<!--
+NOTE FOR FUTURE ME:
+This module uses child Rmd files under section headings (##) so that:
+- Module 1, Tutorial are in different files but render together
+- Summary, Review, and Tutorial are numbered 1.1, 1.2, 1.3
+- bs4_book splits these sections into separate HTML pages (via split_by: section)
+- PDF output still renders cleanly with correct numbering
+
+DO NOT add this file's children to _bookdown.yml
+DO NOT use # headings in the child files
+-->
+
+
+
+```{r, child="01-Tut1 - v3.Rmd"}
+```
+

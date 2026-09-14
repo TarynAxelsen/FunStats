@@ -1,130 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Tutorial Questions: Module 1 | Fundamental Statistics</title>
-<meta name="author" content="Taryn Axelsen">
-<meta name="description" content="Note: * Indicates Expanded Competencies  1.5 Question 1: Investigating the association between two categorical variables Is there an association between the amount of coffee consumed and the...">
-<meta name="generator" content="bookdown 0.46 with bs4_book()">
-<meta property="og:title" content="Tutorial Questions: Module 1 | Fundamental Statistics">
-<meta property="og:type" content="book">
-<meta property="og:description" content="Note: * Indicates Expanded Competencies  1.5 Question 1: Investigating the association between two categorical variables Is there an association between the amount of coffee consumed and the...">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Tutorial Questions: Module 1 | Fundamental Statistics">
-<meta name="twitter:description" content="Note: * Indicates Expanded Competencies  1.5 Question 1: Investigating the association between two categorical variables Is there an association between the amount of coffee consumed and the...">
-<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
-<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.10.0/transition.js"></script><script src="libs/bs3compat-0.10.0/tabs.js"></script><script src="libs/bs3compat-0.10.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
-<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
-    
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-  </style>
-<style type="text/css">
-    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-    div.csl-bib-body { }
-    div.csl-entry {
-      clear: both;
-        }
-    .hanging div.csl-entry {
-      margin-left:2em;
-      text-indent:-2em;
-    }
-    div.csl-left-margin {
-      min-width:2em;
-      float:left;
-    }
-    div.csl-right-inline {
-      margin-left:2em;
-      padding-left:1em;
-    }
-    div.csl-indent {
-      margin-left: 2em;
-    }
-  </style>
-<link rel="stylesheet" href="style.css">
-</head>
-<body data-spy="scroll" data-target="#toc">
+# Tutorial Questions: Module 1 {-}
 
-<div class="container-fluid">
-<div class="row">
-  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+Note: * Indicates **Expanded** Competencies
 
-    <div class="d-flex align-items-start justify-content-between">
-      <h1>
-        <a href="index.html" title="">Fundamental Statistics</a>
-      </h1>
-      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
-    </div>
 
-    <div id="main-nav" class="collapse-lg">
-      <form role="search">
-        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-</form>
 
-      <nav aria-label="Table of contents"><h2>Table of contents</h2>
-        <ul class="book-toc list-unstyled">
-<li><a class="" href="index.html">Preface</a></li>
-<li><a class="" href="module-1.html"><span class="header-section-number">1</span> Module 1</a></li>
-<li><a class="" href="review-questions-module-1.html">Review Questions: Module 1</a></li>
-<li><a class="active" href="tutorial-questions-module-1.html">Tutorial Questions: Module 1</a></li>
-<li><a class="" href="module-1-checklist.html">Module 1 Checklist</a></li>
-<li><a class="" href="solutions.html"><span class="header-section-number">2</span> Solutions</a></li>
-<li><a class="" href="references.html">References</a></li>
-</ul>
+## Question 1: Investigating the association between two categorical variables 
 
-        <div class="book-extra">
-          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
-        </div>
-      </nav>
-</div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tutorial-questions-module-1" class="section level1 unnumbered">
-<h1>Tutorial Questions: Module 1<a class="anchor" aria-label="anchor" href="#tutorial-questions-module-1"><i class="fas fa-link"></i></a>
-</h1>
-<p>Note: * Indicates <strong>Expanded</strong> Competencies</p>
-<div id="question-1-investigating-the-association-between-two-categorical-variables" class="section level2" number="1.5">
-<h2>
-<span class="header-section-number">1.5</span> Question 1: Investigating the association between two categorical variables<a class="anchor" aria-label="anchor" href="#question-1-investigating-the-association-between-two-categorical-variables"><i class="fas fa-link"></i></a>
-</h2>
-<p><em>Is there an association between the amount of coffee consumed and the number of hours of sleep students manage to have per night?</em></p>
-<p>The following data was collected and organized into the Contingency Table (two-way table) below to see if there is an association between amount of coffee consumed
-(stated as <em>3 or less coffees per day (Light)</em> and <em>more than 3 coffees per day (Heavy)</em>) and the number of hours slept per night (stated as <em>7 or less hours per night</em> and <em>more than 7 hours per night</em>) for 151 statistics students.</p>
-<div class="inline-table"><table style="width:100%;" class="table table-sm">
-<caption>Coffee consumption and hours of sleep</caption>
-<colgroup>
-<col width="28%">
-<col width="30%">
-<col width="33%">
-<col width="7%">
-</colgroup>
-<thead><tr class="header">
-<th></th>
-<th>7 hours or less per night</th>
-<th>More than 7 hours per night</th>
-<th>Total</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td>3 or less coffees per day (Light)</td>
-<td>57</td>
-<td>19</td>
-<td>76</td>
-</tr>
-<tr class="even">
-<td>More than 3 coffees per day (Heavy)</td>
-<td>36</td>
-<td>39</td>
-<td>75</td>
-</tr>
-<tr class="odd">
-<td>Total</td>
-<td>93</td>
-<td>58</td>
-<td>151</td>
-</tr>
-</tbody>
-</table></div>
+*Is there an association between the amount of coffee consumed and the number of hours of sleep students manage to have per night?*
+
+The following data was collected and organized into the Contingency Table (two-way table) below to see if there is an association between amount of coffee consumed
+(stated as *3 or less coffees per day (Light)* and *more than 3 coffees per day (Heavy)*) and the number of hours slept per night (stated as *7 or less hours per night* and *more than 7 hours per night*) for 151 statistics students.
+
+Table: Coffee consumption and hours of sleep
+
+|                          | 7 hours or less per night | More than 7 hours per night | Total |
+|--------------------------|---------------------------|------------------------------|-------|
+| 3 or less coffees per day (Light) | 57 | 19 | 76 |
+| More than 3 coffees per day (Heavy) | 36 | 39 | 75 |
+| Total                    | 93 | 58 | 151 |
+
+```{=html}
 <style>
   .pred-box{max-width:750px;border:1px solid #e5e5e5;border-radius:8px;padding:18px;margin:18px 0;background:linear-gradient(135deg,#fff8e6,#fff);}
   .pred-box p{margin:.3rem 0;}
@@ -135,6 +30,7 @@
   .pred-locked{margin-top:.6rem;font-size:.95rem;}
   .pred-btn-small{padding:4px 10px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer;font-size:.85rem;margin-top:.3rem;}
 </style>
+
 <div class="pred-box" id="pred-box">
   <p>☕ 😴 Before you crunch any numbers, go with your gut.</p>
   <p class="pred-q">Do you think students who drink <em>more</em> coffee tend to sleep MORE or LESS than light coffee drinkers?</p>
@@ -148,7 +44,8 @@
   <div class="pred-locked" id="pred-locked" style="display:none;">
     🔒 Prediction locked in: <strong id="pred-locked-text"></strong>.
     Work through the questions below, then come back to Q1(g) to see how you did.
-    <br><button class="pred-btn-small" id="pred-change">Change my guess</button>
+    <br>
+    <button class="pred-btn-small" id="pred-change">Change my guess</button>
   </div>
 </div>
 
@@ -186,25 +83,28 @@
   const saved = localStorage.getItem(KEY);
   if (saved) lockIn(saved);
 })();
-</script><div id="q1a" class="section level3 unnumbered">
-<h3>Q1(a)<a class="anchor" aria-label="anchor" href="#q1a"><i class="fas fa-link"></i></a>
-</h3>
-<p>From the data in the study, how many students:</p>
+</script>
+```
+
+### Q1(a){-}
+From the data in the study, how many students:
+
+```{=html}
 <div class="qa-box">
   <div class="qa-row">
     <label>(i) slept 7 or fewer hours:</label>
-    <input type="number" class="qa-in" id="qa1" data-answer="93">
-</div>
+    <input type="number" class="qa-in" id="qa1" data-answer="93" />
+  </div>
 
   <div class="qa-row">
     <label>(ii) are Light coffee drinkers:</label>
-    <input type="number" class="qa-in" id="qa2" data-answer="76">
-</div>
+    <input type="number" class="qa-in" id="qa2" data-answer="76" />
+  </div>
 
   <div class="qa-row">
     <label>(iii) are Heavy coffee drinkers AND 7 or fewer hours per night:</label>
-    <input type="number" class="qa-in" id="qa3" data-answer="36">
-</div>
+    <input type="number" class="qa-in" id="qa3" data-answer="36" />
+  </div>
 
   <button class="qa-btn" id="qa-check">Check answers</button>
   <button class="qa-btn" id="qa-show">Show answers</button>
@@ -259,62 +159,98 @@
   document.getElementById("qa-reset").onclick = reset;
 })();
 </script>
-</div>
-<div id="q1b" class="section level3 unnumbered">
-<h3>Q1(b)<a class="anchor" aria-label="anchor" href="#q1b"><i class="fas fa-link"></i></a>
-</h3>
-<p>From the data in the study (for each state if it is a joint, marginal or conditional
-percentage (rounded to 1 decimal place) as well as the answer):</p>
+```
+
+### Q1(b){-}
+From the data in the study (for each state if it is a joint, marginal or conditional
+percentage (rounded to 1 decimal place) as well as the answer):
+
+```{=html}
 <div class="qb2-box">
 
   <div class="qb2-row">
     <label>(i) Percentage of students who slept 7 or fewer hours:</label>
     <div class="qb2-inline">
-      <select class="qb2-type" id="qb2_type_1" data-answer="Marginal"><option value="">-- Select --</option>
-<option>Marginal</option>
-<option>Joint</option>
-<option>Conditional</option></select><input type="number" class="qb2-in" id="qb2_val_1" data-answer="61.6" placeholder="%">
-</div>
+      <select class="qb2-type" id="qb2_type_1" data-answer="Marginal">
+        <option value="">-- Select --</option>
+        <option>Marginal</option>
+        <option>Joint</option>
+        <option>Conditional</option>
+      </select>
+      <input type="number"
+             class="qb2-in"
+             id="qb2_val_1"
+             data-answer="61.6"
+             placeholder="%" />
+    </div>
   </div>
 
   <div class="qb2-row">
     <label>(ii) Percentage of students who are light coffee drinkers:</label>
     <div class="qb2-inline">
-      <select class="qb2-type" id="qb2_type_2" data-answer="Marginal"><option value="">-- Select --</option>
-<option>Marginal</option>
-<option>Joint</option>
-<option>Conditional</option></select><input type="number" class="qb2-in" id="qb2_val_2" data-answer="50.3" placeholder="%">
-</div>
+      <select class="qb2-type" id="qb2_type_2" data-answer="Marginal">
+        <option value="">-- Select --</option>
+        <option>Marginal</option>
+        <option>Joint</option>
+        <option>Conditional</option>
+      </select>
+      <input type="number"
+             class="qb2-in"
+             id="qb2_val_2"
+             data-answer="50.3"
+             placeholder="%" />
+    </div>
   </div>
 
   <div class="qb2-row">
     <label>(iii) Percentage of heavy coffee drinkers AND sleep 7 or less hours:</label>
     <div class="qb2-inline">
-      <select class="qb2-type" id="qb2_type_3" data-answer="Joint"><option value="">-- Select --</option>
-<option>Marginal</option>
-<option>Joint</option>
-<option>Conditional</option></select><input type="number" class="qb2-in" id="qb2_val_3" data-answer="23.8" placeholder="%">
-</div>
+      <select class="qb2-type" id="qb2_type_3" data-answer="Joint">
+        <option value="">-- Select --</option>
+        <option>Marginal</option>
+        <option>Joint</option>
+        <option>Conditional</option>
+      </select>
+      <input type="number"
+             class="qb2-in"
+             id="qb2_val_3"
+             data-answer="23.8"
+             placeholder="%" />
+    </div>
   </div>
 
   <div class="qb2-row">
     <label>(iv) Percentage of light coffee drinkers who also sleep 7 or less hours:</label>
     <div class="qb2-inline">
-      <select class="qb2-type" id="qb2_type_4" data-answer="Conditional"><option value="">-- Select --</option>
-<option>Marginal</option>
-<option>Joint</option>
-<option>Conditional</option></select><input type="number" class="qb2-in" id="qb2_val_4" data-answer="75.0" placeholder="%">
-</div>
+      <select class="qb2-type" id="qb2_type_4" data-answer="Conditional">
+        <option value="">-- Select --</option>
+        <option>Marginal</option>
+        <option>Joint</option>
+        <option>Conditional</option>
+      </select>
+      <input type="number"
+             class="qb2-in"
+             id="qb2_val_4"
+             data-answer="75.0"
+             placeholder="%" />
+    </div>
   </div>
 
   <div class="qb2-row">
     <label>(v) Percentage who sleep 7 or less hours are light coffee drinkers:</label>
     <div class="qb2-inline">
-      <select class="qb2-type" id="qb2_type_5" data-answer="Conditional"><option value="">-- Select --</option>
-<option>Marginal</option>
-<option>Joint</option>
-<option>Conditional</option></select><input type="number" class="qb2-in" id="qb2_val_5" data-answer="61.3" placeholder="%">
-</div>
+      <select class="qb2-type" id="qb2_type_5" data-answer="Conditional">
+        <option value="">-- Select --</option>
+        <option>Marginal</option>
+        <option>Joint</option>
+        <option>Conditional</option>
+      </select>
+      <input type="number"
+             class="qb2-in"
+             id="qb2_val_5"
+             data-answer="61.3"
+             placeholder="%" />
+    </div>
   </div>
 
   <button class="qb2-btn" id="qb2-check">Check answers</button>
@@ -392,42 +328,48 @@ percentage (rounded to 1 decimal place) as well as the answer):</p>
   document.getElementById("qb2-reset").onclick = reset;
 })();
 </script>
-</div>
-<div id="q1c-joint-distribution" class="section level3 unnumbered">
-<h3>Q1(c): Joint Distribution<a class="anchor" aria-label="anchor" href="#q1c-joint-distribution"><i class="fas fa-link"></i></a>
-</h3>
-<p>In a two-way table, display the <em>joint</em> distribution of level of coffee consumed
-and level of sleep in terms of percentages (round to 1 or 2 decimal place).</p>
+```
+
+### Q1(c): Joint Distribution {-}
+In a two-way table, display the *joint* distribution of level of coffee consumed
+and level of sleep in terms of percentages (round to 1 or 2 decimal place).
+
+```{=html}
 <div class="pt-box">
   <h3>Fill in the percentage table (percent of all 151 students)</h3>
 
-<div class="inline-table"><table class="pt">
-<tr>
-<th>Coffee / Sleep</th>
+<table class="pt">
+  <tr>
+    <th>Coffee / Sleep</th>
     <th>7 hours or less</th>
     <th>More than 7 hours</th>
     <th>Total</th>
   </tr>
-<tr>
-<th>Light drinkers</th>
-    <td><input class="pt-in pt-joint" id="pt_1_1" data-answer="37.75"></td>
-    <td><input class="pt-in pt-joint" id="pt_1_2" data-answer="12.25"></td>
+
+  <tr>
+    <th>Light drinkers</th>
+    <td><input class="pt-in pt-joint" id="pt_1_1" data-answer="37.75" /></td>
+    <td><input class="pt-in pt-joint" id="pt_1_2" data-answer="12.25" /></td>
     <td></td>  <!-- blank total -->
   </tr>
-<tr>
-<th>Heavy drinkers</th>
-    <td><input class="pt-in pt-joint" id="pt_2_1" data-answer="23.84"></td>
-    <td><input class="pt-in pt-joint" id="pt_2_2" data-answer="25.83"></td>
+
+  <tr>
+    <th>Heavy drinkers</th>
+    <td><input class="pt-in pt-joint" id="pt_2_1" data-answer="23.84" /></td>
+    <td><input class="pt-in pt-joint" id="pt_2_2" data-answer="25.83" /></td>
     <td></td>  <!-- blank total -->
   </tr>
-<tr>
-<th>Total</th>
+
+  <tr>
+    <th>Total</th>
     <td></td>  <!-- blank total -->
     <td></td>  <!-- blank total -->
     <td></td>  <!-- blank grand total -->
   </tr>
-</table></div>
-<!-- Action buttons --><button class="pt-btn" id="pt-check">Check answers</button>
+</table>
+
+  <!-- Action buttons -->
+  <button class="pt-btn" id="pt-check">Check answers</button>
   <button class="pt-btn" id="pt-show">Show answers</button>
   <button class="pt-btn" id="pt-reset">Reset</button>
   <button class="pt-btn" id="pt-hint-show">Show hint</button>
@@ -437,7 +379,8 @@ and level of sleep in terms of percentages (round to 1 or 2 decimal place).</p>
   <div class="hint-box" id="pt-hint" style="display:none; margin-top:10px;">
     <strong>Hint:</strong>
     A <em>joint percentage</em> is calculated as
-    <br><strong>cell total ÷ grand total × 100</strong>.
+    <br>
+    <strong>cell total ÷ grand total × 100</strong>.
     <br>
     Answers correct to <em>1 or 2 decimal places</em> are acceptable.
   </div>
@@ -517,30 +460,35 @@ and level of sleep in terms of percentages (round to 1 or 2 decimal place).</p>
 
 })();
 </script>
-</div>
-<div id="q1d" class="section level3 unnumbered">
-<h3>Q1(d)<a class="anchor" aria-label="anchor" href="#q1d"><i class="fas fa-link"></i></a>
-</h3>
-<p>Using the joint distribution in (c), write 4 sentences describing what each of
-these 4 percentages mean (i.e. one of the sentences could be something like
+```
+
+### Q1(d){-}
+Using the joint distribution in (c), write 4 sentences describing what each of
+these 4 percentages mean (i.e. one of the sentences could be something like
 ”90% of statistics students are light coffee drinkers and have 7 or less hours of
-sleep per night”).</p>
+sleep per night”).
+
+```{=html}
 <div class="q2d-self" id="q2d-self">
   <p class="muted">
     Tick the checkbox if you believe your sentence is correct.
   </p>
 
   <div class="q2d-row">
-    <textarea id="s1" placeholder="Sentence 1 …"></textarea><label class="chkbox"><input type="checkbox" id="c1"> Marked correct</label>
+    <textarea id="s1" placeholder="Sentence 1 …"></textarea>
+    <label class="chkbox"><input type="checkbox" id="c1"> Marked correct</label>
   </div>
   <div class="q2d-row">
-    <textarea id="s2" placeholder="Sentence 2 …"></textarea><label class="chkbox"><input type="checkbox" id="c2"> Marked correct</label>
+    <textarea id="s2" placeholder="Sentence 2 …"></textarea>
+    <label class="chkbox"><input type="checkbox" id="c2"> Marked correct</label>
   </div>
   <div class="q2d-row">
-    <textarea id="s3" placeholder="Sentence 3 …"></textarea><label class="chkbox"><input type="checkbox" id="c3"> Marked correct</label>
+    <textarea id="s3" placeholder="Sentence 3 …"></textarea>
+    <label class="chkbox"><input type="checkbox" id="c3"> Marked correct</label>
   </div>
   <div class="q2d-row">
-    <textarea id="s4" placeholder="Sentence 4 …"></textarea><label class="chkbox"><input type="checkbox" id="c4"> Marked correct</label>
+    <textarea id="s4" placeholder="Sentence 4 …"></textarea>
+    <label class="chkbox"><input type="checkbox" id="c4"> Marked correct</label>
   </div>
 
   <!-- Buttons (standardised) -->
@@ -559,19 +507,14 @@ sleep per night”).</p>
 
   <!-- Model answers -->
   <div class="model-answers" id="model-block" aria-live="polite">
-    <h5>Model answers<a class="anchor" aria-label="anchor" href="#model-block"><i class="fas fa-link"></i></a>
-</h5>
+    <h5>Model answers</h5>
     <ol>
-<li>
-<strong>37.75%</strong> of statistics students are <strong>light</strong> coffee drinkers and sleep <strong>seven hours or less</strong>.</li>
-      <li>
-<strong>12.25%</strong> of statistics students are <strong>light</strong> coffee drinkers and sleep <strong>more than seven hours</strong>.</li>
-      <li>
-<strong>23.84%</strong> of statistics students are <strong>heavy</strong> coffee drinkers and sleep <strong>seven hours or less</strong>.</li>
-      <li>
-<strong>25.83%</strong> of statistics students are <strong>heavy</strong> coffee drinkers and sleep <strong>more than seven hours</strong>.</li>
+      <li><strong>37.75%</strong> of statistics students are <strong>light</strong> coffee drinkers and sleep <strong>seven hours or less</strong>.</li>
+      <li><strong>12.25%</strong> of statistics students are <strong>light</strong> coffee drinkers and sleep <strong>more than seven hours</strong>.</li>
+      <li><strong>23.84%</strong> of statistics students are <strong>heavy</strong> coffee drinkers and sleep <strong>seven hours or less</strong>.</li>
+      <li><strong>25.83%</strong> of statistics students are <strong>heavy</strong> coffee drinkers and sleep <strong>more than seven hours</strong>.</li>
     </ol>
-</div>
+  </div>
 
   <span class="muted" id="self-progress" style="float:right;"></span>
 </div>
@@ -643,16 +586,17 @@ sleep per night”).</p>
   };
 })();
 </script>
-</div>
-<div id="q1e-marginal-distribution" class="section level3 unnumbered">
-<h3>Q1(e): Marginal Distribution<a class="anchor" aria-label="anchor" href="#q1e-marginal-distribution"><i class="fas fa-link"></i></a>
-</h3>
-<p>Calculate, in percentages, and display, in a two-way table the following marginal
-distributions:</p>
-<ol style="list-style-type: lower-roman">
-<li><p>Marginal Distribution of Level of Sleep</p></li>
-<li><p>Marginal Distribution of Level of Coffee Consumed</p></li>
-</ol>
+```
+
+### Q1(e): Marginal Distribution {-}
+Calculate, in percentages, and display, in a two-way table the following marginal
+distributions:
+
+i. Marginal Distribution of Level of Sleep
+
+ii. Marginal Distribution of Level of Coffee Consumed
+
+```{=html}
 <style>
   .marg-box { max-width:750px; margin:0; padding:0; }
   .marg-box h3 { margin-bottom:.35rem; }
@@ -678,50 +622,56 @@ distributions:</p>
   .muted { color:#666; font-size:.9rem; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
 </style>
+
 <div class="marg-box" id="marg-box">
   <div class="marg-note">
     Marginal Distribution means we divide the row and column totals by the total number of cases in the whole study (<span class="mono">n = 151</span>).
   </div>
 
   <!-- Main marginal table (students enter the marginal % only) -->
-  <div class="inline-table"><table class="marg" aria-label="Marginal distributions for Sleep and Coffee">
-<tr>
-<th></th>
+  <table class="marg" aria-label="Marginal distributions for Sleep and Coffee">
+    <tr>
+      <th></th>
       <th colspan="2">Level of Sleep</th>
       <th>Total</th>
     </tr>
-<tr>
-<th></th>
+    <tr>
+      <th></th>
       <th>7 or less hours</th>
       <th>More than 7 hours</th>
       <th></th>
     </tr>
-<tr>
-<th>Level of Coffee Consumed</th>
+    <tr>
+      <th>Level of Coffee Consumed</th>
       <td></td>
       <td></td>
       <td></td>
     </tr>
-<!-- Coffee totals (row marginals) --><tr>
-<th>3 or less per day (Light)</th>
+
+    <!-- Coffee totals (row marginals) -->
+    <tr>
+      <th>3 or less per day (Light)</th>
       <td></td>
       <td></td>
-      <td><input class="marg-in" data-answer="50.33" placeholder="%"></td>
+      <td><input class="marg-in" data-answer="50.33" placeholder="%" /></td>
     </tr>
-<tr>
-<th>More than 3 per day (Heavy)</th>
+    <tr>
+      <th>More than 3 per day (Heavy)</th>
       <td></td>
       <td></td>
-      <td><input class="marg-in" data-answer="49.67" placeholder="%"></td>
+      <td><input class="marg-in" data-answer="49.67" placeholder="%" /></td>
     </tr>
-<!-- Sleep totals (column marginals) and grand total --><tr>
-<th>Total</th>
-      <td><input class="marg-in" data-answer="61.59" placeholder="%"></td>
-      <td><input class="marg-in" data-answer="38.41" placeholder="%"></td>
-      <td><input class="marg-in" data-answer="100" placeholder="%"></td>
+
+    <!-- Sleep totals (column marginals) and grand total -->
+    <tr>
+      <th>Total</th>
+      <td><input class="marg-in" data-answer="61.59" placeholder="%" /></td>
+      <td><input class="marg-in" data-answer="38.41" placeholder="%" /></td>
+      <td><input class="marg-in" data-answer="100"   placeholder="%" /></td>
     </tr>
-</table></div>
-<button class="marg-btn" id="marg-check">Check answers</button>
+  </table>
+
+  <button class="marg-btn" id="marg-check">Check answers</button>
   <button class="marg-btn" id="marg-show">Show answers</button>
   <button class="marg-btn" id="marg-reset">Reset</button>
   <button class="marg-btn" id="marg-hint">Hint</button>
@@ -743,16 +693,18 @@ distributions:</p>
     <div style="margin-top:.5rem;">
       <em>(i) Marginal Distribution of Level of Sleep</em>
       <label for="sleep-leq7">7 or less hours</label>
-      <input id="sleep-leq7" class="ftt-in" data-answer="61.59" placeholder="%"><label for="sleep-gt7">More than 7 hours</label>
+      <input id="sleep-leq7" class="ftt-in" data-answer="61.59" placeholder="%">
+      <label for="sleep-gt7">More than 7 hours</label>
       <input id="sleep-gt7" class="ftt-in" data-answer="38.41" placeholder="%">
-</div>
+    </div>
 
     <div style="margin-top:.5rem;">
       <em>(ii) Marginal Distribution of Level of Coffee Consumed</em>
       <label for="coffee-light">Light</label>
-      <input id="coffee-light" class="ftt-in" data-answer="50.33" placeholder="%"><label for="coffee-heavy">Heavy</label>
+      <input id="coffee-light" class="ftt-in" data-answer="50.33" placeholder="%">
+      <label for="coffee-heavy">Heavy</label>
       <input id="coffee-heavy" class="ftt-in" data-answer="49.67" placeholder="%">
-</div>
+    </div>
 
     <div style="margin-top:.6rem;">
       <button class="marg-btn" id="ftt-check">Check answers</button>
@@ -857,23 +809,28 @@ document.getElementById("marg-reset").addEventListener("click", () => {
   });
 })();
 </script>
-</div>
-<div id="q1f-conditional-distribution" class="section level3 unnumbered">
-<h3>Q1(f): Conditional Distribution<a class="anchor" aria-label="anchor" href="#q1f-conditional-distribution"><i class="fas fa-link"></i></a>
-</h3>
-<p>Using percentages,</p>
-<ol style="list-style-type: lower-roman">
-<li><p>Calculate the distributions of level of coffee consumed conditional on level
-of sleep (i.e. calculate the distribution of level of coffee consumed for
+```
+
+
+
+
+### Q1(f): Conditional Distribution {-}
+Using percentages,
+
+i. Calculate the distributions of level of coffee consumed conditional on level
+of sleep (i.e. calculate the distribution of level of coffee consumed for
 those who sleep 7 or less hours and then the distribution of level of coffee
-consumed for those who sleep more than 7 hours).</p></li>
-<li><p>Calculate the distributions of level of sleep conditional on level of coffee
-consumed.</p></li>
-<li><p>Sketch a suitable graph to display the association between the two variables,
+consumed for those who sleep more than 7 hours).
+
+ii. Calculate the distributions of level of sleep conditional on level of coffee
+consumed.
+
+iii. Sketch a suitable graph to display the association between the two variables,
 using the information from (i) or (ii) (there are two ways of doing
 this, either using the information from your answer to f(i) or the information
-from your answer to f(ii) ).</p></li>
-</ol>
+from your answer to f(ii) ).
+
+```{=html}
 <style>
   .marg-box { max-width:750px; margin:0; padding:0; }
   .marg-note { font-size:.9rem; color:#555; margin:.25rem 0 .75rem; }
@@ -899,6 +856,7 @@ from your answer to f(ii) ).</p></li>
   .muted { color:#666; font-size:.9rem; }
   .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
 </style>
+
 <div class="marg-box" id="cgs-box">
   <p class="h5">(i) Coffee consumed <em>given</em> level of sleep (percentages)</p>
 
@@ -907,38 +865,42 @@ from your answer to f(ii) ).</p></li>
     Each column (sleep group) totals <strong>100%</strong>.
   </div>
 
-  <div class="inline-table"><table class="marg" aria-label="Coffee given Sleep">
-<tr>
-<th></th>
+  <table class="marg" aria-label="Coffee given Sleep">
+    <tr>
+      <th></th>
       <th colspan="2">Level of Sleep</th>
     </tr>
-<tr>
-<th></th>
+    <tr>
+      <th></th>
       <th>7 or less hours</th>
       <th>More than 7 hours</th>
     </tr>
-<tr>
-<th>Level of Coffee Consumed</th>
-      <td></td>
-<td></td>
+    <tr>
+      <th>Level of Coffee Consumed</th>
+      <td></td><td></td>
     </tr>
-<tr>
-<th>Light</th>
-      <td><input class="cgs-in" id="cgs_1" data-answer="61.29" placeholder="%"></td>
-      <td><input class="cgs-in" id="cgs_2" data-answer="32.76" placeholder="%"></td>
+
+    <tr>
+      <th>Light</th>
+      <td><input class="cgs-in" id="cgs_1" data-answer="61.29" placeholder="%" /></td>
+      <td><input class="cgs-in" id="cgs_2" data-answer="32.76" placeholder="%" /></td>
     </tr>
-<tr>
-<th>Heavy</th>
-      <td><input class="cgs-in" id="cgs_3" data-answer="38.71" placeholder="%"></td>
-      <td><input class="cgs-in" id="cgs_4" data-answer="67.24" placeholder="%"></td>
+
+    <tr>
+      <th>Heavy</th>
+      <td><input class="cgs-in" id="cgs_3" data-answer="38.71" placeholder="%" /></td>
+      <td><input class="cgs-in" id="cgs_4" data-answer="67.24" placeholder="%" /></td>
     </tr>
-<tr>
-<th>Total</th>
+
+    <tr>
+      <th>Total</th>
       <td><strong>100%</strong></td>
       <td><strong>100%</strong></td>
     </tr>
-</table></div>
-<!-- Buttons --><button class="marg-btn" id="cgs-check">Check answers</button>
+  </table>
+
+  <!-- Buttons -->
+  <button class="marg-btn" id="cgs-check">Check answers</button>
   <button class="marg-btn" id="cgs-show">Show answers</button>
   <button class="marg-btn" id="cgs-reset">Reset</button>
   <button class="marg-btn" id="cgs-hint-show">Show hint</button>
@@ -1018,7 +980,11 @@ from your answer to f(ii) ).</p></li>
     hintShow.style.display = "inline-block";
   };
 })();
-</script><style>
+</script>
+```
+
+```{=html}
+<style>
   .marg-box { max-width:750px; margin:0; padding:0; }
   .marg-note { font-size:.9rem; color:#555; margin:.25rem 0 .75rem; }
   table.marg { width:100%; border-collapse:collapse; margin-top:6px; }
@@ -1045,6 +1011,7 @@ from your answer to f(ii) ).</p></li>
 
   .muted { color:#666; font-size:.9rem; }
 </style>
+
 <div class="marg-box" id="sgc-box">
   <p class="h5">(ii) Level of sleep <em>given</em> coffee consumed (percentages)</p>
 
@@ -1053,38 +1020,40 @@ from your answer to f(ii) ).</p></li>
     Each row (coffee group) totals <strong>100%</strong>.
   </div>
 
-  <div class="inline-table"><table class="marg" aria-label="Sleep given Coffee">
-<tr>
-<th></th>
+  <table class="marg" aria-label="Sleep given Coffee">
+    <tr>
+      <th></th>
       <th colspan="2">Level of Sleep</th>
       <th>Total</th>
     </tr>
-<tr>
-<th></th>
+    <tr>
+      <th></th>
       <th>7 or less hours</th>
       <th>More than 7 hours</th>
       <th></th>
     </tr>
-<tr>
-<th>Level of Coffee Consumed</th>
-      <td></td>
-<td></td>
-<td></td>
+    <tr>
+      <th>Level of Coffee Consumed</th>
+      <td></td><td></td><td></td>
     </tr>
-<tr>
-<th>Light</th>
-      <td><input class="sgc-in" id="sgc_1" data-answer="75.0" placeholder="%"></td>
-      <td><input class="sgc-in" id="sgc_2" data-answer="25.0" placeholder="%"></td>
+
+    <tr>
+      <th>Light</th>
+      <td><input class="sgc-in" id="sgc_1" data-answer="75.0" placeholder="%" /></td>
+      <td><input class="sgc-in" id="sgc_2" data-answer="25.0" placeholder="%" /></td>
       <td><strong>100%</strong></td>
     </tr>
-<tr>
-<th>Heavy</th>
-      <td><input class="sgc-in" id="sgc_3" data-answer="48.0" placeholder="%"></td>
-      <td><input class="sgc-in" id="sgc_4" data-answer="52.0" placeholder="%"></td>
+
+    <tr>
+      <th>Heavy</th>
+      <td><input class="sgc-in" id="sgc_3" data-answer="48.0" placeholder="%" /></td>
+      <td><input class="sgc-in" id="sgc_4" data-answer="52.0" placeholder="%" /></td>
       <td><strong>100%</strong></td>
     </tr>
-</table></div>
-<!-- Buttons --><button class="marg-btn" id="sgc-check">Check answers</button>
+  </table>
+
+  <!-- Buttons -->
+  <button class="marg-btn" id="sgc-check">Check answers</button>
   <button class="marg-btn" id="sgc-show">Show answers</button>
   <button class="marg-btn" id="sgc-reset">Reset</button>
   <button class="marg-btn" id="sgc-hint-show">Show hint</button>
@@ -1163,7 +1132,12 @@ from your answer to f(ii) ).</p></li>
     hintShow.style.display = "inline-block";
   };
 })();
-</script><div class="marg-box">
+</script>
+```
+
+
+```{=html}
+<div class="marg-box">
 
   <p class="h5">(iii) Sketch a suitable graph</p>
 
@@ -1172,7 +1146,13 @@ from your answer to f(ii) ).</p></li>
     Then compare your sketch with the model graphs below.
   </p>
 
-  <textarea id="graph-desc" rows="4" style="width:100%; padding:8px; box-sizing:border-box;" placeholder="Describe what your graph shows about the association between sleep and coffee consumption."></textarea><div style="margin-top:.6rem;">
+  <textarea id="graph-desc"
+            rows="4"
+            style="width:100%; padding:8px; box-sizing:border-box;"
+            placeholder="Describe what your graph shows about the association between sleep and coffee consumption.">
+  </textarea>
+
+  <div style="margin-top:.6rem;">
     <button class="marg-btn" id="graph-show">Show model graphs</button>
     <button class="marg-btn" id="graph-hide" style="display:none;">Hide model graphs</button>
   </div>
@@ -1186,8 +1166,15 @@ from your answer to f(ii) ).</p></li>
     </p>
 
    
-<img src="_book/figures/conditional_coffee_given_sleep.png" alt="Coffee consumption given level of sleep" style="max-width:100%; display:block; margin:0 auto 1rem;"><img src="_book/figures/conditional_sleep_given_coffee.png" style="max-width:100%; display:block; margin:0 auto;">
-</div>
+<img src="_book/figures/conditional_coffee_given_sleep.png"
+       alt="Coffee consumption given level of sleep"
+       style="max-width:100%; display:block; margin:0 auto 1rem;">
+
+  <img src="_book/figures/conditional_sleep_given_coffee.png"
+       style="max-width:100%; display:block; margin:0 auto;">
+
+
+  </div>
 
 </div>
 
@@ -1210,22 +1197,121 @@ from your answer to f(ii) ).</p></li>
   };
 })();
 </script>
-</div>
-<div id="q1g" class="section level3 unnumbered">
-<h3>Q1(g)<a class="anchor" aria-label="anchor" href="#q1g"><i class="fas fa-link"></i></a>
-</h3>
-<p>*We used two categorical variables in this exercise and have examined the
+```
+
+```{r make-both-conditional-graphs, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
+# Ensure figures folder exists in _book
+dir.create("_book/figures", showWarnings = FALSE)
+
+# ---------- Graph 1 ----------
+png("_book/figures/conditional_coffee_given_sleep.png",
+    width = 800, height = 500)
+
+cond_coffee_sleep <- matrix(
+  c(61.29, 38.71,
+    32.76, 67.24),
+  nrow = 2, byrow = TRUE
+)
+
+rownames(cond_coffee_sleep) <- c("7 or less hours", "More than 7 hours")
+colnames(cond_coffee_sleep) <- c("Light", "Heavy")
+
+cols <- c("#a6cee3", "#1f78b4")
+
+par(mar = c(7, 4, 4, 2) + 0.1)
+bp <- barplot(
+  t(cond_coffee_sleep),
+  col = cols,
+  ylim = c(0, 100),
+  ylab = "Percentage",
+  xlab = "Level of sleep",
+  main = "Coffee consumption given level of sleep",
+  las = 1
+)
+
+for (i in seq_len(ncol(cond_coffee_sleep))) {
+  cum <- 0
+  for (j in seq_len(nrow(cond_coffee_sleep))) {
+    v <- cond_coffee_sleep[i, j]
+    text(bp[i], cum + v/2, paste0(v, "%"),
+         col="black", cex=1.2, font=2)
+    cum <- cum + v
+  }
+}
+
+legend("bottom", inset=-0.25,
+       legend=c("Light coffee", "Heavy coffee"),
+       fill=cols, horiz=TRUE, bty="n", xpd=TRUE)
+
+invisible(dev.off())
+
+
+# ---------- Graph 2 ----------
+png("_book/figures/conditional_sleep_given_coffee.png",
+    width = 800, height = 500)
+
+cond_sleep_coffee <- matrix(
+  c(75, 25,
+    48, 52),
+  nrow = 2, byrow = TRUE
+)
+
+rownames(cond_sleep_coffee) <- c("Light coffee", "Heavy coffee")
+colnames(cond_sleep_coffee) <- c("7 or less hours", "More than 7 hours")
+
+cols2 <- c("#b2df8a", "#33a02c")
+
+par(mar = c(7, 4, 4, 2) + 0.1)
+bp2 <- barplot(
+  t(cond_sleep_coffee),
+  col = cols2,
+  ylim = c(0, 100),
+  ylab = "Percentage",
+  xlab = "Level of coffee consumed",
+  main = "Level of sleep given coffee consumption",
+  las = 1
+)
+
+for (i in seq_len(ncol(cond_sleep_coffee))) {
+  cum <- 0
+  for (j in seq_len(nrow(cond_sleep_coffee))) {
+    v <- cond_sleep_coffee[i, j]
+    text(bp2[i], cum + v/2, paste0(v, "%"),
+         col="black", cex=1.2, font=2)
+    cum <- cum + v
+  }
+}
+
+legend("bottom", inset=-0.25,
+       legend=c("7 or less hours", "More than 7 hours"),
+       fill=cols2, horiz=TRUE, bty="n", xpd=TRUE)
+
+invisible(dev.off())
+```
+
+### Q1(g){-}
+*We used two categorical variables in this exercise and have examined the
 joint, marginal and conditional distributions. Based on this analysis so far (including
 your graph from part (f)), do you think there is an association between
-level of sleep and level of coffee consumed? Why or why not?</p>
+level of sleep and level of coffee consumed? Why or why not?
+
+```{=html}
 <p><em>Type your answer in the box below.</em></p>
 
-<textarea rows="8" style="width:100%; font-size: 0.95em;"></textarea><details><summary style="font-size:0.9em;">Hint</summary><p style="font-size:0.9em;">
+<textarea rows="8" style="width:100%; font-size: 0.95em;"></textarea>
+
+<details>
+<summary style="font-size:0.9em;">Hint</summary>
+<p style="font-size:0.9em;">
 Look at the conditional distributions. Are the percentages similar across the different
 levels of sleep, or are they noticeably different? If the percentages change depending
 on the level of sleep, this suggests an association.
 </p>
-</details><details><summary style="font-size:0.9em;">Sample answer</summary><p style="font-size:0.9em;">
+</details>
+
+<details>
+<summary style="font-size:0.9em;">Sample answer</summary>
+<p style="font-size:0.9em;">
 Yes, there does appear to be an association between level of sleep and level of coffee
 consumed. When we examine the conditional distribution of coffee consumption given
 level of sleep, the percentages differ noticeably between the sleep categories [For example, you can see that 38.71% of light sleepers (sleeping 7 or less hours) are heavy coffee drinkers whereas 67.24% of heavy sleepers (sleeping more than 7 hours) are heavy coffee drinkers]. Because the distribution of coffee consumption changes depending on the level of sleep, this indicates an association between the two variables. Those students who sleep more than 7 hours per night are more likely to be heavy coffee drinkers than those who sleep less than 7 hours per night
@@ -1236,7 +1322,9 @@ Although this result may seem counterintuitive (since higher coffee consumption 
 be expected to reduce sleep), it could be due to other factors or because the sample is
 not representative of all students.
 </p>
-</details><div class="pred-box" id="pred-reveal-box" style="margin-top:1rem;">
+</details>
+
+<div class="pred-box" id="pred-reveal-box" style="margin-top:1rem;">
   <button class="pred-choice" id="pred-reveal-btn">🔍 See how your prediction compares</button>
   <div id="pred-reveal-result" style="display:none; margin-top:.6rem; font-size:.95rem;"></div>
 </div>
@@ -1264,20 +1352,25 @@ not representative of all students.
     result.style.display = "block";
   });
 })();
-</script><div class="tipBox">
-<p><strong>Note on wording</strong>:</p>
-<ul>
-<li><p>Saying that two categorical variables are <strong>not associated</strong> (or not related) is the
-same as saying they are <strong>independent</strong>.</p></li>
-<li><p>Saying that two categorical variables are <strong>associated</strong> (or related) is the same as
-saying they are <strong>NOT independent</strong>.</p></li>
-</ul>
-</div>
-</div>
-<div id="bonus-activity-spot-the-misleading-graph" class="section level3 unnumbered">
-<h3>Bonus Activity: Spot the Misleading Graph<a class="anchor" aria-label="anchor" href="#bonus-activity-spot-the-misleading-graph"><i class="fas fa-link"></i></a>
-</h3>
-<p>Using the raw group sizes from this same data set (76 light coffee drinkers vs 75 heavy coffee drinkers, a real difference of only one student), drag the slider below to see how much a dishonest y-axis can distort a completely unremarkable difference.</p>
+</script>
+```
+
+
+::: {.tipBox}
+**Note on wording**:
+
+- Saying that two categorical variables are **not associated** (or not related) is the
+same as saying they are **independent**.
+
+- Saying that two categorical variables are **associated** (or related) is the same as
+saying they are **NOT independent**.
+:::
+
+### Bonus Activity: Spot the Misleading Graph {-}
+
+Using the raw group sizes from this same data set (76 light coffee drinkers vs 75 heavy coffee drinkers, a real difference of only one student), drag the slider below to see how much a dishonest y-axis can distort a completely unremarkable difference.
+
+```{=html}
 <style>
   .tg-box{max-width:750px;border:1px solid #e5e5e5;border-radius:8px;padding:18px;margin:14px 0;background:#fff;}
   .tg-chart{display:flex;align-items:flex-end;gap:40px;height:220px;border-left:2px solid #333;border-bottom:2px solid #333;padding:0 30px;margin:20px 0 6px;}
@@ -1292,24 +1385,23 @@ saying they are <strong>NOT independent</strong>.</p></li>
   .tg-readout{font-size:.9rem;color:#555;margin-top:4px;}
   .tg-note{font-size:.9rem;background:#fff8e6;border-left:4px solid #e0a800;padding:.6rem .8rem;border-radius:4px;margin-top:12px;}
 </style>
+
 <div class="tg-box" id="tg-box">
   <div class="tg-chart">
     <div class="tg-bar-wrap">
       <div class="tg-bar" id="tg-bar-light"></div>
-      <div class="tg-bar-label">Light drinkers<br><span class="tg-value">76</span>
-</div>
+      <div class="tg-bar-label">Light drinkers<br><span class="tg-value">76</span></div>
     </div>
     <div class="tg-bar-wrap">
       <div class="tg-bar heavy" id="tg-bar-heavy"></div>
-      <div class="tg-bar-label">Heavy drinkers<br><span class="tg-value">75</span>
-</div>
+      <div class="tg-bar-label">Heavy drinkers<br><span class="tg-value">75</span></div>
     </div>
   </div>
 
   <div class="tg-controls">
     <label for="tg-slider">Drag to change where the y-axis starts: <span id="tg-slider-val">0</span> students</label>
     <input type="range" id="tg-slider" min="0" max="74" value="0" step="1">
-</div>
+  </div>
 
   <div class="tg-readout" id="tg-readout"></div>
 
@@ -1352,11 +1444,13 @@ saying they are <strong>NOT independent</strong>.</p></li>
   render();
 })();
 </script>
-</div>
-<div id="bonus-activity-build-your-own-contingency-table" class="section level3 unnumbered">
-<h3>Bonus Activity: Build Your Own Contingency Table<a class="anchor" aria-label="anchor" href="#bonus-activity-build-your-own-contingency-table"><i class="fas fa-link"></i></a>
-</h3>
-<p>Pick two categorical variables from your own life (transport to campus, coffee order, study method, anything), invent some plausible counts for a 2x2 table, and see what the joint, marginal and conditional distributions say about them.</p>
+```
+
+### Bonus Activity: Build Your Own Contingency Table {-}
+
+Pick two categorical variables from your own life (transport to campus, coffee order, study method, anything), invent some plausible counts for a 2x2 table, and see what the joint, marginal and conditional distributions say about them.
+
+```{=html}
 <style>
   .ct-box{max-width:750px;border:1px solid #e5e5e5;border-radius:8px;padding:18px;margin:14px 0;background:#fff;}
   .ct-labels{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px;}
@@ -1371,32 +1465,38 @@ saying they are <strong>NOT independent</strong>.</p></li>
   .ct-output th, .ct-output td{border:1px solid #ddd;padding:6px;text-align:center;}
   .ct-verdict{margin-top:10px;font-weight:600;padding:.6rem .8rem;border-radius:4px;background:#f0f7ff;border-left:4px solid #2a7ae2;}
 </style>
+
 <div class="ct-box" id="ct-box">
   <div class="ct-labels">
-    <input id="ct-varA" placeholder="Variable 1 name, e.g. Transport to campus"><input id="ct-a1" placeholder="Category A, e.g. Car"><input id="ct-a2" placeholder="Category B, e.g. Bus">
-</div>
+    <input id="ct-varA" placeholder="Variable 1 name, e.g. Transport to campus">
+    <input id="ct-a1" placeholder="Category A, e.g. Car">
+    <input id="ct-a2" placeholder="Category B, e.g. Bus">
+  </div>
   <div class="ct-labels">
-    <input id="ct-varB" placeholder="Variable 2 name, e.g. Arrives on time"><input id="ct-b1" placeholder="Category A, e.g. Yes"><input id="ct-b2" placeholder="Category B, e.g. No">
-</div>
+    <input id="ct-varB" placeholder="Variable 2 name, e.g. Arrives on time">
+    <input id="ct-b1" placeholder="Category A, e.g. Yes">
+    <input id="ct-b2" placeholder="Category B, e.g. No">
+  </div>
 
-  <div class="inline-table"><table class="ct" id="ct-input-table">
-<tr>
-<th></th>
+  <table class="ct" id="ct-input-table">
+    <tr>
+      <th></th>
       <th id="ct-head-b1">Category B1</th>
       <th id="ct-head-b2">Category B2</th>
     </tr>
-<tr>
-<th id="ct-head-a1">Category A1</th>
+    <tr>
+      <th id="ct-head-a1">Category A1</th>
       <td><input type="number" id="ct-c11" min="0" value="0"></td>
       <td><input type="number" id="ct-c12" min="0" value="0"></td>
     </tr>
-<tr>
-<th id="ct-head-a2">Category A2</th>
+    <tr>
+      <th id="ct-head-a2">Category A2</th>
       <td><input type="number" id="ct-c21" min="0" value="0"></td>
       <td><input type="number" id="ct-c22" min="0" value="0"></td>
     </tr>
-</table></div>
-<button class="ct-btn" id="ct-calc">Calculate distributions</button>
+  </table>
+
+  <button class="ct-btn" id="ct-calc">Calculate distributions</button>
 
   <div class="ct-output" id="ct-output"></div>
 </div>
@@ -1470,16 +1570,18 @@ saying they are <strong>NOT independent</strong>.</p></li>
   });
 })();
 </script>
-</div>
-<div id="you-made-it" class="section level3 unnumbered">
-<h3>You Made It!<a class="anchor" aria-label="anchor" href="#you-made-it"><i class="fas fa-link"></i></a>
-</h3>
+```
+
+### You Made It! {-}
+
+```{=html}
 <style>
   .badge-box{max-width:600px;margin:20px auto;text-align:center;border:2px dashed #2a7ae2;border-radius:10px;padding:20px;background:#f7fbff;}
   .badge-btn{padding:10px 18px;border:none;border-radius:20px;background:#2a7ae2;color:#fff;font-size:1rem;cursor:pointer;}
   .badge-reveal{display:none;margin-top:14px;font-size:1.05rem;}
   .badge-emoji{font-size:2.4rem;}
 </style>
+
 <div class="badge-box" id="badge-box">
   <button class="badge-btn" id="badge-btn">I finished Tutorial 1!</button>
   <div class="badge-reveal" id="badge-reveal">
@@ -1499,13 +1601,12 @@ saying they are <strong>NOT independent</strong>.</p></li>
   });
 })();
 </script>
-</div>
-</div>
-<div id="question-2-repeat-q1-using-statistical-software" class="section level2" number="1.6">
-<h2>
-<span class="header-section-number">1.6</span> Question 2: Repeat Q1 using Statistical Software<a class="anchor" aria-label="anchor" href="#question-2-repeat-q1-using-statistical-software"><i class="fas fa-link"></i></a>
-</h2>
-<p>Using the data in Question 1, repeat the analysis using Statistical Software for this course and then compare your answers in Question 1 with your output.</p>
+```
+
+## Question 2: Repeat Q1 using Statistical Software
+Using the data in Question 1, repeat the analysis using Statistical Software for this course and then compare your answers in Question 1 with your output.
+
+```{=html}
 <style>
   .q2-wrap{max-width:750px;margin:14px 0;}
   .q2-card{border:1px solid #e5e5e5;border-radius:6px;padding:14px;background:#fff;}
@@ -1518,6 +1619,7 @@ saying they are <strong>NOT independent</strong>.</p></li>
   .q2-controls{margin-top:.5rem;}
   .q2-controls button{padding:6px 10px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer;}
 </style>
+
 <div class="q2-wrap" id="q2-checklist">
   <div class="q2-card">
     <h4>Track your progress through Question 2</h4>
@@ -1583,24 +1685,27 @@ saying they are <strong>NOT independent</strong>.</p></li>
 
   load();
 })();
-</script><ol style="list-style-type: lower-alpha">
-<li>Open the datafile Tutorial 1 in your Statistical Software (this file can be found in the Module 1 block on the StudyDesk, or downloaded from here).</li>
-</ol>
-<p><strong>Download the data file:</strong></p>
-<ul>
-<li><a href="static/Tutorial1.xlsx">Excel data file (Tutorial 1)</a></li>
-</ul>
-<ol start="2" style="list-style-type: lower-alpha">
-<li>Make sure everything is set up correctly.</li>
-</ol>
-<ul>
-<li><p>Coffee Consumed is categorical (Light / Heavy)</p></li>
-<li><p>Level of Sleep is categorical (7 hours or less / More than 7 hours)</p></li>
-</ul>
-<ol start="3" style="list-style-type: lower-alpha">
-<li><p>Create a two-way table showing the frequencies and totals. Put Coffee Consumed in rows and Level of Sleep in columns.</p></li>
-<li><p>*Display the joint distribution of level of coffee consumed and level of sleep in terms of percentages, in a two-way table. Note that this table also gives you the marginal distributions. Compare with answers in Q1.</p></li>
-</ol>
+</script>
+```
+
+(a) Open the datafile Tutorial 1 in your Statistical Software (this file can be found in the Module 1 block on the StudyDesk, or downloaded from here).
+
+**Download the data file:**
+
+- [Excel data file (Tutorial 1)](static/Tutorial1.xlsx)
+
+
+(b) Make sure everything is set up correctly.
+
+- Coffee Consumed is categorical (Light / Heavy)
+
+- Level of Sleep is categorical (7 hours or less / More than 7 hours)
+
+(c) Create a two-way table showing the frequencies and totals. Put Coffee Consumed in rows and Level of Sleep in columns.
+
+(d) *Display the joint distribution of level of coffee consumed and level of sleep in terms of percentages, in a two-way table. Note that this table also gives you the marginal distributions. Compare with answers in Q1.
+
+```{=html}
 <style>
   .q2c-box{max-width:600px;border:1px solid #e5e5e5;border-radius:6px;padding:14px;margin:12px 0;background:#fafcff;}
   .q2c-box p{margin:.3rem 0;font-size:.92rem;}
@@ -1613,27 +1718,23 @@ saying they are <strong>NOT independent</strong>.</p></li>
   .incorrect{background:#ffecec;}
   #q2c-result{margin-top:8px;font-weight:600;font-size:.9rem;}
 </style>
+
 <div class="q2c-box">
   <p><strong>Software self-check:</strong> type the joint percentages your software gave you and see if they match Q1(c).</p>
 
-  <div class="inline-table"><table class="q2c">
-<tr>
-<th></th>
-<th>7 hours or less</th>
-<th>More than 7 hours</th>
-</tr>
-<tr>
-<th>Light</th>
+  <table class="q2c">
+    <tr><th></th><th>7 hours or less</th><th>More than 7 hours</th></tr>
+    <tr><th>Light</th>
       <td><input class="q2c-in" id="q2c_1" data-answer="37.75" placeholder="%"></td>
       <td><input class="q2c-in" id="q2c_2" data-answer="12.25" placeholder="%"></td>
     </tr>
-<tr>
-<th>Heavy</th>
+    <tr><th>Heavy</th>
       <td><input class="q2c-in" id="q2c_3" data-answer="23.84" placeholder="%"></td>
       <td><input class="q2c-in" id="q2c_4" data-answer="25.83" placeholder="%"></td>
     </tr>
-</table></div>
-<button class="q2c-btn" id="q2c-check">Check against Q1</button>
+  </table>
+
+  <button class="q2c-btn" id="q2c-check">Check against Q1</button>
   <button class="q2c-btn" id="q2c-reset">Reset</button>
   <div id="q2c-result"></div>
 </div>
@@ -1667,9 +1768,12 @@ saying they are <strong>NOT independent</strong>.</p></li>
     result.textContent = "";
   });
 })();
-</script><ol start="5" style="list-style-type: lower-alpha">
-<li>*Produce the conditional distributions (both Row Percent and Column Percent). Compare with answers in Q1.</li>
-</ol>
+</script>
+```
+
+(e) *Produce the conditional distributions (both Row Percent and Column Percent). Compare with answers in Q1.
+
+```{=html}
 <style>
   .q2e-box{max-width:600px;border:1px solid #e5e5e5;border-radius:6px;padding:14px;margin:12px 0;background:#fafcff;}
   .q2e-box p{margin:.3rem 0;font-size:.92rem;}
@@ -1680,27 +1784,23 @@ saying they are <strong>NOT independent</strong>.</p></li>
   .q2e-btn{padding:6px 10px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer;margin-right:6px;margin-top:6px;}
   #q2e-result{margin-top:8px;font-weight:600;font-size:.9rem;}
 </style>
+
 <div class="q2e-box">
   <p><strong>Software self-check (Row Percent):</strong> coffee consumption given level of sleep. Enter your software's row percentages.</p>
 
-  <div class="inline-table"><table class="q2e">
-<tr>
-<th></th>
-<th>7 hours or less</th>
-<th>More than 7 hours</th>
-</tr>
-<tr>
-<th>Light</th>
+  <table class="q2e">
+    <tr><th></th><th>7 hours or less</th><th>More than 7 hours</th></tr>
+    <tr><th>Light</th>
       <td><input class="q2e-in" id="q2e_1" data-answer="61.29" placeholder="%"></td>
       <td><input class="q2e-in" id="q2e_2" data-answer="32.76" placeholder="%"></td>
     </tr>
-<tr>
-<th>Heavy</th>
+    <tr><th>Heavy</th>
       <td><input class="q2e-in" id="q2e_3" data-answer="38.71" placeholder="%"></td>
       <td><input class="q2e-in" id="q2e_4" data-answer="67.24" placeholder="%"></td>
     </tr>
-</table></div>
-<button class="q2e-btn" id="q2e-check">Check against Q1</button>
+  </table>
+
+  <button class="q2e-btn" id="q2e-check">Check against Q1</button>
   <button class="q2e-btn" id="q2e-reset">Reset</button>
   <div id="q2e-result"></div>
 
@@ -1738,135 +1838,271 @@ saying they are <strong>NOT independent</strong>.</p></li>
     result.textContent = "";
   });
 })();
-</script><ol start="6" style="list-style-type: lower-alpha">
-<li>*Construct a Stacked Bar Graph to display the association between level of
-coffee consumed and level of sleep. Compare to your sketch in Question 1.</li>
-</ol>
-</div>
-<div id="further-practice-from-the-textbook" class="section level2" number="1.7">
-<h2>
-<span class="header-section-number">1.7</span> Further Practice from the Textbook<a class="anchor" aria-label="anchor" href="#further-practice-from-the-textbook"><i class="fas fa-link"></i></a>
-</h2>
-<p>Answers to these questions are located in the back of the textbook. If you require further explanation, please ask in the Module Content Discussion Forum on the Study-
-Desk.</p>
-<p><strong>Note</strong>: 1.23 means DeVeaux, Velleman &amp; Bock (4th edition) Chapter 1, Exercise 23
-at the end of the chapter.</p>
-<p>• Questions 2.19, 2.21, 2.37* (De Veaux, Velleman &amp; Bock, (4th edition))</p>
-<p>• Questions 2.3, 2.43, 3.41* (De Veaux, Velleman &amp; Bock, (5th edition))</p>
-</div>
-<div id="textbook-readings" class="section level2" number="1.8">
-<h2>
-<span class="header-section-number">1.8</span> Textbook Readings<a class="anchor" aria-label="anchor" href="#textbook-readings"><i class="fas fa-link"></i></a>
-</h2>
-<p>For extra clarification on materials in this module, see: De Veaux, Velleman &amp; Bock, (4th edition), Chapters 1, 2, 10 and 11 (De Veaux, Velleman &amp; Bock, (5th edition), Chapters 1, 2.1, 3 and 10).</p>
-</div>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-
-  // Restore saved values
-  document.querySelectorAll("textarea, input, select").forEach(function (el) {
-    if (!el.id) return;
-
-    const saved = localStorage.getItem(el.id);
-    if (saved !== null) {
-      if (el.type === "checkbox" || el.type === "radio") {
-        el.checked = (saved === "true");
-      } else {
-        el.value = saved;
-      }
-    }
-  });
-
-  // Save values
-  document.querySelectorAll("textarea, input, select").forEach(function (el) {
-    if (!el.id) return;
-
-    const save = function () {
-      if (el.type === "checkbox" || el.type === "radio") {
-        localStorage.setItem(el.id, el.checked);
-      } else {
-        localStorage.setItem(el.id, el.value);
-      }
-    };
-
-    // input works for text/number
-    el.addEventListener("input", save);
-
-    // change is REQUIRED for select
-    el.addEventListener("change", save);
-  });
-
-});
 </script>
-``
+```
+
+(f) *Construct a Stacked Bar Graph to display the association between level of
+coffee consumed and level of sleep. Compare to your sketch in Question 1.
+
+
+## Further Practice from the Textbook
+
+Answers to these questions are located in the back of the textbook. If you require further explanation, please ask in the Module Content Discussion Forum on the Study-
+Desk.
+
+**Note**: 1.23 means DeVeaux, Velleman & Bock (4th edition) Chapter 1, Exercise 23
+at the end of the chapter.
+
+• Questions 2.19, 2.21, 2.37* (De Veaux, Velleman & Bock, (4th edition))
+
+• Questions 2.3, 2.43, 3.41*  (De Veaux, Velleman & Bock, (5th edition))
+
+## Textbook Readings 
+For extra clarification on materials in this module, see: De Veaux, Velleman & Bock, (4th edition), Chapters 1, 2, 10 and 11 (De Veaux, Velleman & Bock, (5th edition), Chapters 1, 2.1, 3 and 10).
+
+
+# Module 1 Checklist {-}
+
+```{=html}
+<style>
+  .cl-wrap{max-width:900px;margin:0 auto}
+  .cl-card{border:1px solid #e5e5e5;border-radius:6px;padding:14px;background:#fff;margin:12px 0}
+  .cl-card h4{margin:.2rem 0 .6rem;font-size:1.05rem}
+  .cl-note{font-size:.9rem;color:#666}
+  .cl-group-title{font-weight:700;margin:.4rem 0}
+  .cl-item{display:flex;align-items:flex-start;gap:8px;margin:.35rem 0}
+  .cl-item input[type=checkbox]{transform:scale(1.2);margin-top:2px}
+  .cl-adv{font-style:italic;color:#333}
+  .cl-controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:.6rem}
+  .btn{padding:6px 10px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer}
+  .cl-prog{height:10px;background:#f1f1f1;border-radius:6px;overflow:hidden;margin:.4rem 0 .8rem}
+  .cl-bar{height:100%;width:0%;background:#2b8cbe;transition:width .25s ease}
+  .cl-stats{font-size:.9rem;color:#555}
+</style>
+
+<div class="cl-wrap" id="m1-checklist">
+  <div class="cl-card">
+    <h4>Module 1 — Checklist</h4>
+    <div class="cl-note">
+      Once you have watched the lecture recording, completed the tutorial activity,
+      and textbook problems, tick the outcomes you have achieved.
+      Your selections are saved in your browser on this device.
+    </div>
+
+    <div class="cl-prog"><div class="cl-bar"></div></div>
+    <div class="cl-stats"></div>
+
+    <div class="cl-controls">
+      <button class="btn" data-action="all">Mark all done</button>
+      <button class="btn" data-action="clear">Clear all</button>
+      <span class="cl-note">(* denotes expanded competencies)</span>
+    </div>
+  </div>
+
+  <div class="cl-card">
+    <div class="cl-group-title">Sampling</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="s1">
+      <span>Identify the cases/individuals and variables in any data set.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="s2">
+      <span>Classify a variable as categorical, quantitative, ordinal or an identifier.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="s3">
+      <span>Choose an appropriate graph to display the distribution of a categorical variable.</span>
+    </label>
+  </div>
+
+  <div class="cl-card">
+    <div class="cl-group-title">Association between two categorical variables</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="a1">
+      <span>Create a contingency table from data for two categorical variables.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="a2">
+      <span>Determine and interpret joint, marginal and conditional distributions from a contingency table.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="a3">
+      <span>Interpret the association between two categorical variables summarised in a stacked bar chart.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="a4">
+      <span class="cl-adv">* Interpret the association between two categorical variables from the conditional distributions.</span>
+    </label>
+  </div>
+</div>
+
 <script>
-function resetAllAnswers() {
+(function(){
+  const ROOT = document.getElementById("m1-checklist");
+  const KEY  = "m1-checklist-v2";
 
-  // Clear everything saved by this book
-  localStorage.clear();
+  const boxes = Array.from(ROOT.querySelectorAll("input[type=checkbox][data-id]"));
+  const bar   = ROOT.querySelector(".cl-bar");
+  const stats = ROOT.querySelector(".cl-stats");
+  const btnAll   = ROOT.querySelector('[data-action="all"]');
+  const btnClear = ROOT.querySelector('[data-action="clear"]');
 
-  // Clear visible inputs on the current page
-  document.querySelectorAll("textarea, input").forEach(el => {
-    if (el.type === "checkbox" || el.type === "radio") {
-      el.checked = false;
-    } else {
-      el.value = "";
-    }
-    el.classList.remove("correct","incorrect");
+  function update(){
+    const total = boxes.length;
+    const done  = boxes.filter(b => b.checked).length;
+    const pct   = total ? Math.round(100 * done / total) : 0;
+    bar.style.width = pct + "%";
+    stats.textContent = `${done} of ${total} completed (${pct}%)`;
+  }
+
+  function save(){
+    const state = {};
+    boxes.forEach(b => state[b.dataset.id] = b.checked);
+    localStorage.setItem(KEY, JSON.stringify(state));
+    update();
+  }
+
+  function load(){
+    const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+    boxes.forEach(b => b.checked = !!saved[b.dataset.id]);
+    update();
+  }
+
+  boxes.forEach(b => b.addEventListener("change", save));
+
+  btnAll.addEventListener("click", () => {
+    boxes.forEach(b => b.checked = true);
+    save();
   });
 
-  alert("All saved answers in this workbook have been cleared.");
-}
-</script><div class="chapter-nav">
-<div class="prev"><a href="review-questions-module-1.html">Review Questions: Module 1</a></div>
-<div class="next"><a href="module-1-checklist.html">Module 1 Checklist</a></div>
-</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
-    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#tutorial-questions-module-1">Tutorial Questions: Module 1</a></li>
-<li>
-<a class="nav-link" href="#question-1-investigating-the-association-between-two-categorical-variables"><span class="header-section-number">1.5</span> Question 1: Investigating the association between two categorical variables</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#q1a">Q1(a)</a></li>
-<li><a class="nav-link" href="#q1b">Q1(b)</a></li>
-<li><a class="nav-link" href="#q1c-joint-distribution">Q1(c): Joint Distribution</a></li>
-<li><a class="nav-link" href="#q1d">Q1(d)</a></li>
-<li><a class="nav-link" href="#q1e-marginal-distribution">Q1(e): Marginal Distribution</a></li>
-<li><a class="nav-link" href="#q1f-conditional-distribution">Q1(f): Conditional Distribution</a></li>
-<li><a class="nav-link" href="#q1g">Q1(g)</a></li>
-<li><a class="nav-link" href="#bonus-activity-spot-the-misleading-graph">Bonus Activity: Spot the Misleading Graph</a></li>
-<li><a class="nav-link" href="#bonus-activity-build-your-own-contingency-table">Bonus Activity: Build Your Own Contingency Table</a></li>
-<li><a class="nav-link" href="#you-made-it">You Made It!</a></li>
-</ul>
-</li>
-<li><a class="nav-link" href="#question-2-repeat-q1-using-statistical-software"><span class="header-section-number">1.6</span> Question 2: Repeat Q1 using Statistical Software</a></li>
-<li><a class="nav-link" href="#further-practice-from-the-textbook"><span class="header-section-number">1.7</span> Further Practice from the Textbook</a></li>
-<li><a class="nav-link" href="#textbook-readings"><span class="header-section-number">1.8</span> Textbook Readings</a></li>
-</ul>
+  btnClear.addEventListener("click", () => {
+    if (!confirm("Clear all ticks for this checklist on this device?")) return;
+    localStorage.removeItem(KEY);
+    boxes.forEach(b => b.checked = false);
+    update();
+  });
 
-      <div class="book-extra">
-        <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/01-Mod1-v2.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/01-Mod1-v2.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
-        </ul>
-</div>
-    </nav>
-</div>
+  load();
+})();
+</script>
+```
 
-</div>
-</div> <!-- .container -->
+## Using Statistical Software Checklist {-}
 
-<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+```{=html}
+<div class="cl-wrap" id="m1-software-checklist">
+  <div class="cl-card">
+    <h4>Module 1 — Using Statistical Software Checklist</h4>
+    <div class="cl-note">
+      On successful completion of this module, you should be able to use statistical software
+      to complete the following tasks. Tick each outcome once you have successfully demonstrated it.
+    </div>
 
-  <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-09-14.</p>
+    <div class="cl-prog">
+      <div class="cl-bar"></div>
+    </div>
+    <div class="cl-stats"></div>
+
+    <div class="cl-controls">
+      <button class="btn" data-action="all">Mark all done</button>
+      <button class="btn" data-action="clear">Clear all</button>
+      <span class="cl-note">(* denotes expanded competencies)</span>
+    </div>
   </div>
 
-  <div class="col-12 col-md-6 mt-3">
-    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  <div class="cl-card">
+    <div class="cl-group-title">Data handling and graphs</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss1">
+      <span>Enter data, open a data set, and label variables and values.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss2">
+      <span>Construct a frequency table for a categorical variable.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss3">
+      <span>Construct a bar graph to display the distribution of a categorical variable.</span>
+    </label>
   </div>
 
-</div></div>
-</footer>
-</body>
-</html>
+  <div class="cl-card">
+    <div class="cl-group-title">Two categorical variables</div>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss4">
+      <span>Create a contingency table from data for two categorical variables.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss5">
+      <span class="cl-adv">* Construct the joint, marginal, and conditional distributions from a contingency table.</span>
+    </label>
+
+    <label class="cl-item">
+      <input type="checkbox" data-id="ss6">
+      <span class="cl-adv">* Construct a stacked bar chart for two categorical variables.</span>
+    </label>
+  </div>
+</div>
+
+<script>
+(function(){
+  const KEY = "m1-software-checklist-v1";
+  const root = document.getElementById("m1-software-checklist");
+
+  const boxes = Array.from(root.querySelectorAll("input[type=checkbox][data-id]"));
+  const bar   = root.querySelector(".cl-bar");
+  const stats = root.querySelector(".cl-stats");
+  const btnAll   = root.querySelector('[data-action="all"]');
+  const btnClear = root.querySelector('[data-action="clear"]');
+
+  function update(){
+    const total = boxes.length;
+    const done  = boxes.filter(b => b.checked).length;
+    const pct   = total ? Math.round(100 * done / total) : 0;
+    bar.style.width = pct + "%";
+    stats.textContent = `${done} of ${total} completed (${pct}%)`;
+  }
+
+  function save(){
+    const state = {};
+    boxes.forEach(b => state[b.dataset.id] = b.checked);
+    localStorage.setItem(KEY, JSON.stringify(state));
+    update();
+  }
+
+  function load(){
+    const saved = JSON.parse(localStorage.getItem(KEY) || "{}");
+    boxes.forEach(b => b.checked = !!saved[b.dataset.id]);
+    update();
+  }
+
+  boxes.forEach(b => b.addEventListener("change", save));
+
+  btnAll.addEventListener("click", () => {
+    boxes.forEach(b => b.checked = true);
+    save();
+  });
+
+  btnClear.addEventListener("click", () => {
+    if (!confirm("Clear all ticks for this checklist on this device?")) return;
+    localStorage.removeItem(KEY);
+    boxes.forEach(b => b.checked = false);
+    update();
+  });
+
+  load();
+})();
+</script>
+```

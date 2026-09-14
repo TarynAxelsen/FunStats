@@ -1,7 +1,7 @@
 --- 
 title: "Fundamental Statistics"
 author: "Taryn Axelsen"
-date: "Last Updated: 2026-03-19"
+date: "Last Updated: 2026-09-14"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
