@@ -1200,8 +1200,8 @@ from your answer to f(ii) ).
 ```
 
 ```{r make-both-conditional-graphs, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
-# Ensure figures folder exists in _book
-dir.create("figures", showWarnings = FALSE)
+# Ensure figures folder exists
+#dir.create("figures", showWarnings = FALSE)
 
 # ---------- Graph 1 ----------
 png("figures/conditional_coffee_given_sleep.png",
