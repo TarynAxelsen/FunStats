@@ -1,0 +1,370 @@
+# Module 4
+
+<!-- ====== COLOURED BANNER ====== -->
+```{=html}
+<div style="
+  background: linear-gradient(90deg, #e6f0ff, #f7fbff);
+  border-left: 8px solid #2a7ae2;
+  padding: 22px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+">
+  <h2 style="margin-top:0; color:#1a4f8b; font-weight:700;">
+    Module Focus: Relationships between quantitative variables
+  </h2>
+  <p style="font-size:1.05em; margin-bottom:0;">
+    
+In this module, we learn to display the relationship between two quantitative variables with a scatterplot, describe that relationship in terms of form, direction, scatter and outliers, measure it numerically with the correlation coefficient, fit a regression line to make predictions, check that line with a residual plot, and recognise the cautions and precautions that come with regression analysis.
+  </p>
+</div>
+```
+<!-- ====== END BANNER ====== -->
+
+## Introduction to Scatterplots
+
+For two quantitative variables, we use a **scatterplot**.
+
+|              | Categorical variable | Quantitative variable |
+|--------------|----------------------|------------------------|
+| **Categorical variable** | Two-way table | Boxplot |
+| **Quantitative variable** | Boxplot | Scatterplot |
+
+**Response and explanatory variables**
+
+- A **response (dependent) variable** measures an outcome in the study
+- An **explanatory (independent) variable** explains or influences changes in the response variable, or is the variable expected to change when the explanatory variable is manipulated
+- The variable we are **predicting** goes on the **y-axis** and is the dependent variable; the explanatory variable goes on the **x-axis**
+
+::: {.tipBox}
+**Example:** if a study is looking at hours of study per week and final mark in STA1003, the explanatory variable is *hours of study* (x-axis) and the response variable is *final mark* (y-axis), since we are trying to predict the mark from the hours studied. In some cases it doesn't matter which is which.
+:::
+
+**Interpreting a scatterplot visually**
+
+To describe a scatterplot, look at:
+
+- **Form** — is the pattern approximately **linear** (a straight line pattern), or **curved**?
+- **Direction** — only relevant if the form is linear. Two variables are **positively associated** if high values of one accompany high values of the other, and **negatively associated** if high values of one accompany low values of the other.
+- **Scatter** — the amount of scatter around the main form: small, moderate, or large. A stronger relationship has smaller scatter; a weaker relationship has larger scatter.
+- **Outliers** — a data point that does not fit the pattern. Outliers can be:
+    - **High leverage** — unusual because its x-value is far from the mean of the x-values
+    - **Large residual** — unusual because its y-value is far from the mean of the y-values
+    - **Influential** — removing it from the analysis changes the model enough to make a meaningful difference
+
+::: {.tipBox}
+A high leverage outlier has the *potential* to change the regression line, but doesn't always do so. What matters is whether it is **influential**. Arbitrarily deleting points can give a false sense of how well the model fits the data.
+:::
+
+---
+
+## Correlation
+
+**Correlation** measures the direction and strength of the **linear** relationship between two quantitative variables, and is measured using the correlation coefficient $r$. Correlation is only relevant if the form is linear — always check the scatterplot first!
+
+::: {.tipBox}
+**Properties of the correlation coefficient $r$**
+
+- The sign of $r$ indicates positive or negative association
+- $r$ is always between $-1$ and $+1$
+- $r = 0$ means no linear relationship between the variables
+- $r = +1$ means a perfect, positive relationship
+- $r = -1$ means a perfect, negative relationship
+- $r$ is **not affected** by changing the units of either variable (e.g. from cm to inches)
+- **Strength** is shown by the size of $r$; **direction** is shown by the sign of $r$
+:::
+
+**Try it yourself.** Drag the slider to set a target correlation, and watch a fresh random cloud of points redraw with roughly that correlation. Notice that the *sample* correlation of any particular cloud of points won't exactly match the target — that's sampling variability in action. Click "New sample" to draw another cloud at the same target and see how much it moves around.
+
+```{=html}
+<style>
+  .corr-box{max-width:640px;border:1px solid #e5e5e5;border-radius:8px;padding:16px;margin:14px 0;background:#fff;}
+  .corr-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px;}
+  .corr-controls input[type=range]{width:220px;}
+  .corr-btn{padding:6px 12px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer;font-size:.85rem;}
+  .corr-svg{width:100%;max-width:420px;height:auto;display:block;margin:0 auto;background:#fafcff;border:1px solid #e5e5e5;border-radius:6px;}
+  .corr-result{margin-top:8px;font-size:.92rem;background:#f6fbff;border-left:5px solid #2b8cbe;padding:.5rem .8rem;border-radius:4px;text-align:center;}
+</style>
+
+<div class="corr-box" id="corr-box">
+  <div class="corr-controls">
+    <label>Target r = <span id="corr-target-val">0.70</span></label>
+    <input type="range" id="corr-slider" min="-0.99" max="0.99" step="0.01" value="0.70">
+    <button class="corr-btn" id="corr-new">New sample</button>
+  </div>
+  <svg viewBox="0 0 400 400" class="corr-svg" id="corr-svg"></svg>
+  <div class="corr-result" id="corr-result"></div>
+</div>
+
+<script>
+(function(){
+  const slider = document.getElementById("corr-slider");
+  const targetVal = document.getElementById("corr-target-val");
+  const svg = document.getElementById("corr-svg");
+  const result = document.getElementById("corr-result");
+  const newBtn = document.getElementById("corr-new");
+  const N = 45;
+
+  function randNormal(){
+    let u=0,v=0;
+    while(u===0) u=Math.random();
+    while(v===0) v=Math.random();
+    return Math.sqrt(-2*Math.log(u))*Math.cos(2*Math.PI*v);
+  }
+
+  function generate(r){
+    const pts=[];
+    for(let i=0;i<N;i++){
+      const x=randNormal();
+      const z=randNormal();
+      const y=r*x+Math.sqrt(Math.max(0,1-r*r))*z;
+      pts.push({x,y});
+    }
+    return pts;
+  }
+
+  function sampleR(pts){
+    const n=pts.length;
+    const mx=pts.reduce((a,p)=>a+p.x,0)/n, my=pts.reduce((a,p)=>a+p.y,0)/n;
+    let sxy=0,sxx=0,syy=0;
+    pts.forEach(p=>{ const dx=p.x-mx, dy=p.y-my; sxy+=dx*dy; sxx+=dx*dx; syy+=dy*dy; });
+    return sxy/Math.sqrt(sxx*syy);
+  }
+
+  function pxX(x){ return 200 + x*45; }
+  function pxY(y){ return 200 - y*45; }
+
+  function render(){
+    const r = Number(slider.value);
+    targetVal.textContent = r.toFixed(2);
+    const pts = generate(r);
+    const actualR = sampleR(pts);
+
+    let svgHtml = '<line x1="20" y1="200" x2="380" y2="200" stroke="#ccc"></line>';
+    svgHtml += '<line x1="200" y1="20" x2="200" y2="380" stroke="#ccc"></line>';
+    pts.forEach(p=>{
+      const x = Math.max(15, Math.min(385, pxX(p.x)));
+      const y = Math.max(15, Math.min(385, pxY(p.y)));
+      svgHtml += '<circle cx="'+x+'" cy="'+y+'" r="4" fill="#2a7ae2" fill-opacity="0.75"></circle>';
+    });
+    svg.innerHTML = svgHtml;
+
+    result.innerHTML = "Target r = <strong>" + r.toFixed(2) + "</strong> &nbsp;|&nbsp; This sample's actual r = <strong>" + actualR.toFixed(2) + "</strong>";
+  }
+
+  slider.addEventListener("input", render);
+  newBtn.addEventListener("click", render);
+  render();
+})();
+</script>
+```
+
+---
+
+## Regression
+
+**Regression** finds the "best" straight line for the data (using SPSS, Excel, or mathematical methods).
+
+::: {.tipBox}
+**The regression line**
+
+$$\hat{y} = b_0 + b_1 x$$
+
+- $\hat{y}$ (read "y-hat") indicates the formula gives **predicted** values of $y$
+- $b_0$ is the **intercept**
+- $b_1$ is the **slope**
+:::
+
+**Understanding the coefficients**
+
+- The **slope** ($b_1$) tells us how much $y$ changes when $x$ changes by 1 unit
+- The **intercept** ($b_0$) tells us the value of $y$ when $x$ is zero — often, this interpretation is a bit silly if $x=0$ doesn't make practical sense or falls outside the range of the data
+
+**Worked example.** For the boiling point of water at different air pressures ($n=17$), $b_0 = 155.3$ and $b_1 = 1.90$, so the regression line is:
+
+$$\widehat{\text{B.Pt}} = 155.3 + 1.90 \times \text{Pressure}$$
+
+- **Slope:** an increase in pressure of 1 inch Hg results in an increase of boiling point of 1.9°F
+- **Intercept:** when air pressure is zero, the boiling point is 155°F — but air pressure can't be zero, so this interpretation is a bit silly
+
+**Making predictions.** If air pressure is 21 inches of Hg, we predict a boiling point of:
+
+$$\widehat{\text{B.Pt}} = 155.296 + (1.902 \times 21) = 195.24^{\circ}\text{F}$$
+
+---
+
+## Residuals
+
+The residuals are how much the predictions miss by. For each actual observation $y$ (and given value of $x$), we can generate a prediction $\hat{y}$ using the regression line. The residual for each observation is:
+
+$$e = y - \hat{y}$$
+
+::: {.tipBox}
+**Residual plots**
+
+- Residuals should be completely random when plotted against the explanatory variable — no visible pattern
+- A **curved** residual plot suggests the relationship isn't actually linear
+- A **fanning** residual plot (residuals spreading out or narrowing across the range of x) suggests the variability isn't constant
+- We usually compute residuals for every observation and plot them against $x$ to check the model is working OK
+:::
+
+**Worked example.** For the leg-strength/kicking-distance data ($n=13$), the correlation is $r = 0.865$ and $R^2 = 0.749$ (74.9%): **74.9% of the variation in kicking distance is explained by the variation in right-leg strength**. The residual plot for this example looks fine — a random display of points with no visible pattern.
+
+::: {.tipBox}
+**Caution:** the R given in SPSS/Excel's Model Summary only gives the *size* of the correlation, not the direction — it is always shown as positive. Check the sign of the slope of the regression line to determine whether $r$ should be positive or negative.
+:::
+
+---
+
+## Cautions and Precautions
+
+Regression is easy to use incorrectly. SPSS/Excel will compute a regression line for *any* two quantitative variables, but it may not be appropriate to do so.
+
+**Caution 1: Extrapolation.** Predicting beyond the available data is very dangerous — we can't be sure the linear relationship holds beyond the range we've actually observed. **Never predict beyond the given data.**
+
+::: {.tipBox}
+**Worked example (Jessica's height):** the regression line $\widehat{\text{Ht}} = 58.227 + 1.168 \times \text{Age}$ was fitted using data on a baby's age (in months) and height. Extrapolating this line to age 21 (years, not months!) predicts a height of over 3.5 metres, and at age 30 almost 5 metres — an obviously absurd result of extrapolating far beyond the data.
+:::
+
+**Caution 2: Association is not causation.** An association between two variables can be due to:
+
+- **Causation** — changes in one variable cause changes in the other, or
+- **Confounding** — the effect of a **lurking variable** that affects both measured variables but is itself not measured
+
+Observational studies alone cannot demonstrate causality — in general, an experiment is needed. For example, over time both the number of university students in a town and the town's crime rate might rise together, purely because both increase with the town's growing population — *time* (or population growth) is the lurking variable, not a causal link between student numbers and crime.
+
+**More cautions**
+
+- Outliers can make the regression line unreasonable
+- The data must be approximately **linear**
+- Both variables must be **quantitative**
+
+---
+
+# Review Questions: Module 4 {-}
+
+```{=html}
+<div style="
+  background: #f0f7ff;
+  border-left: 6px solid #2a7ae2;
+  padding: 18px;
+  margin: 25px 0;
+  border-radius: 6px;
+">
+  <p style="margin:0; font-size:1.05em;">
+    Once you have watched the lecture recordings you should be able to answer the following 
+    <em>Threshold</em> questions (solutions can be found at the end of this Workbook).
+  </p>
+</div>
+```
+
+```{=html}
+<style>
+  .revq { max-width:900px; margin:0 auto; }
+  .revq .muted { color:#666; font-size:.9rem; }
+  .revq-row { display:grid; grid-template-columns: 1fr 120px; gap:10px; align-items:start; margin:.6rem 0; }
+  .revq textarea { width:100%; min-height:3.2rem; padding:6px; box-sizing:border-box; }
+  .revq .chk { display:flex; align-items:center; gap:.5rem; }
+  .revq .btn { padding:6px 10px; border:1px solid #ccc; border-radius:4px; background:#f7f7f7; cursor:pointer; }
+  .revq .btn + .btn { margin-left:.4rem; }
+  .revq-answers { background:#f6fbff; border-left:6px solid #2b8cbe; padding:.9rem 1rem; border-radius:6px; margin-top:.8rem; display:none; }
+  .revq-answers h5 { margin:.2rem 0 .5rem; font-size:1.05rem; }
+  .revq-answers p { margin:.4rem 0; }
+</style>
+
+<div class="revq" id="revq">
+  <p class="muted">
+    Write your answers in the boxes below. Tick the checkbox if you believe your answer is correct.
+    Click <em>Show model answers</em> to compare.
+  </p>
+
+  (i) What statistical method is used to quantify the relationship between two quantitative variables?
+  <div class="revq-row">
+    <textarea id="revq_m4_q1" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (ii) What graph is used to display the relationship between two quantitative variables?
+  <div class="revq-row">
+    <textarea id="revq_m4_q2" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (iii) What is the difference between an explanatory variable and a response variable? Give an example.
+  <div class="revq-row">
+    <textarea id="revq_m4_q3" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (iv) List the four features used to describe a scatterplot.
+  <div class="revq-row">
+    <textarea id="revq_m4_q4" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (v) What is the general form of the equation of the regression line?
+  <div class="revq-row">
+    <textarea id="revq_m4_q5" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (vi) Why is caution needed when extrapolating?
+  <div class="revq-row">
+    <textarea id="revq_m4_q6" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  <div style="margin-top:.6rem;">
+    <button class="btn" id="revq-show">Show model answers</button>
+    <button class="btn" id="revq-hide" style="display:none;">Hide model answers</button>
+    <button class="btn" id="revq-reset">Reset</button>
+  </div>
+
+  <div class="revq-answers" id="revq-model">
+    <h5>Model answers</h5>
+
+    <p><strong>(i)</strong> To measure the strength of a relationship between two quantitative variables, we use correlation.</p>
+
+    <p><strong>(ii)</strong> A scatterplot.</p>
+
+    <p><strong>(iii)</strong> A response (dependent) variable measures an outcome in the study. An explanatory (independent) variable explains or influences changes in the response variable. For example, in a study of the age and height of children, "age" would be the explanatory variable and "height" would be the response variable, since height depends on age (rather than age depending on height).</p>
+
+    <p><strong>(iv)</strong> Form (e.g. linear, non-linear/curved), Direction (positive or negative), Scatter (small/medium/large), and Outliers.</p>
+
+    <p><strong>(v)</strong> y = b0 + b1x, where y is the predicted value of the response variable, b0 is the y-intercept, b1 is the slope of the regression line, and x is the explanatory variable.</p>
+
+    <p><strong>(vi)</strong> Because we can't be sure that the linear trend of the data continues beyond the values that we have.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const show = document.getElementById("revq-show");
+  const hide = document.getElementById("revq-hide");
+  const model = document.getElementById("revq-model");
+  const reset = document.getElementById("revq-reset");
+
+  show.onclick = () => { model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; };
+  hide.onclick = () => { model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; };
+  reset.onclick = () => {
+    document.querySelectorAll("#revq textarea").forEach(t => t.value="");
+    document.querySelectorAll("#revq input[type=checkbox]").forEach(c => c.checked=false);
+    model.style.display="none"; hide.style.display="none"; show.style.display="inline-block";
+  };
+})();
+</script>
+```
+
+<!--
+NOTE FOR FUTURE ME:
+This module uses child Rmd files under section headings (##) so that:
+- Module 4, Tutorial are in different files but render together
+- Summary, Review, and Tutorial are numbered 4.1, 4.2, 4.3
+- bs4_book splits these sections into separate HTML pages (via split_by: section)
+- PDF output still renders cleanly with correct numbering
+
+DO NOT add this file's children to _bookdown.yml
+DO NOT use # headings in the child files
+-->
+
+```{r, child="04-Tut4-v2.Rmd"}
+```

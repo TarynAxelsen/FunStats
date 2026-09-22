@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Tutorial Questions: Module 3 | Fundamental Statistics</title>
+<meta name="author" content="Taryn Axelsen">
+<meta name="description" content="Note: * Indicates Expanded Competencies  .ne-box{max-width:760px;border:1px solid #e5e5e5;border-radius:8px;padding:16px;margin:14px 0;background:#fff;} ...">
+<meta name="generator" content="bookdown 0.46 with bs4_book()">
+<meta property="og:title" content="Tutorial Questions: Module 3 | Fundamental Statistics">
+<meta property="og:type" content="book">
+<meta property="og:description" content="Note: * Indicates Expanded Competencies  .ne-box{max-width:760px;border:1px solid #e5e5e5;border-radius:8px;padding:16px;margin:14px 0;background:#fff;} ...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tutorial Questions: Module 3 | Fundamental Statistics">
+<meta name="twitter:description" content="Note: * Indicates Expanded Competencies  .ne-box{max-width:760px;border:1px solid #e5e5e5;border-radius:8px;padding:16px;margin:14px 0;background:#fff;} ...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.10.0/transition.js"></script><script src="libs/bs3compat-0.10.0/tabs.js"></script><script src="libs/bs3compat-0.10.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><link href="libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
+<script src="libs/htmlwidgets-1.6.4/htmlwidgets.js"></script><script src="libs/plotly-binding-4.12.0/plotly.js"></script><script src="libs/typedarray-0.1/typedarray.min.js"></script><link href="libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
+<script src="libs/crosstalk-1.2.2/js/crosstalk.min.js"></script><link href="libs/plotly-htmlwidgets-css-2.25.2/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="libs/plotly-main-2.25.2/plotly-latest.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<style type="text/css">
+    /* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+        }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Fundamental Statistics</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Preface</a></li>
+<li><a class="" href="module-1.html"><span class="header-section-number">1</span> Module 1</a></li>
+<li><a class="" href="review-questions-module-1.html">Review Questions: Module 1</a></li>
+<li><a class="" href="tutorial-questions-module-1.html">Tutorial Questions: Module 1</a></li>
+<li><a class="" href="module-1-checklist.html">Module 1 Checklist</a></li>
+<li><a class="" href="module-2.html"><span class="header-section-number">2</span> Module 2</a></li>
+<li><a class="" href="review-questions-module-2.html">Review Questions: Module 2</a></li>
+<li><a class="" href="tutorial-questions-module-2.html">Tutorial Questions: Module 2</a></li>
+<li><a class="" href="module-2-checklist.html">Module 2 Checklist</a></li>
+<li><a class="" href="module-3.html"><span class="header-section-number">3</span> Module 3</a></li>
+<li><a class="" href="review-questions-module-3.html">Review Questions: Module 3</a></li>
+<li><a class="active" href="tutorial-questions-module-3.html">Tutorial Questions: Module 3</a></li>
+<li><a class="" href="module-3-checklist.html">Module 3 Checklist</a></li>
+<li><a class="" href="module-4.html"><span class="header-section-number">4</span> Module 4</a></li>
+<li><a class="" href="review-questions-module-4.html">Review Questions: Module 4</a></li>
+<li><a class="" href="tutorial-questions-module-4.html">Tutorial Questions: Module 4</a></li>
+<li><a class="" href="module-4-checklist.html">Module 4 Checklist</a></li>
+<li><a class="" href="solutions.html"><span class="header-section-number">5</span> Solutions</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rstudio/bookdown-demo">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="tutorial-questions-module-3" class="section level1 unnumbered">
+<h1>Tutorial Questions: Module 3<a class="anchor" aria-label="anchor" href="#tutorial-questions-module-3"><i class="fas fa-link"></i></a>
+</h1>
+<p>Note: * Indicates <strong>Expanded</strong> Competencies</p>
+<style>
+  .ne-box{max-width:760px;border:1px solid #e5e5e5;border-radius:8px;padding:16px;margin:14px 0;background:#fff;}
+  .ne-tabs{display:flex;gap:6px;margin-bottom:10px;}
+  .ne-tab-btn{padding:7px 14px;border:1px solid #ccc;border-radius:20px 20px 0 0;background:#f2f2f2;cursor:pointer;font-size:.9rem;}
+  .ne-tab-btn.active{background:#2a7ae2;color:#fff;border-color:#2a7ae2;}
+  .ne-controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:8px;font-size:.9rem;}
+  .ne-controls select, .ne-controls input[type=number]{padding:5px;border:1px solid #ccc;border-radius:4px;}
+  .ne-controls input[type=number]{width:90px;}
+  .ne-svg-area, .ne-svg-value{width:100%;height:auto;background:#fafcff;border:1px solid #e5e5e5;border-radius:6px;}
+  .ne-result-area, .ne-result-value{margin-top:8px;font-size:.95rem;background:#f6fbff;border-left:5px solid #2b8cbe;padding:.5rem .8rem;border-radius:4px;min-height:1.4em;}
+  .ne-context{font-size:.88rem;color:#555;margin-bottom:8px;}
+  .qbox{max-width:760px;border:1px solid #e5e5e5;border-radius:8px;padding:14px;margin:12px 0;background:#fff;}
+  .qbox textarea{width:100%;min-height:4rem;padding:6px;box-sizing:border-box;}
+  .qbox .btn{padding:6px 10px;border:1px solid #ccc;border-radius:4px;background:#f7f7f7;cursor:pointer;margin-top:8px;margin-right:6px;}
+  .qbox .qchk{display:flex;align-items:center;gap:6px;font-size:.88rem;margin-top:4px;}
+  .qbox-answer{background:#f6fbff;border-left:6px solid #2b8cbe;padding:.8rem 1rem;border-radius:6px;margin-top:.7rem;display:none;font-size:.92rem;}
+  .zcheck-box{max-width:760px;border:1px solid #e5e5e5;border-radius:8px;padding:14px;margin:12px 0;background:#fafcff;}
+  .zcheck-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:6px 0;}
+  .zcheck-row input{width:100px;padding:5px;border:1px solid #ccc;border-radius:4px;text-align:center;}
+  .zcheck-row.correct input{border-color:#2e8b45;background:#eaffea;}
+  .zcheck-row.incorrect input{border-color:#c0392b;background:#fdeaea;}
+</style>
+<script>
+window.NE = (function(){
+  const ZMIN=-4, ZMAX=4, MAXD=0.398942280401433;
+
+  function zDensity(z){ return Math.exp(-z*z/2)/Math.sqrt(2*Math.PI); }
+
+  function normalCDF(z){
+    const b1=0.319381530,b2=-0.356563782,b3=1.781477937,b4=-1.821255978,b5=1.330274429,p=0.2316419,c=0.39894228;
+    const az=Math.abs(z);
+    const t=1/(1+p*az);
+    const poly=t*(t*(t*(t*(t*b5+b4)+b3)+b2)+b1);
+    const tail=c*Math.exp(-az*az/2)*poly;
+    return z>=0 ? 1-tail : tail;
+  }
+
+  function normalInv(p){
+    if(p<=0) return -Infinity;
+    if(p>=1) return Infinity;
+    const a=[-3.969683028665376e+01,2.209460984245205e+02,-2.759285104469687e+02,1.383577518672690e+02,-3.066479806614716e+01,2.506628277459239e+00];
+    const b=[-5.447609879822406e+01,1.615858368580409e+02,-1.556989798598866e+02,6.680131188771972e+01,-1.328068155288572e+01];
+    const c=[-7.784894002430293e-03,-3.223964580411365e-01,-2.400758277161838e+00,-2.549732539343734e+00,4.374664141464968e+00,2.938163982698783e+00];
+    const d=[7.784695709041462e-03,3.224671290700398e-01,2.445134137142996e+00,3.754408661907416e+00];
+    const plow=0.02425, phigh=1-plow;
+    let q,r;
+    if(p<plow){
+      q=Math.sqrt(-2*Math.log(p));
+      return (((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);
+    } else if(p<=phigh){
+      q=p-0.5; r=q*q;
+      return (((((a[0]*r+a[1])*r+a[2])*r+a[3])*r+a[4])*r+a[5])*q / (((((b[0]*r+b[1])*r+b[2])*r+b[3])*r+b[4])*r+1);
+    } else {
+      q=Math.sqrt(-2*Math.log(1-p));
+      return -(((((c[0]*q+c[1])*q+c[2])*q+c[3])*q+c[4])*q+c[5]) / ((((d[0]*q+d[1])*q+d[2])*q+d[3])*q+1);
+    }
+  }
+
+  function pxX(z){ return 30 + (z-ZMIN)/(ZMAX-ZMIN)*540; }
+  function pxY(d){ return 190 - (d/MAXD)*150; }
+
+  function outlinePath(){
+    let d="";
+    for(let z=ZMIN; z<=ZMAX+1e-9; z+=0.08){
+      const x=pxX(z), y=pxY(zDensity(z));
+      d += (d===""?"M":" L") + x + " " + y;
+    }
+    return d;
+  }
+
+  function shadePath(zLo, zHi){
+    const lo=Math.max(ZMIN,zLo), hi=Math.min(ZMAX,zHi);
+    if(hi<=lo) return "";
+    let d="M"+pxX(lo)+" 190";
+    for(let z=lo; z<=hi+1e-9; z+=0.06){
+      d += " L "+pxX(z)+" "+pxY(zDensity(z));
+    }
+    d += " L "+pxX(hi)+" 190 Z";
+    return d;
+  }
+
+  function fmt(n, dp){ return Number(n).toFixed(dp===undefined?2:dp); }
+
+  function init(containerId, opts){
+    const mu = opts.mu, sigma = opts.sigma, unit = opts.unit || "", symbol = opts.symbol || "y", precision = opts.precision===undefined?2:opts.precision;
+    const root = document.getElementById(containerId);
+    if(!root) return;
+
+    root.querySelectorAll(".ne-outline").forEach(o => o.setAttribute("d", outlinePath()));
+
+    function toZ(y){ return (Number(y)-mu)/sigma; }
+    function toY(z){ return mu + z*sigma; }
+
+    const regionSel = root.querySelector(".ne-region");
+    const val1 = root.querySelector(".ne-val1");
+    const val2wrap = root.querySelector(".ne-val2-wrap");
+    const val2 = root.querySelector(".ne-val2");
+    const shadeArea = root.querySelector(".ne-shade-area");
+    const resultArea = root.querySelector(".ne-result-area");
+
+    function renderArea(){
+      const region = regionSel.value;
+      val2wrap.style.display = region==="between" ? "inline-flex" : "none";
+      const v1 = Number(val1.value);
+      if (val1.value==="" || isNaN(v1)) { shadeArea.setAttribute("d",""); resultArea.textContent=""; return; }
+      const z1 = toZ(v1);
+      let zLo, zHi, prob, desc;
+      if(region==="above"){
+        zLo=z1; zHi=4; prob = 1-normalCDF(z1);
+        desc = symbol + " > " + fmt(v1,precision) + (unit? " "+unit : "");
+      } else if(region==="below"){
+        zLo=-4; zHi=z1; prob = normalCDF(z1);
+        desc = symbol + " < " + fmt(v1,precision) + (unit? " "+unit : "");
+      } else {
+        const v2 = Number(val2.value);
+        if (val2.value==="" || isNaN(v2)) { shadeArea.setAttribute("d",""); resultArea.textContent=""; return; }
+        const z2 = toZ(v2);
+        zLo=Math.min(z1,z2); zHi=Math.max(z1,z2);
+        prob = normalCDF(zHi)-normalCDF(zLo);
+        desc = fmt(Math.min(v1,v2),precision) + " < " + symbol + " < " + fmt(Math.max(v1,v2),precision) + (unit? " "+unit : "");
+      }
+      shadeArea.setAttribute("d", shadePath(zLo,zHi));
+      resultArea.innerHTML = "<strong>" + desc + "</strong>: proportion = " + fmt(prob,4) + " (about " + fmt(prob*100,2) + "%)";
+    }
+
+    [regionSel,val1,val2].forEach(el=>{ if(el) el.addEventListener("input", renderArea); });
+    renderArea();
+
+    const region2 = root.querySelector(".ne-region2");
+    const pctInput = root.querySelector(".ne-pct");
+    const shadeValue = root.querySelector(".ne-shade-value");
+    const resultValue = root.querySelector(".ne-result-value");
+
+    function renderValue(){
+      if(!region2) return;
+      const region = region2.value;
+      const pct = Number(pctInput.value);
+      if (pctInput.value==="" || isNaN(pct) || pct<=0 || pct>=100) { shadeValue.setAttribute("d",""); resultValue.textContent=""; return; }
+      const p = pct/100;
+      let zLo, zHi, text;
+      if(region==="lowest"){
+        const z = normalInv(p);
+        zLo=-4; zHi=z;
+        text = "z = " + fmt(z,2) + (symbol!=="z" ? (", " + symbol + " = " + fmt(toY(z),precision) + (unit? " "+unit:"")) : "");
+      } else if(region==="highest"){
+        const z = normalInv(1-p);
+        zLo=z; zHi=4;
+        text = "z = " + fmt(z,2) + (symbol!=="z" ? (", " + symbol + " = " + fmt(toY(z),precision) + (unit? " "+unit:"")) : "");
+      } else {
+        const zHiVal = normalInv((1+p)/2);
+        const zLoVal = -zHiVal;
+        zLo=zLoVal; zHi=zHiVal;
+        text = "z = " + fmt(zLoVal,2) + " to " + fmt(zHiVal,2) + (symbol!=="z" ? (", " + symbol + " = " + fmt(toY(zLoVal),precision) + " to " + fmt(toY(zHiVal),precision) + (unit? " "+unit:"")) : "");
+      }
+      shadeValue.setAttribute("d", shadePath(zLo,zHi));
+      resultValue.innerHTML = "<strong>Cut-off:</strong> " + text;
+    }
+
+    [region2,pctInput].forEach(el=>{ if(el) el.addEventListener("input", renderValue); });
+    renderValue();
+
+    const tabBtns = root.querySelectorAll(".ne-tab-btn");
+    const panels = root.querySelectorAll(".ne-panel");
+    tabBtns.forEach(btn=>{
+      btn.addEventListener("click", ()=>{
+        tabBtns.forEach(b=>b.classList.remove("active"));
+        btn.classList.add("active");
+        panels.forEach(p=> p.style.display = (p.dataset.panel===btn.dataset.tab) ? "block" : "none");
+      });
+    });
+  }
+
+  return { init, normalCDF, normalInv };
+})();
+</script><div id="question-1-using-standard-normal-tables" class="section level2" number="3.4">
+<h2>
+<span class="header-section-number">3.4</span> Question 1: Using Standard Normal Tables<a class="anchor" aria-label="anchor" href="#question-1-using-standard-normal-tables"><i class="fas fa-link"></i></a>
+</h2>
+<p>Draw a picture of the standard Normal curve. Mark in the position and values of the mean and standard deviation. A standard Normal model has a mean <span class="math inline">\(\mu = 0\)</span> and standard deviation <span class="math inline">\(\sigma = 1\)</span>.</p>
+<p>Now use your diagram of the Normal Distribution and Table Z to answer the following questions.</p>
+<div id="a-what-percentage-of-a-standard-normal-model-is-found-in-each-region" class="section level3 unnumbered">
+<h3>(a) What percentage of a standard Normal model is found in each region?<a class="anchor" aria-label="anchor" href="#a-what-percentage-of-a-standard-normal-model-is-found-in-each-region"><i class="fas fa-link"></i></a>
+</h3>
+<ol style="list-style-type: lower-roman">
+<li><span class="math inline">\(z &gt; 1.5\)</span></li>
+<li><span class="math inline">\(z &lt; 2.3\)</span></li>
+<li><span class="math inline">\(z &gt; -1.72\)</span></li>
+<li><span class="math inline">\(z &lt; -0.56\)</span></li>
+<li>*<span class="math inline">\(-2 &lt; z &lt; 1.34\)</span>
+</li>
+<li>*<span class="math inline">\(2.3 &lt; z &lt; 3.1\)</span>
+</li>
+</ol>
+<p><strong>Try it yourself.</strong> Use the explorer below to shade each region and read off the proportion. Enter the z-value(s) from each part above and check your hand-table answer against the live calculation.</p>
+<div class="ne-box" id="ne-std">
+  <div class="ne-context">Standard Normal model: mean = 0, standard deviation = 1</div>
+  <div class="ne-tabs">
+    <button class="ne-tab-btn active" data-tab="area">Find a proportion</button>
+    <button class="ne-tab-btn" data-tab="value">Find a cut-off value</button>
+  </div>
+
+  <div class="ne-panel" data-panel="area">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region"><option value="above">Greater than</option>
+<option value="below">Less than</option>
+<option value="between">Between two values</option></select></label>
+      <label>z = <input type="number" step="0.01" class="ne-val1" placeholder="e.g. 1.5"></label>
+      <span class="ne-val2-wrap" style="display:none;">and <input type="number" step="0.01" class="ne-val2" placeholder="e.g. 2.0"></span>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-area"><path class="ne-shade-area" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-area"></div>
+  </div>
+
+  <div class="ne-panel" data-panel="value" style="display:none;">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region2"><option value="lowest">Lowest</option>
+<option value="highest">Highest</option>
+<option value="middle">Middle</option></select></label>
+      <label><input type="number" class="ne-pct" value="10" min="1" max="99"> %</label>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-value"><path class="ne-shade-value" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-value"></div>
+  </div>
+</div>
+<script>NE.init("ne-std", {mu:0, sigma:1, unit:"", symbol:"z", precision:2});</script><div class="qbox">
+  <button class="btn" id="q1a-show">Show worked solutions (a)</button>
+  <button class="btn" id="q1a-hide" style="display:none;">Hide worked solutions (a)</button>
+  <div class="qbox-answer" id="q1a-model">
+    <p><strong>i.</strong> $z&gt;1.5$: from Table Z, area = 0.9332. Required area = 1 - 0.9332 = 0.0668, i.e. 6.68%.</p>
+    <p><strong>ii.</strong> $z&lt;2.3$: from Table Z, area = 0.9893, i.e. 98.93%.</p>
+    <p><strong>iii.</strong> $z&gt;-1.72$: from Table Z, area = 0.0427. Required area = 1 - 0.0427 = 0.9573, i.e. 95.73%.</p>
+    <p><strong>iv.</strong> $z&lt;-0.56$: from Table Z, area = 0.2877, i.e. 28.77%.</p>
+    <p><strong>v.</strong> $-2<z area at is required i.e.><p><strong>vi.</strong> $2.3<z area at is required i.e.></z></p></z></p>
+</div>
+</div>
+
+<script>
+(function(){
+  const show=document.getElementById("q1a-show"), hide=document.getElementById("q1a-hide"), model=document.getElementById("q1a-model");
+  show.addEventListener("click", ()=>{ model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; });
+  hide.addEventListener("click", ()=>{ model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; });
+})();
+</script>
+</div>
+<div id="b-in-a-standard-normal-model-what-values-of-z-cuts-off-the-region-described" class="section level3 unnumbered">
+<h3>(b) *In a standard Normal model, what value(s) of z cut(s) off the region described?<a class="anchor" aria-label="anchor" href="#b-in-a-standard-normal-model-what-values-of-z-cuts-off-the-region-described"><i class="fas fa-link"></i></a>
+</h3>
+<p><em>First step: always draw a picture!</em></p>
+<ol style="list-style-type: lower-roman">
+<li>*the highest 10%</li>
+<li>*the highest 60%</li>
+<li>*the lowest 2%</li>
+<li>*the lowest 40%</li>
+<li>*the middle 95%</li>
+<li>*the middle 50%</li>
+</ol>
+<p><strong>Try it yourself.</strong> Switch the explorer above to the “Find a cut-off value” tab, choose the matching region, and enter each percentage to check your table answer.</p>
+<div class="qbox">
+  <button class="btn" id="q1b-show">Show worked solutions (b)</button>
+  <button class="btn" id="q1b-hide" style="display:none;">Hide worked solutions (b)</button>
+  <div class="qbox-answer" id="q1b-model">
+    <p><strong>i.</strong> the highest 10%: from Table Z with area = 0.90, $z = 1.28$.</p>
+    <p><strong>ii.</strong> the highest 60%: from Table Z with area = 0.40, $z = -0.25$.</p>
+    <p><strong>iii.</strong> the lowest 2%: from Table Z with area = 0.02, $z = -2.05$.</p>
+    <p><strong>iv.</strong> the lowest 40%: from Table Z with area = 0.40, $z = -0.25$.</p>
+    <p><strong>v.</strong> the middle 95%: from Table Z with area = 0.025, $z = -1.96$; with area = 0.975, $z = 1.96$.</p>
+    <p><strong>vi.</strong> the middle 50%: from Table Z with area = 0.25, $z = -0.67$; with area = 0.75, $z = 0.67$.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const show=document.getElementById("q1b-show"), hide=document.getElementById("q1b-hide"), model=document.getElementById("q1b-model");
+  show.addEventListener("click", ()=>{ model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; });
+  hide.addEventListener("click", ()=>{ model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; });
+})();
+</script>
+</div>
+</div>
+<div id="question-2-how-do-the-males-in-western-europe-stack-up" class="section level2" number="3.5">
+<h2>
+<span class="header-section-number">3.5</span> Question 2: How do the males in Western Europe stack up?<a class="anchor" aria-label="anchor" href="#question-2-how-do-the-males-in-western-europe-stack-up"><i class="fas fa-link"></i></a>
+</h2>
+<p>Based on a Normal model with mean 179 cm and standard deviation of 7 cm describing the heights of males in a particular Western European country:</p>
+<ol style="list-style-type: lower-alpha">
+<li>What proportion of males will be taller than 184 cm?</li>
+<li>*Below what height will the shortest 10% of the male population of this country be?</li>
+<li>*What percentage of males from this country are between 175 and 185 cm tall?</li>
+<li>*Calculate the interquartile range of heights of males from this country.</li>
+<li>*Above what height are the tallest 5% of the males in this country?</li>
+</ol>
+<p><strong>Use the explorer below</strong> (already set to this context) to work through each part. For (a) and (c), use the “Find a proportion” tab. For (b), (d) and (e), use the “Find a cut-off value” tab (note that the IQR in (d) needs the middle 50% cut-offs).</p>
+<div class="ne-box" id="ne-heights">
+  <div class="ne-context">Heights of males: mean = 179 cm, standard deviation = 7 cm</div>
+  <div class="ne-tabs">
+    <button class="ne-tab-btn active" data-tab="area">Find a proportion</button>
+    <button class="ne-tab-btn" data-tab="value">Find a cut-off value</button>
+  </div>
+
+  <div class="ne-panel" data-panel="area">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region"><option value="above">Greater than</option>
+<option value="below">Less than</option>
+<option value="between">Between two values</option></select></label>
+      <label>Height (cm) = <input type="number" step="0.1" class="ne-val1" placeholder="e.g. 184"></label>
+      <span class="ne-val2-wrap" style="display:none;">and <input type="number" step="0.1" class="ne-val2" placeholder="e.g. 190"></span>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-area"><path class="ne-shade-area" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-area"></div>
+  </div>
+
+  <div class="ne-panel" data-panel="value" style="display:none;">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region2"><option value="lowest">Lowest</option>
+<option value="highest">Highest</option>
+<option value="middle">Middle</option></select></label>
+      <label><input type="number" class="ne-pct" value="10" min="1" max="99"> %</label>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-value"><path class="ne-shade-value" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-value"></div>
+  </div>
+</div>
+<script>NE.init("ne-heights", {mu:179, sigma:7, unit:"cm", symbol:"height", precision:2});</script><div class="qbox">
+  <button class="btn" id="q2-show">Show worked solutions</button>
+  <button class="btn" id="q2-hide" style="display:none;">Hide worked solutions</button>
+  <div class="qbox-answer" id="q2-model">
+    <p><strong>(a)</strong> $z = (184-179)/7 = 0.71$. From Table Z, area = 0.7611, so 76.11% are shorter than 184cm. Required area = 1 - 0.7611 = 0.2389, so 23.89% of males will be taller than 184 cm.</p>
+    <p><strong>(b)</strong> From Table Z with area = 0.10, $z = -1.28$. $y = 179 - 1.28 \times 7 = 170.04$ cm. 10% of the male population will be shorter than 170 cm.</p>
+    <p><strong>(c)</strong> At $y=175$: $z=(175-179)/7=-0.57$, area = 0.2843. At $y=185$: $z=(185-179)/7=0.86$, area = 0.8051. Required area = 0.8051 - 0.2843 = 0.5208. About 52% of males will be between 175 and 185 cm tall.</p>
+    <p><strong>(d)</strong> From Table Z with area = 0.25, $z=-0.67$: $y = 179 - 0.67 \times 7 = 174.31$ cm. With area = 0.75, $z=0.67$: $y = 179 + 0.67 \times 7 = 183.69$ cm. IQR = 183.69 - 174.31 = 9.38 cm.</p>
+    <p><strong>(e)</strong> From Table Z with area = 0.95, $z=1.65$: $y = 179 + 1.65 \times 7 = 190.55$ cm. The tallest 5% of males will be taller than 190.55 cm.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const show=document.getElementById("q2-show"), hide=document.getElementById("q2-hide"), model=document.getElementById("q2-model");
+  show.addEventListener("click", ()=>{ model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; });
+  hide.addEventListener("click", ()=>{ model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; });
+})();
+</script>
+</div>
+<div id="question-3-do-they-get-what-they-pay-for" class="section level2" number="3.6">
+<h2>
+<span class="header-section-number">3.6</span> Question 3: Do they get what they pay for?<a class="anchor" aria-label="anchor" href="#question-3-do-they-get-what-they-pay-for"><i class="fas fa-link"></i></a>
+</h2>
+<p>Management at a cereal company is concerned that the filling machine at their factory may need some further adjustment to obtain a better balance between the number of satisfied customers (they are getting the amount of cereal that they have paid for based on the advertised volume) and minimizing overfilling (loss of profit). The filling machine currently fills boxes based on a Normal model with mean 720 grams and standard deviation of 30 grams describing the weights of boxes of cereal of a particular variety.</p>
+<ol style="list-style-type: lower-alpha">
+<li>If boxes of this cereal are labelled as containing 700 grams, what proportion of customers are going to be dissatisfied with their purchase?</li>
+<li>*Below what weight will the lightest 5% of boxes of this cereal be?</li>
+<li>*What percentage of boxes of this cereal is between 700 grams and 750 grams?</li>
+<li>*Above what weight are the heaviest 10% of boxes of this cereal?</li>
+</ol>
+<div class="ne-box" id="ne-cereal">
+  <div class="ne-context">Cereal box weights: mean = 720 grams, standard deviation = 30 grams</div>
+  <div class="ne-tabs">
+    <button class="ne-tab-btn active" data-tab="area">Find a proportion</button>
+    <button class="ne-tab-btn" data-tab="value">Find a cut-off value</button>
+  </div>
+
+  <div class="ne-panel" data-panel="area">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region"><option value="above">Greater than</option>
+<option value="below">Less than</option>
+<option value="between">Between two values</option></select></label>
+      <label>Weight (g) = <input type="number" step="1" class="ne-val1" placeholder="e.g. 700"></label>
+      <span class="ne-val2-wrap" style="display:none;">and <input type="number" step="1" class="ne-val2" placeholder="e.g. 750"></span>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-area"><path class="ne-shade-area" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-area"></div>
+  </div>
+
+  <div class="ne-panel" data-panel="value" style="display:none;">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region2"><option value="lowest">Lowest</option>
+<option value="highest">Highest</option>
+<option value="middle">Middle</option></select></label>
+      <label><input type="number" class="ne-pct" value="5" min="1" max="99"> %</label>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-value"><path class="ne-shade-value" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-value"></div>
+  </div>
+</div>
+<script>NE.init("ne-cereal", {mu:720, sigma:30, unit:"g", symbol:"weight", precision:1});</script><div class="qbox">
+  <button class="btn" id="q3-show">Show worked solutions</button>
+  <button class="btn" id="q3-hide" style="display:none;">Hide worked solutions</button>
+  <div class="qbox-answer" id="q3-model">
+    <p><strong>(a)</strong> $z=(700-720)/30=-0.67$. From Table Z, area = 0.2514, so 25.14% of customers will receive less than 700 grams.</p>
+    <p><strong>(b)</strong> From Table Z with area = 0.05, $z=-1.64$. $y = 720 - 1.64 \times 30 = 670.8$ grams. 5% of boxes will be lighter than 670.8 grams.</p>
+    <p><strong>(c)</strong> At $y=700$: $z=-0.67$, area = 0.2514. At $y=750$: $z=1.00$, area = 0.8413. Required area = 0.8413 - 0.2514 = 0.5899. About 59% of boxes will be between 700 and 750 grams.</p>
+    <p><strong>(d)</strong> From Table Z with area = 0.90, $z=1.28$. $y = 720 + 1.28 \times 30 = 758.4$ grams. 10% of boxes will be heavier than 758.4 grams.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const show=document.getElementById("q3-show"), hide=document.getElementById("q3-hide"), model=document.getElementById("q3-model");
+  show.addEventListener("click", ()=>{ model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; });
+  hide.addEventListener("click", ()=>{ model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; });
+})();
+</script>
+</div>
+<div id="question-4-comparing-two-groups-based-on-summary-statistics" class="section level2" number="3.7">
+<h2>
+<span class="header-section-number">3.7</span> Question 4: Comparing two groups based on summary statistics<a class="anchor" aria-label="anchor" href="#question-4-comparing-two-groups-based-on-summary-statistics"><i class="fas fa-link"></i></a>
+</h2>
+<p><em>Who should get the prize? Is there much chance that anyone would have scored a better result than the prizewinner?</em></p>
+<p>The local school gives one prize for Social Studies at the end of the school year. Two subjects are studied in the Social Studies discipline - history and geography. George studied history and obtained a result of 86 marks out of 100 overall for the year. Ringo studied geography and obtained a result of 89 marks out of 100 overall for the year.</p>
+<div id="a" class="section level3 unnumbered">
+<h3>(a)<a class="anchor" aria-label="anchor" href="#a"><i class="fas fa-link"></i></a>
+</h3>
+<p>Before Speech Night some students in the class thought that Ringo was a certainty to get the Social Studies prize. Explain the students’ reasoning. Do you agree?</p>
+<div class="qbox">
+  <textarea id="q4a-answer" placeholder="Your answer..."></textarea><label class="qchk"><input type="checkbox" id="q4a-marked"> Marked correct</label><br><button class="btn" id="q4a-show">Show model answer</button>
+  <button class="btn" id="q4a-hide" style="display:none;">Hide model answer</button>
+  <div class="qbox-answer" id="q4a-model">
+    <p>At first it would seem reasonable for Ringo to be awarded the prize as he got more marks than George, however it does not take into account how good their marks were compared with the others in their respective classes.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const KEY="q4a-v1";
+  const ta=document.getElementById("q4a-answer"), chk=document.getElementById("q4a-marked");
+  const show=document.getElementById("q4a-show"), hide=document.getElementById("q4a-hide"), model=document.getElementById("q4a-model");
+  function save(){ localStorage.setItem(KEY, JSON.stringify({t:ta.value,c:chk.checked})); }
+  function load(){ const s=JSON.parse(localStorage.getItem(KEY)||"{}"); ta.value=s.t||""; chk.checked=!!s.c; }
+  ta.addEventListener("input", save); chk.addEventListener("change", save);
+  show.addEventListener("click", ()=>{ model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; });
+  hide.addEventListener("click", ()=>{ model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; });
+  load();
+})();
+</script>
+</div>
+<div id="b" class="section level3 unnumbered">
+<h3>(b)<a class="anchor" aria-label="anchor" href="#b"><i class="fas fa-link"></i></a>
+</h3>
+<p>The Social Studies HOD (Head of Department) studied statistics at university and thought that she had a fair solution. She knew that the distribution of marks in the history class had a mean of 63 with a standard deviation of 12 and the distribution of marks in the geography class had a mean of 60 with a standard deviation of 16. Explain how she could use this information to arrive at a fair solution, and calculate the z-score for each student.</p>
+<div class="zcheck-box">
+  <p style="margin-top:0;">Calculate each student's z-score and check your answer.</p>
+  <div class="zcheck-row" id="q4b-george-row">
+    <label>George's z-score (history, mean 63, SD 12):</label>
+    <input type="number" step="0.001" id="q4b-george"><button class="btn" data-check="q4b-george" data-answer="1.917">Check</button>
+    <span id="q4b-george-fb"></span>
+  </div>
+  <div class="zcheck-row" id="q4b-ringo-row">
+    <label>Ringo's z-score (geography, mean 60, SD 16):</label>
+    <input type="number" step="0.001" id="q4b-ringo"><button class="btn" data-check="q4b-ringo" data-answer="1.813">Check</button>
+    <span id="q4b-ringo-fb"></span>
+  </div>
+</div>
+
+<script>
+(function(){
+  document.querySelectorAll('[data-check]').forEach(btn => {
+    btn.addEventListener("click", () => {
+      const id = btn.dataset.check;
+      const input = document.getElementById(id);
+      const fb = document.getElementById(id + "-fb");
+      const row = document.getElementById(id + "-row");
+      const key = Number(btn.dataset.answer);
+      const val = Number(input.value);
+      row.classList.remove("correct","incorrect");
+      if (!isNaN(val) && Math.abs(val - key) < 0.02) {
+        row.classList.add("correct");
+        fb.textContent = "Correct.";
+      } else {
+        row.classList.add("incorrect");
+        fb.textContent = "Not quite - try again.";
+      }
+    });
+  });
+})();
+</script>
+</div>
+<div id="c" class="section level3 unnumbered">
+<h3>(c)<a class="anchor" aria-label="anchor" href="#c"><i class="fas fa-link"></i></a>
+</h3>
+<p>Applying the teacher’s procedure, determine who got the Social Studies Prize.</p>
+<div class="qbox">
+  <textarea id="q4c-answer" placeholder="Your answer..."></textarea><label class="qchk"><input type="checkbox" id="q4c-marked"> Marked correct</label><br><button class="btn" id="q4c-show">Show model answer</button>
+  <button class="btn" id="q4c-hide" style="display:none;">Hide model answer</button>
+  <div class="qbox-answer" id="q4c-model">
+    <p>The HOD could use z-scores to compare each student's result with the rest of the results in their respective classes to see which was more unusual. Because George has the higher positive z-score (1.917 vs 1.813), his result is better than Ringo's, as it is more extreme compared with the results of his classmates than Ringo's is compared with his classmates. George should be awarded the prize.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const KEY="q4c-v1";
+  const ta=document.getElementById("q4c-answer"), chk=document.getElementById("q4c-marked");
+  const show=document.getElementById("q4c-show"), hide=document.getElementById("q4c-hide"), model=document.getElementById("q4c-model");
+  function save(){ localStorage.setItem(KEY, JSON.stringify({t:ta.value,c:chk.checked})); }
+  function load(){ const s=JSON.parse(localStorage.getItem(KEY)||"{}"); ta.value=s.t||""; chk.checked=!!s.c; }
+  ta.addEventListener("input", save); chk.addEventListener("change", save);
+  show.addEventListener("click", ()=>{ model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; });
+  hide.addEventListener("click", ()=>{ model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; });
+  load();
+})();
+</script>
+</div>
+<div id="d" class="section level3 unnumbered">
+<h3>(d)<a class="anchor" aria-label="anchor" href="#d"><i class="fas fa-link"></i></a>
+</h3>
+<p>What is the probability that anyone would have scored better than the Social Studies prize winner (if the results on the examinations followed a Normal model)?</p>
+<p><strong>Try it yourself.</strong> Use George’s class context below (mean 63, SD 12 marks) and enter his mark of 86 to find the proportion scoring higher.</p>
+<div class="ne-box" id="ne-history">
+  <div class="ne-context">History class marks: mean = 63, standard deviation = 12</div>
+  <div class="ne-tabs">
+    <button class="ne-tab-btn active" data-tab="area">Find a proportion</button>
+    <button class="ne-tab-btn" data-tab="value">Find a cut-off value</button>
+  </div>
+
+  <div class="ne-panel" data-panel="area">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region"><option value="above" selected>Greater than</option>
+<option value="below">Less than</option>
+<option value="between">Between two values</option></select></label>
+      <label>Mark = <input type="number" step="1" class="ne-val1" placeholder="e.g. 86"></label>
+      <span class="ne-val2-wrap" style="display:none;">and <input type="number" step="1" class="ne-val2"></span>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-area"><path class="ne-shade-area" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-area"></div>
+  </div>
+
+  <div class="ne-panel" data-panel="value" style="display:none;">
+    <div class="ne-controls">
+      <label>Region:
+        <select class="ne-region2"><option value="lowest">Lowest</option>
+<option value="highest">Highest</option>
+<option value="middle">Middle</option></select></label>
+      <label><input type="number" class="ne-pct" value="10" min="1" max="99"> %</label>
+    </div>
+    <svg viewbox="0 0 600 210" class="ne-svg-value"><path class="ne-shade-value" fill="#ffdca8" stroke="none"></path><path class="ne-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="ne-result-value"></div>
+  </div>
+</div>
+<script>NE.init("ne-history", {mu:63, sigma:12, unit:"marks", symbol:"mark", precision:1});</script><div class="qbox">
+  <button class="btn" id="q4d-show">Show model answer</button>
+  <button class="btn" id="q4d-hide" style="display:none;">Hide model answer</button>
+  <div class="qbox-answer" id="q4d-model">
+    <p>From Table Z with $z=1.917$, area = 0.9726. Required area = 1 - 0.9726 = 0.0274. There is only a 2.7% chance that anyone would have scored better than George.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const show=document.getElementById("q4d-show"), hide=document.getElementById("q4d-hide"), model=document.getElementById("q4d-model");
+  show.addEventListener("click", ()=>{ model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; });
+  hide.addEventListener("click", ()=>{ model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; });
+})();
+</script>
+</div>
+</div>
+<div id="further-practice-from-the-textbook-2" class="section level2" number="3.8">
+<h2>
+<span class="header-section-number">3.8</span> Further Practice from the Textbook<a class="anchor" aria-label="anchor" href="#further-practice-from-the-textbook-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>Answers to these questions are located in the back of the textbook. If you require further explanation, please ask in the Module Content Discussion Forum on the StudyDesk.</p>
+<ul>
+<li>Questions 5.3, 5.17, *5.39 (use SPSS or Excel to construct a histogram), 5.49(a), *5.49 (b &amp; c) (De Veaux, Velleman &amp; Bock, (4th edition))</li>
+<li>Questions 5.3, 5.11, *5.43 (use SPSS or Excel to construct a histogram), 5.55(a), *5.55 (b &amp; c) (De Veaux, Velleman &amp; Bock, (5th edition))</li>
+</ul>
+<p>Note that an additional Quick Review and associated revision exercises covering material from the first three modules is given after Chapter 5 in the textbook (after the Chapter 5 exercises).</p>
+</div>
+<div id="textbook-readings-2" class="section level2" number="3.9">
+<h2>
+<span class="header-section-number">3.9</span> Textbook Readings<a class="anchor" aria-label="anchor" href="#textbook-readings-2"><i class="fas fa-link"></i></a>
+</h2>
+<p>For extra clarification on materials in this module, see: De Veaux, Velleman &amp; Bock, (4th edition), Chapter 5 (De Veaux, Velleman &amp; Bock, (5th edition), Chapter 5).</p>
+</div>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Restore saved values
+  document.querySelectorAll("textarea, input, select").forEach(function (el) {
+    if (!el.id) return;
+
+    const saved = localStorage.getItem(el.id);
+    if (saved !== null) {
+      if (el.type === "checkbox" || el.type === "radio") {
+        el.checked = (saved === "true");
+      } else {
+        el.value = saved;
+      }
+    }
+  });
+
+  // Save values
+  document.querySelectorAll("textarea, input, select").forEach(function (el) {
+    if (!el.id) return;
+
+    const save = function () {
+      if (el.type === "checkbox" || el.type === "radio") {
+        localStorage.setItem(el.id, el.checked);
+      } else {
+        localStorage.setItem(el.id, el.value);
+      }
+    };
+
+    // input works for text/number
+    el.addEventListener("input", save);
+
+    // change is REQUIRED for select
+    el.addEventListener("change", save);
+  });
+
+});
+</script>
+``
+<script>
+function resetAllAnswers() {
+
+  // Clear everything saved by this book
+  localStorage.clear();
+
+  // Clear visible inputs on the current page
+  document.querySelectorAll("textarea, input").forEach(el => {
+    if (el.type === "checkbox" || el.type === "radio") {
+      el.checked = false;
+    } else {
+      el.value = "";
+    }
+    el.classList.remove("correct","incorrect");
+  });
+
+  alert("All saved answers in this workbook have been cleared.");
+}
+</script><div class="chapter-nav">
+<div class="prev"><a href="review-questions-module-3.html">Review Questions: Module 3</a></div>
+<div class="next"><a href="module-3-checklist.html">Module 3 Checklist</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#tutorial-questions-module-3">Tutorial Questions: Module 3</a></li>
+<li>
+<a class="nav-link" href="#question-1-using-standard-normal-tables"><span class="header-section-number">3.4</span> Question 1: Using Standard Normal Tables</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#a-what-percentage-of-a-standard-normal-model-is-found-in-each-region">(a) What percentage of a standard Normal model is found in each region?</a></li>
+<li><a class="nav-link" href="#b-in-a-standard-normal-model-what-values-of-z-cuts-off-the-region-described">(b) *In a standard Normal model, what value(s) of z cut(s) off the region described?</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#question-2-how-do-the-males-in-western-europe-stack-up"><span class="header-section-number">3.5</span> Question 2: How do the males in Western Europe stack up?</a></li>
+<li><a class="nav-link" href="#question-3-do-they-get-what-they-pay-for"><span class="header-section-number">3.6</span> Question 3: Do they get what they pay for?</a></li>
+<li>
+<a class="nav-link" href="#question-4-comparing-two-groups-based-on-summary-statistics"><span class="header-section-number">3.7</span> Question 4: Comparing two groups based on summary statistics</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#a">(a)</a></li>
+<li><a class="nav-link" href="#b">(b)</a></li>
+<li><a class="nav-link" href="#c">(c)</a></li>
+<li><a class="nav-link" href="#d">(d)</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#further-practice-from-the-textbook-2"><span class="header-section-number">3.8</span> Further Practice from the Textbook</a></li>
+<li><a class="nav-link" href="#textbook-readings-2"><span class="header-section-number">3.9</span> Textbook Readings</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/03-Mod3-v2.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/03-Mod3-v2.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-09-22.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
+</body>
+</html>

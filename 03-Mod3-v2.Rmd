@@ -1,0 +1,339 @@
+# Module 3
+
+<!-- ====== COLOURED BANNER ====== -->
+```{=html}
+<div style="
+  background: linear-gradient(90deg, #e6f0ff, #f7fbff);
+  border-left: 8px solid #2a7ae2;
+  padding: 22px;
+  margin-bottom: 30px;
+  border-radius: 6px;
+">
+  <h2 style="margin-top:0; color:#1a4f8b; font-weight:700;">
+    Module Focus: Modelling quantitative data with the Normal distribution
+  </h2>
+  <p style="font-size:1.05em; margin-bottom:0;">
+    
+In this module, we introduce the Normal model as a theoretical description of bell-shaped data, learn to standardise observations into z-scores, use the Standard Normal Table to find proportions and probabilities, and reverse the process to find cut-off values from a given percentage.
+  </p>
+</div>
+```
+<!-- ====== END BANNER ====== -->
+
+## Introducing the Normal Model
+
+Many real quantitative variables are approximately bell-shaped (for example, heights, weights, and measurement errors). For these variables, we consider a theoretical or ideal **Normal model**.
+
+**What is a model?**
+
+A model is a theoretical or ideal concept, not the exact truth. Think of a plastic skeleton in a doctor's office: it isn't really a skeleton, and none of us have a skeleton exactly like it, but it still gives a great approximation to reality and is genuinely useful. The Normal model works the same way. No real variable probably has *exactly* a Normal distribution, but the model is still a useful approximation.
+
+**Key features of the Normal model**
+
+- In symbols, a Normal model is written $N(\mu, \sigma)$
+- It is **perfectly symmetric**
+- 50% of observations occur on one side of the mean and 50% on the other
+- Normal curves are drawn to contain 100% of the observations, so **areas under the curve represent theoretical percentages** (or probabilities)
+
+::: {.tipBox}
+**Notation**
+
+- The mean of a theoretical Normal model is $\mu$ ("mu")
+- The standard deviation of a theoretical Normal model is $\sigma$ ("sigma")
+- Recall: $\bar{y}$ is the mean of **actual (sample)** data, and $s$ is the standard deviation of actual (sample) data. $\mu$ and $\sigma$ describe the theoretical model; $\bar{y}$ and $s$ describe the data we actually collected.
+:::
+
+**Standard deviation as a ruler**
+
+Areas under Normal curves depend only on how many standard deviations an observation is away from the mean. The number of standard deviations away from the mean is called $z$.
+
+### The 68-95-99.7 Rule
+
+For **any** Normal model:
+
+- **68%** of observations are within 1 standard deviation of the mean
+- **95%** of observations are within 2 standard deviations of the mean
+- **99.7%** of observations are within 3 standard deviations of the mean
+
+**Try it yourself.** The example below uses STA1003 student heights, Normal with mean 170cm and standard deviation 5cm (matching the lecture example). Pick how many standard deviations to shade and see the rule in action.
+
+```{=html}
+<style>
+  .rule-box{max-width:700px;border:1px solid #e5e5e5;border-radius:8px;padding:16px;margin:14px 0;background:#fff;}
+  .rule-controls{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+  .rule-btn{padding:7px 16px;border:1px solid #2a7ae2;border-radius:20px;background:#eaf2ff;color:#1a4f8b;cursor:pointer;font-size:.9rem;}
+  .rule-btn.active{background:#2a7ae2;color:#fff;}
+  .rule-svg{width:100%;height:auto;background:#fafcff;border:1px solid #e5e5e5;border-radius:6px;}
+  .rule-result{margin-top:8px;font-size:.95rem;background:#f6fbff;border-left:5px solid #2b8cbe;padding:.5rem .8rem;border-radius:4px;}
+</style>
+
+<div class="rule-box" id="rule-box">
+  <div class="rule-controls">
+    <button class="rule-btn active" data-k="1">Within 1 SD</button>
+    <button class="rule-btn" data-k="2">Within 2 SD</button>
+    <button class="rule-btn" data-k="3">Within 3 SD</button>
+  </div>
+  <svg viewBox="0 0 600 210" class="rule-svg" id="rule-svg">
+    <path id="rule-shade" fill="#ffdca8" stroke="none"></path>
+    <path id="rule-outline" fill="none" stroke="#333" stroke-width="2"></path>
+  </svg>
+  <div class="rule-result" id="rule-result"></div>
+</div>
+
+<script>
+(function(){
+  const MU=170, SIGMA=5;
+  const ZMIN=-4, ZMAX=4, MAXD=0.398942280401433;
+  function zDensity(z){ return Math.exp(-z*z/2)/Math.sqrt(2*Math.PI); }
+  function pxX(z){ return 30 + (z-ZMIN)/(ZMAX-ZMIN)*540; }
+  function pxY(d){ return 190 - (d/MAXD)*150; }
+
+  function outlinePath(){
+    let d="";
+    for(let z=ZMIN; z<=ZMAX+1e-9; z+=0.08){
+      const x=pxX(z), y=pxY(zDensity(z));
+      d += (d===""?"M":" L") + x + " " + y;
+    }
+    return d;
+  }
+  function shadePath(zLo, zHi){
+    let d="M"+pxX(zLo)+" 190";
+    for(let z=zLo; z<=zHi+1e-9; z+=0.06){
+      d += " L "+pxX(z)+" "+pxY(zDensity(z));
+    }
+    d += " L "+pxX(zHi)+" 190 Z";
+    return d;
+  }
+
+  const pct = {1:68, 2:95, 3:99.7};
+
+  document.getElementById("rule-outline").setAttribute("d", outlinePath());
+
+  function render(k){
+    document.getElementById("rule-shade").setAttribute("d", shadePath(-k,k));
+    const lo = (MU-k*SIGMA).toFixed(0), hi=(MU+k*SIGMA).toFixed(0);
+    document.getElementById("rule-result").innerHTML =
+      "<strong>" + pct[k] + "%</strong> of STA1003 student heights lie within " + k +
+      " standard deviation" + (k>1?"s":"") + " of the mean &mdash; between <strong>" + lo + "cm</strong> and <strong>" + hi + "cm</strong>.";
+  }
+
+  document.querySelectorAll(".rule-btn").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      document.querySelectorAll(".rule-btn").forEach(b=>b.classList.remove("active"));
+      btn.classList.add("active");
+      render(Number(btn.dataset.k));
+    });
+  });
+
+  render(1);
+})();
+</script>
+```
+
+Tables are more accurate and more useful than the 68-95-99.7 rule for anything other than whole standard deviations, so generally use the Standard Normal Table unless a question specifically asks you to use the 68-95-99.7 rule.
+
+---
+
+## Normal Distribution: Standardising
+
+Normal distributions do not necessarily have the same means and standard deviations. Areas under a Normal curve depend only on how many standard deviations ($\sigma$) the observation ($y$) is from the mean ($\mu$). The number of standard deviations from the mean is called a **z-score**. Converting a score to a z-score is called **standardising**.
+
+::: {.tipBox}
+**The standardising formula**
+
+$$z = \frac{y - \mu}{\sigma}$$
+
+- $z$-scores are negative for observations below the mean, and positive for observations above the mean
+- $z$-scores are numbers without units ("dimensionless")
+- Always round $z$-scores to **2 decimal places**
+:::
+
+**Why standardise?** The z-score is useful because it:
+
+- allows the probability of a score occurring within a Normal distribution to be calculated
+- allows the comparison of two scores from **different** Normal distributions (even distributions with different units — we can compare apples and oranges!)
+
+**The Standard Normal Model** has a Normal model shape, a mean of 0, and a standard deviation of 1. Any Normal model can be converted to a Standard Normal model, which means we can use the Standard Normal Table to work out probabilities.
+
+**Comparing apples and oranges.** Suppose apple weights are approximately Normal with mean 136g and SD 25g, and orange circumferences are approximately Normal with mean 26cm and SD 4cm. Which is more unusual: an apple weighing 185g, or an orange with a 35cm circumference? We cannot compare grams to centimetres directly, but we can compare z-scores:
+
+$$z_{\text{apple}} = \frac{185-136}{25} = 1.96 \qquad z_{\text{orange}} = \frac{35-26}{4} = 2.25$$
+
+The orange has the higher z-score, so it is the more unusual of the two, even though we started with two completely different units of measurement.
+
+::: {.tipBox}
+**Steps to standardise and find a proportion**
+
+1. Draw a diagram!
+2. Compute the z-score using the standardising formula
+3. Use the Standard Normal Table to find the proportion (or %)
+4. Work out the answer
+:::
+
+The Standard Normal Table gives the area under a Normal curve **to the left** of the z-score you look up. If you need the area to the right, or between two z-scores, you will need to subtract from 1 or subtract one table value from another, exactly as in the worked examples in the tutorial.
+
+---
+
+## Normal Distribution: Unstandardising
+
+Sometimes a problem works the opposite way around: instead of knowing an observation and needing to find a proportion, you know a proportion (or percentage) and need to find the corresponding observation. This is sometimes called an "unstandardising" or "backwards" problem.
+
+We can use the Standard Normal Table "backwards": if we know an area or proportion, we can look up the corresponding z-score, and then use the **unstandardising formula** to convert that z-score back into an actual observation.
+
+::: {.tipBox}
+**The unstandardising formula**
+
+$$y = z\sigma + \mu$$
+
+Use a diagram whenever problem-solving with a Normal model!
+:::
+
+**Recognising an unstandardising context.** Before, we knew the observation ($y$) and sought a percentage. Now, we know the percentage, and seek an observation ($y$). This is the tell-tale sign of a "backwards" problem.
+
+::: {.tipBox}
+**Steps to unstandardise and find a value**
+
+1. Draw a diagram!
+2. Use the Standard Normal Table to find the z-score (read the table in reverse: find the area closest to the one you want, then read off the row and column to get z)
+3. Use this z-score in the unstandardising formula, $y = z\sigma + \mu$
+4. Work out the answer
+:::
+
+**Worked example.** The length of human pregnancies is approximately Normal with mean 266 days and standard deviation 16 days. What is the duration of the shortest 10% of pregnancies?
+
+From Table Z, the area closest to 0.10 corresponds to $z = -1.28$. Using the unstandardising formula:
+
+$$y = z\sigma + \mu = (-1.28 \times 16) + 266 = 245.52$$
+
+So 10% of pregnancies are about 246 days or shorter.
+
+---
+
+# Review Questions: Module 3 {-}
+
+```{=html}
+<div style="
+  background: #f0f7ff;
+  border-left: 6px solid #2a7ae2;
+  padding: 18px;
+  margin: 25px 0;
+  border-radius: 6px;
+">
+  <p style="margin:0; font-size:1.05em;">
+    Once you have watched the lecture recordings you should be able to answer the following 
+    <em>Threshold</em> questions (solutions can be found at the end of this Workbook).
+  </p>
+</div>
+```
+
+```{=html}
+<style>
+  .revq { max-width:900px; margin:0 auto; }
+  .revq .muted { color:#666; font-size:.9rem; }
+  .revq-row { display:grid; grid-template-columns: 1fr 120px; gap:10px; align-items:start; margin:.6rem 0; }
+  .revq textarea { width:100%; min-height:3.2rem; padding:6px; box-sizing:border-box; }
+  .revq .chk { display:flex; align-items:center; gap:.5rem; }
+  .revq .btn { padding:6px 10px; border:1px solid #ccc; border-radius:4px; background:#f7f7f7; cursor:pointer; }
+  .revq .btn + .btn { margin-left:.4rem; }
+  .revq-answers { background:#f6fbff; border-left:6px solid #2b8cbe; padding:.9rem 1rem; border-radius:6px; margin-top:.8rem; display:none; }
+  .revq-answers h5 { margin:.2rem 0 .5rem; font-size:1.05rem; }
+  .revq-answers p { margin:.4rem 0; }
+</style>
+
+<div class="revq" id="revq">
+  <p class="muted">
+    Write your answers in the boxes below. Tick the checkbox if you believe your answer is correct.
+    Click <em>Show model answers</em> to compare.
+  </p>
+
+  (i) Why is the normal model so important in statistics?
+  <div class="revq-row">
+    <textarea id="revq_m3_q1" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (ii) Which two values are needed to specify a particular normal model?
+  <div class="revq-row">
+    <textarea id="revq_m3_q2" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (iii) What do areas under normal curves represent?
+  <div class="revq-row">
+    <textarea id="revq_m3_q3b" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (iv) What is meant by standardising? How is data standardised? What notation is commonly used for standardised data?
+  <div class="revq-row">
+    <textarea id="revq_m3_q4" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (v) What is the purpose of standardising?
+  <div class="revq-row">
+    <textarea id="revq_m3_q5" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  (vi) In the normal model, what percentage of values falls within one standard deviation of the mean? Within two standard deviations of the mean? Within three standard deviations of the mean?
+  <div class="revq-row">
+    <textarea id="revq_m3_q6" placeholder="Your answer..."></textarea>
+    <label class="chk"><input type="checkbox"> Marked correct</label>
+  </div>
+
+  <div style="margin-top:.6rem;">
+    <button class="btn" id="revq-show">Show model answers</button>
+    <button class="btn" id="revq-hide" style="display:none;">Hide model answers</button>
+    <button class="btn" id="revq-reset">Reset</button>
+  </div>
+
+  <div class="revq-answers" id="revq-model">
+    <h5>Model answers</h5>
+
+    <p><strong>(i)</strong> Many naturally occurring quantitative variables follow an approximately symmetric distribution, so the normal model is a useful approximation to reality.</p>
+
+    <p><strong>(ii)</strong> Mean &mu; (measure of centre) and standard deviation &sigma; (measure of spread).</p>
+
+    <p><strong>(iii)</strong> The areas represent theoretical percentages of the population, or probabilities.</p>
+
+    <p><strong>(iv)</strong> Standardising means converting a score to a Z score (the number of standard deviations from the mean). Data is standardised using the formula Z = (y - &mu;) / &sigma;, where y = the score of interest, &mu; = the population mean, and &sigma; = the population standard deviation. Standardised data is represented by Z.</p>
+
+    <p><strong>(v)</strong> It allows the probability of a score occurring within our normal distribution to be calculated. It also allows the comparison of two scores that are from different normal distributions.</p>
+
+    <p><strong>(vi)</strong> 68% of values lie within one standard deviation either side of the mean. 95% of values lie within two standard deviations either side of the mean. 99.7% of values lie within three standard deviations either side of the mean.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  const show = document.getElementById("revq-show");
+  const hide = document.getElementById("revq-hide");
+  const model = document.getElementById("revq-model");
+  const reset = document.getElementById("revq-reset");
+
+  show.onclick = () => { model.style.display="block"; show.style.display="none"; hide.style.display="inline-block"; };
+  hide.onclick = () => { model.style.display="none"; hide.style.display="none"; show.style.display="inline-block"; };
+  reset.onclick = () => {
+    document.querySelectorAll("#revq textarea").forEach(t => t.value="");
+    document.querySelectorAll("#revq input[type=checkbox]").forEach(c => c.checked=false);
+    model.style.display="none"; hide.style.display="none"; show.style.display="inline-block";
+  };
+})();
+</script>
+```
+
+<!--
+NOTE FOR FUTURE ME:
+This module uses child Rmd files under section headings (##) so that:
+- Module 3, Tutorial are in different files but render together
+- Summary, Review, and Tutorial are numbered 3.1, 3.2, 3.3
+- bs4_book splits these sections into separate HTML pages (via split_by: section)
+- PDF output still renders cleanly with correct numbering
+
+DO NOT add this file's children to _bookdown.yml
+DO NOT use # headings in the child files
+-->
+
+```{r, child="03-Tut3-v2.Rmd"}
+```

@@ -6,14 +6,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 3 Module 3 | Fundamental Statistics</title>
 <meta name="author" content="Taryn Axelsen">
-<meta name="description" content='Module Focus:      One line summary In this module, we ???.    3.1 Summary   document.addEventListener("DOMContentLoaded", function () {  // Restore saved values ...'>
+<meta name="description" content="Module Focus: Modelling quantitative data with the Normal distribution      In this module, we introduce the Normal model as a theoretical description of bell-shaped data, learn to standardise...">
 <meta name="generator" content="bookdown 0.46 with bs4_book()">
 <meta property="og:title" content="Chapter 3 Module 3 | Fundamental Statistics">
 <meta property="og:type" content="book">
-<meta property="og:description" content='Module Focus:      One line summary In this module, we ???.    3.1 Summary   document.addEventListener("DOMContentLoaded", function () {  // Restore saved values ...'>
+<meta property="og:description" content="Module Focus: Modelling quantitative data with the Normal distribution      In this module, we introduce the Normal model as a theoretical description of bell-shaped data, learn to standardise...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 3 Module 3 | Fundamental Statistics">
-<meta name="twitter:description" content='Module Focus:      One line summary In this module, we ???.    3.1 Summary   document.addEventListener("DOMContentLoaded", function () {  // Restore saved values ...'>
+<meta name="twitter:description" content="Module Focus: Modelling quantitative data with the Normal distribution      In this module, we introduce the Normal model as a theoretical description of bell-shaped data, learn to standardise...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.10.0/transition.js"></script><script src="libs/bs3compat-0.10.0/tabs.js"></script><script src="libs/bs3compat-0.10.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -79,6 +79,13 @@
 <li><a class="" href="module-2-checklist.html">Module 2 Checklist</a></li>
 <li><a class="active" href="module-3.html"><span class="header-section-number">3</span> Module 3</a></li>
 <li><a class="" href="review-questions-module-3.html">Review Questions: Module 3</a></li>
+<li><a class="" href="tutorial-questions-module-3.html">Tutorial Questions: Module 3</a></li>
+<li><a class="" href="module-3-checklist.html">Module 3 Checklist</a></li>
+<li><a class="" href="module-4.html"><span class="header-section-number">4</span> Module 4</a></li>
+<li><a class="" href="review-questions-module-4.html">Review Questions: Module 4</a></li>
+<li><a class="" href="tutorial-questions-module-4.html">Tutorial Questions: Module 4</a></li>
+<li><a class="" href="module-4-checklist.html">Module 4 Checklist</a></li>
+<li><a class="" href="solutions.html"><span class="header-section-number">5</span> Solutions</a></li>
 <li><a class="" href="references.html">References</a></li>
 </ul>
 
@@ -100,19 +107,187 @@
   border-radius: 6px;
 ">
   <h2 style="margin-top:0; color:#1a4f8b; font-weight:700;">
-    Module Focus:
+    Module Focus: Modelling quantitative data with the Normal distribution
   </h2>
   <p style="font-size:1.05em; margin-bottom:0;">
-    One line summary
-
-In this module, we ???.
+    
+In this module, we introduce the Normal model as a theoretical description of bell-shaped data, learn to standardise observations into z-scores, use the Standard Normal Table to find proportions and probabilities, and reverse the process to find cut-off values from a given percentage.
   </p>
 </div>
 <!-- ====== END BANNER ====== -->
-<div id="summary" class="section level2" number="3.1">
+<div id="introducing-the-normal-model" class="section level2" number="3.1">
 <h2>
-<span class="header-section-number">3.1</span> Summary<a class="anchor" aria-label="anchor" href="#summary"><i class="fas fa-link"></i></a>
+<span class="header-section-number">3.1</span> Introducing the Normal Model<a class="anchor" aria-label="anchor" href="#introducing-the-normal-model"><i class="fas fa-link"></i></a>
 </h2>
+<p>Many real quantitative variables are approximately bell-shaped (for example, heights, weights, and measurement errors). For these variables, we consider a theoretical or ideal <strong>Normal model</strong>.</p>
+<p><strong>What is a model?</strong></p>
+<p>A model is a theoretical or ideal concept, not the exact truth. Think of a plastic skeleton in a doctor’s office: it isn’t really a skeleton, and none of us have a skeleton exactly like it, but it still gives a great approximation to reality and is genuinely useful. The Normal model works the same way. No real variable probably has <em>exactly</em> a Normal distribution, but the model is still a useful approximation.</p>
+<p><strong>Key features of the Normal model</strong></p>
+<ul>
+<li>In symbols, a Normal model is written <span class="math inline">\(N(\mu, \sigma)\)</span>
+</li>
+<li>It is <strong>perfectly symmetric</strong>
+</li>
+<li>50% of observations occur on one side of the mean and 50% on the other</li>
+<li>Normal curves are drawn to contain 100% of the observations, so <strong>areas under the curve represent theoretical percentages</strong> (or probabilities)</li>
+</ul>
+<div class="tipBox">
+<p><strong>Notation</strong></p>
+<ul>
+<li>The mean of a theoretical Normal model is <span class="math inline">\(\mu\)</span> (“mu”)</li>
+<li>The standard deviation of a theoretical Normal model is <span class="math inline">\(\sigma\)</span> (“sigma”)</li>
+<li>Recall: <span class="math inline">\(\bar{y}\)</span> is the mean of <strong>actual (sample)</strong> data, and <span class="math inline">\(s\)</span> is the standard deviation of actual (sample) data. <span class="math inline">\(\mu\)</span> and <span class="math inline">\(\sigma\)</span> describe the theoretical model; <span class="math inline">\(\bar{y}\)</span> and <span class="math inline">\(s\)</span> describe the data we actually collected.</li>
+</ul>
+</div>
+<p><strong>Standard deviation as a ruler</strong></p>
+<p>Areas under Normal curves depend only on how many standard deviations an observation is away from the mean. The number of standard deviations away from the mean is called <span class="math inline">\(z\)</span>.</p>
+<div id="the-68-95-99.7-rule" class="section level3" number="3.1.1">
+<h3>
+<span class="header-section-number">3.1.1</span> The 68-95-99.7 Rule<a class="anchor" aria-label="anchor" href="#the-68-95-99.7-rule"><i class="fas fa-link"></i></a>
+</h3>
+<p>For <strong>any</strong> Normal model:</p>
+<ul>
+<li>
+<strong>68%</strong> of observations are within 1 standard deviation of the mean</li>
+<li>
+<strong>95%</strong> of observations are within 2 standard deviations of the mean</li>
+<li>
+<strong>99.7%</strong> of observations are within 3 standard deviations of the mean</li>
+</ul>
+<p><strong>Try it yourself.</strong> The example below uses STA1003 student heights, Normal with mean 170cm and standard deviation 5cm (matching the lecture example). Pick how many standard deviations to shade and see the rule in action.</p>
+<style>
+  .rule-box{max-width:700px;border:1px solid #e5e5e5;border-radius:8px;padding:16px;margin:14px 0;background:#fff;}
+  .rule-controls{display:flex;gap:8px;margin-bottom:10px;flex-wrap:wrap;}
+  .rule-btn{padding:7px 16px;border:1px solid #2a7ae2;border-radius:20px;background:#eaf2ff;color:#1a4f8b;cursor:pointer;font-size:.9rem;}
+  .rule-btn.active{background:#2a7ae2;color:#fff;}
+  .rule-svg{width:100%;height:auto;background:#fafcff;border:1px solid #e5e5e5;border-radius:6px;}
+  .rule-result{margin-top:8px;font-size:.95rem;background:#f6fbff;border-left:5px solid #2b8cbe;padding:.5rem .8rem;border-radius:4px;}
+</style>
+<div class="rule-box" id="rule-box">
+  <div class="rule-controls">
+    <button class="rule-btn active" data-k="1">Within 1 SD</button>
+    <button class="rule-btn" data-k="2">Within 2 SD</button>
+    <button class="rule-btn" data-k="3">Within 3 SD</button>
+  </div>
+  <svg viewbox="0 0 600 210" class="rule-svg" id="rule-svg"><path id="rule-shade" fill="#ffdca8" stroke="none"></path><path id="rule-outline" fill="none" stroke="#333" stroke-width="2"></path></svg><div class="rule-result" id="rule-result"></div>
+</div>
+
+<script>
+(function(){
+  const MU=170, SIGMA=5;
+  const ZMIN=-4, ZMAX=4, MAXD=0.398942280401433;
+  function zDensity(z){ return Math.exp(-z*z/2)/Math.sqrt(2*Math.PI); }
+  function pxX(z){ return 30 + (z-ZMIN)/(ZMAX-ZMIN)*540; }
+  function pxY(d){ return 190 - (d/MAXD)*150; }
+
+  function outlinePath(){
+    let d="";
+    for(let z=ZMIN; z<=ZMAX+1e-9; z+=0.08){
+      const x=pxX(z), y=pxY(zDensity(z));
+      d += (d===""?"M":" L") + x + " " + y;
+    }
+    return d;
+  }
+  function shadePath(zLo, zHi){
+    let d="M"+pxX(zLo)+" 190";
+    for(let z=zLo; z<=zHi+1e-9; z+=0.06){
+      d += " L "+pxX(z)+" "+pxY(zDensity(z));
+    }
+    d += " L "+pxX(zHi)+" 190 Z";
+    return d;
+  }
+
+  const pct = {1:68, 2:95, 3:99.7};
+
+  document.getElementById("rule-outline").setAttribute("d", outlinePath());
+
+  function render(k){
+    document.getElementById("rule-shade").setAttribute("d", shadePath(-k,k));
+    const lo = (MU-k*SIGMA).toFixed(0), hi=(MU+k*SIGMA).toFixed(0);
+    document.getElementById("rule-result").innerHTML =
+      "<strong>" + pct[k] + "%</strong> of STA1003 student heights lie within " + k +
+      " standard deviation" + (k>1?"s":"") + " of the mean &mdash; between <strong>" + lo + "cm</strong> and <strong>" + hi + "cm</strong>.";
+  }
+
+  document.querySelectorAll(".rule-btn").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      document.querySelectorAll(".rule-btn").forEach(b=>b.classList.remove("active"));
+      btn.classList.add("active");
+      render(Number(btn.dataset.k));
+    });
+  });
+
+  render(1);
+})();
+</script><p>Tables are more accurate and more useful than the 68-95-99.7 rule for anything other than whole standard deviations, so generally use the Standard Normal Table unless a question specifically asks you to use the 68-95-99.7 rule.</p>
+<hr>
+</div>
+</div>
+<div id="normal-distribution-standardising" class="section level2" number="3.2">
+<h2>
+<span class="header-section-number">3.2</span> Normal Distribution: Standardising<a class="anchor" aria-label="anchor" href="#normal-distribution-standardising"><i class="fas fa-link"></i></a>
+</h2>
+<p>Normal distributions do not necessarily have the same means and standard deviations. Areas under a Normal curve depend only on how many standard deviations (<span class="math inline">\(\sigma\)</span>) the observation (<span class="math inline">\(y\)</span>) is from the mean (<span class="math inline">\(\mu\)</span>). The number of standard deviations from the mean is called a <strong>z-score</strong>. Converting a score to a z-score is called <strong>standardising</strong>.</p>
+<div class="tipBox">
+<p><strong>The standardising formula</strong></p>
+<p><span class="math display">\[z = \frac{y - \mu}{\sigma}\]</span></p>
+<ul>
+<li>
+<span class="math inline">\(z\)</span>-scores are negative for observations below the mean, and positive for observations above the mean</li>
+<li>
+<span class="math inline">\(z\)</span>-scores are numbers without units (“dimensionless”)</li>
+<li>Always round <span class="math inline">\(z\)</span>-scores to <strong>2 decimal places</strong>
+</li>
+</ul>
+</div>
+<p><strong>Why standardise?</strong> The z-score is useful because it:</p>
+<ul>
+<li>allows the probability of a score occurring within a Normal distribution to be calculated</li>
+<li>allows the comparison of two scores from <strong>different</strong> Normal distributions (even distributions with different units — we can compare apples and oranges!)</li>
+</ul>
+<p><strong>The Standard Normal Model</strong> has a Normal model shape, a mean of 0, and a standard deviation of 1. Any Normal model can be converted to a Standard Normal model, which means we can use the Standard Normal Table to work out probabilities.</p>
+<p><strong>Comparing apples and oranges.</strong> Suppose apple weights are approximately Normal with mean 136g and SD 25g, and orange circumferences are approximately Normal with mean 26cm and SD 4cm. Which is more unusual: an apple weighing 185g, or an orange with a 35cm circumference? We cannot compare grams to centimetres directly, but we can compare z-scores:</p>
+<p><span class="math display">\[z_{\text{apple}} = \frac{185-136}{25} = 1.96 \qquad z_{\text{orange}} = \frac{35-26}{4} = 2.25\]</span></p>
+<p>The orange has the higher z-score, so it is the more unusual of the two, even though we started with two completely different units of measurement.</p>
+<div class="tipBox">
+<p><strong>Steps to standardise and find a proportion</strong></p>
+<ol style="list-style-type: decimal">
+<li>Draw a diagram!</li>
+<li>Compute the z-score using the standardising formula</li>
+<li>Use the Standard Normal Table to find the proportion (or %)</li>
+<li>Work out the answer</li>
+</ol>
+</div>
+<p>The Standard Normal Table gives the area under a Normal curve <strong>to the left</strong> of the z-score you look up. If you need the area to the right, or between two z-scores, you will need to subtract from 1 or subtract one table value from another, exactly as in the worked examples in the tutorial.</p>
+<hr>
+</div>
+<div id="normal-distribution-unstandardising" class="section level2" number="3.3">
+<h2>
+<span class="header-section-number">3.3</span> Normal Distribution: Unstandardising<a class="anchor" aria-label="anchor" href="#normal-distribution-unstandardising"><i class="fas fa-link"></i></a>
+</h2>
+<p>Sometimes a problem works the opposite way around: instead of knowing an observation and needing to find a proportion, you know a proportion (or percentage) and need to find the corresponding observation. This is sometimes called an “unstandardising” or “backwards” problem.</p>
+<p>We can use the Standard Normal Table “backwards”: if we know an area or proportion, we can look up the corresponding z-score, and then use the <strong>unstandardising formula</strong> to convert that z-score back into an actual observation.</p>
+<div class="tipBox">
+<p><strong>The unstandardising formula</strong></p>
+<p><span class="math display">\[y = z\sigma + \mu\]</span></p>
+<p>Use a diagram whenever problem-solving with a Normal model!</p>
+</div>
+<p><strong>Recognising an unstandardising context.</strong> Before, we knew the observation (<span class="math inline">\(y\)</span>) and sought a percentage. Now, we know the percentage, and seek an observation (<span class="math inline">\(y\)</span>). This is the tell-tale sign of a “backwards” problem.</p>
+<div class="tipBox">
+<p><strong>Steps to unstandardise and find a value</strong></p>
+<ol style="list-style-type: decimal">
+<li>Draw a diagram!</li>
+<li>Use the Standard Normal Table to find the z-score (read the table in reverse: find the area closest to the one you want, then read off the row and column to get z)</li>
+<li>Use this z-score in the unstandardising formula, <span class="math inline">\(y = z\sigma + \mu\)</span>
+</li>
+<li>Work out the answer</li>
+</ol>
+</div>
+<p><strong>Worked example.</strong> The length of human pregnancies is approximately Normal with mean 266 days and standard deviation 16 days. What is the duration of the shortest 10% of pregnancies?</p>
+<p>From Table Z, the area closest to 0.10 corresponds to <span class="math inline">\(z = -1.28\)</span>. Using the unstandardising formula:</p>
+<p><span class="math display">\[y = z\sigma + \mu = (-1.28 \times 16) + 266 = 245.52\]</span></p>
+<p>So 10% of pregnancies are about 246 days or shorter.</p>
+<hr>
 </div>
 </div>
 <script>
@@ -179,13 +354,17 @@ function resetAllAnswers() {
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#module-3"><span class="header-section-number">3</span> Module 3</a></li>
-<li><a class="nav-link" href="#summary"><span class="header-section-number">3.1</span> Summary</a></li>
+<li>
+<a class="nav-link" href="#introducing-the-normal-model"><span class="header-section-number">3.1</span> Introducing the Normal Model</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#the-68-95-99.7-rule"><span class="header-section-number">3.1.1</span> The 68-95-99.7 Rule</a></li></ul>
+</li>
+<li><a class="nav-link" href="#normal-distribution-standardising"><span class="header-section-number">3.2</span> Normal Distribution: Standardising</a></li>
+<li><a class="nav-link" href="#normal-distribution-unstandardising"><span class="header-section-number">3.3</span> Normal Distribution: Unstandardising</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/03-Mod3.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/03-Mod3.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/rstudio/bookdown-demo/blob/master/03-Mod3-v2.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rstudio/bookdown-demo/edit/master/03-Mod3-v2.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>
@@ -197,7 +376,7 @@ function resetAllAnswers() {
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-09-14.</p>
+    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-09-22.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -205,6 +384,34 @@ function resetAllAnswers() {
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>
