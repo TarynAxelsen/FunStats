@@ -20,6 +20,17 @@ question-2-assignment-results
 question-3-cloud-seeding-in-tasmania
 further-practice-from-the-textbook-1
 textbook-readings-1
+module-3
+introducing-the-normal-model
+the-68-95-99.7-rule
+normal-distribution-standardising
+normal-distribution-unstandardising
+question-1-using-standard-normal-tables
+question-2-how-do-the-males-in-western-europe-stack-up
+question-3-do-they-get-what-they-pay-for
+question-4-comparing-two-groups-based-on-summary-statistics
+further-practice-from-the-textbook-2
+textbook-readings-2
 solutions
 module-1-1
 question-1

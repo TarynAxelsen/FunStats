@@ -55,7 +55,7 @@ For **any** Normal model:
 - **95%** of observations are within 2 standard deviations of the mean
 - **99.7%** of observations are within 3 standard deviations of the mean
 
-**Try it yourself.** The example below uses STA1003 student heights, Normal with mean 170cm and standard deviation 5cm (matching the lecture example). Pick how many standard deviations to shade and see the rule in action.
+**Try it yourself.** The example below uses STA1003 student heights, Normal with mean 170cm and standard deviation 5cm. Pick how many standard deviations to shade and see the rule in action.
 
 ```{=html}
 <style>
@@ -151,7 +151,7 @@ $$z = \frac{y - \mu}{\sigma}$$
 **Why standardise?** The z-score is useful because it:
 
 - allows the probability of a score occurring within a Normal distribution to be calculated
-- allows the comparison of two scores from **different** Normal distributions (even distributions with different units — we can compare apples and oranges!)
+- allows the comparison of two scores from **different** Normal distributions (even distributions with different units: we can compare apples and oranges!)
 
 **The Standard Normal Model** has a Normal model shape, a mean of 0, and a standard deviation of 1. Any Normal model can be converted to a Standard Normal model, which means we can use the Standard Normal Table to work out probabilities.
 

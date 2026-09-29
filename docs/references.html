@@ -77,7 +77,11 @@
 <li><a class="" href="review-questions-module-2.html">Review Questions: Module 2</a></li>
 <li><a class="" href="tutorial-questions-module-2.html">Tutorial Questions: Module 2</a></li>
 <li><a class="" href="module-2-checklist.html">Module 2 Checklist</a></li>
-<li><a class="" href="solutions.html"><span class="header-section-number">3</span> Solutions</a></li>
+<li><a class="" href="module-3.html"><span class="header-section-number">3</span> Module 3</a></li>
+<li><a class="" href="review-questions-module-3.html">Review Questions: Module 3</a></li>
+<li><a class="" href="tutorial-questions-module-3.html">Tutorial Questions: Module 3</a></li>
+<li><a class="" href="module-3-checklist.html">Module 3 Checklist</a></li>
+<li><a class="" href="solutions.html"><span class="header-section-number">4</span> Solutions</a></li>
 <li><a class="active" href="references.html">References</a></li>
 </ul>
 
@@ -173,7 +177,7 @@ function resetAllAnswers() {
   alert("All saved answers in this workbook have been cleared.");
 }
 </script><div class="chapter-nav">
-<div class="prev"><a href="solutions.html"><span class="header-section-number">3</span> Solutions</a></div>
+<div class="prev"><a href="solutions.html"><span class="header-section-number">4</span> Solutions</a></div>
 <div class="empty"></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
@@ -194,7 +198,7 @@ function resetAllAnswers() {
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-09-23.</p>
+    <p>"<strong>Fundamental Statistics</strong>" was written by Taryn Axelsen. It was last built on Last Updated: 2026-09-29.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">
@@ -202,6 +206,34 @@ function resetAllAnswers() {
   </div>
 
 </div></div>
-</footer>
+</footer><!-- dynamically load mathjax for compatibility with self-contained --><script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script><script type="text/x-mathjax-config">const popovers = document.querySelectorAll('a.footnote-ref[data-toggle="popover"]');
+for (let popover of popovers) {
+  const div = document.createElement('div');
+  div.setAttribute('style', 'position: absolute; top: 0, left:0; width:0, height:0, overflow: hidden; visibility: hidden;');
+  div.innerHTML = popover.getAttribute('data-content');
+
+  var has_math = div.querySelector("span.math");
+  if (has_math) {
+    document.body.appendChild(div);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, div]);
+    MathJax.Hub.Queue(function() {
+      popover.setAttribute('data-content', div.innerHTML);
+      document.body.removeChild(div);
+    })
+  }
+}
+</script>
 </body>
 </html>
